@@ -1,0 +1,73 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+/dist
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OMC
+.omc
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+.env.backup
+
+# Package managers (we use pnpm)
+package-lock.json
+package-lock.json
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Static assets (except favicon)
+static/images/
+!static/images/favicon.svg
+
+# Sanity - exclude bloat backup (157M assets + raw duplicates)
+# Keep only sanity/data/*.json (published, ~5MB) for seed --skip-assets
+sanity/data/assets/
+sanity/data/*.raw.json
+sanity/data/all-documents.raw.json
+sanity/data/all-data.raw.json
+sanity/data/drafts-data.json
+sanity/data/assets-manifest.json
+
+# Sanity build & cache (artifacts)
+sanity/dist/
+sanity/.sanity/
+.sanity/
+
+# Env token - ensure nested sanity/.env is ignored (root .env already above)
+**/.env
+**/.env.local
+sanity/.env
+
+# Ensure node_modules ignored at all levels
+**/node_modules/
+pnpm-debug.log*

@@ -1,0 +1,254 @@
+[
+	{
+		"_id": "category-ai-automation",
+		"_type": "category",
+		"color": "#6366F1",
+		"description": {
+			"_type": "localizedText",
+			"en": "Insights and implementation stories on AI use cases, automation strategy, and practical business adoption.",
+			"id": "Insight dan implementasi AI use case, strategi otomasi, dan adopsi praktis untuk bisnis."
+		},
+		"icon": "brain",
+		"slug": {
+			"_type": "slug",
+			"current": "ai-automation"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "AI & Automation",
+			"id": "AI & Otomasi"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-cloud-devops",
+		"_type": "category",
+		"color": "#06B6D4",
+		"description": {
+			"_type": "localizedText",
+			"en": "Cloud migration, CI/CD, monitoring, and infrastructure automation for reliable deployments.",
+			"id": "Migrasi cloud, CI/CD, monitoring, dan otomasi infrastruktur untuk deployment yang andal."
+		},
+		"icon": "cloud",
+		"slug": {
+			"_type": "slug",
+			"current": "cloud-devops"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Cloud & DevOps",
+			"id": "Cloud & DevOps"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-design-branding",
+		"_type": "category",
+		"color": "#EC4899",
+		"description": {
+			"_type": "localizedText",
+			"en": "Creative design and branding projects including UI/UX, visual identity, and promotional assets.",
+			"id": "Proyek desain kreatif dan branding termasuk UI/UX, identitas visual, dan aset promosi."
+		},
+		"icon": "palette",
+		"slug": {
+			"_type": "slug",
+			"current": "design-branding"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Design & Branding",
+			"id": "Desain & Branding"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-digital-marketing-printing",
+		"_type": "category",
+		"color": "#F59E0B",
+		"description": {
+			"_type": "localizedText",
+			"en": "Digital campaign and printing strategy content for promotion materials and brand activation.",
+			"id": "Konten strategi kampanye digital dan percetakan untuk materi promosi serta aktivasi brand."
+		},
+		"icon": "megaphone",
+		"slug": {
+			"_type": "slug",
+			"current": "digital-marketing-printing"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Digital Marketing & Printing",
+			"id": "Digital Marketing & Percetakan"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-ecommerce-marketplace",
+		"_type": "category",
+		"color": "#14B8A6",
+		"description": {
+			"_type": "localizedText",
+			"en": "Online store and marketplace implementation with payments, order management, and analytics.",
+			"id": "Implementasi toko online dan marketplace dengan pembayaran, manajemen pesanan, dan analitik."
+		},
+		"icon": "shopping-cart",
+		"slug": {
+			"_type": "slug",
+			"current": "ecommerce-marketplace"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "E-commerce & Marketplace",
+			"id": "E-commerce & Marketplace"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-erp-crm-enterprise",
+		"_type": "category",
+		"color": "#7C3AED",
+		"description": {
+			"_type": "localizedText",
+			"en": "Enterprise solutions for ERP, CRM, inventory, finance, and integrated operational workflows.",
+			"id": "Solusi enterprise untuk ERP, CRM, inventori, keuangan, dan alur kerja operasional terintegrasi."
+		},
+		"icon": "database",
+		"slug": {
+			"_type": "slug",
+			"current": "erp-crm-enterprise"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "ERP & CRM Enterprise",
+			"id": "ERP & CRM Enterprise"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-government-education-systems",
+		"_type": "category",
+		"color": "#334155",
+		"description": {
+			"_type": "localizedText",
+			"en": "Implementation of digital systems for government institutions, schools, and public service organizations.",
+			"id": "Implementasi sistem digital untuk instansi pemerintah, sekolah, dan organisasi layanan publik."
+		},
+		"icon": "building-2",
+		"slug": {
+			"_type": "slug",
+			"current": "government-education-systems"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Government & Education Systems",
+			"id": "Sistem Pemerintahan & Pendidikan"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-infrastructure-networking",
+		"_type": "category",
+		"color": "#0F766E",
+		"description": {
+			"_type": "localizedText",
+			"en": "Network architecture, server setup, security hardening, and on-premise/cloud infrastructure projects.",
+			"id": "Arsitektur jaringan, setup server, penguatan keamanan, dan proyek infrastruktur on-premise/cloud."
+		},
+		"icon": "router",
+		"slug": {
+			"_type": "slug",
+			"current": "infrastructure-networking"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Infrastructure & Networking",
+			"id": "Infrastruktur & Jaringan"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-it-consulting-training",
+		"_type": "category",
+		"color": "#8B5CF6",
+		"description": {
+			"_type": "localizedText",
+			"en": "Consulting frameworks, team training, and digital transformation planning for organizations.",
+			"id": "Kerangka konsultasi, pelatihan tim, dan perencanaan transformasi digital untuk organisasi."
+		},
+		"icon": "graduation-cap",
+		"slug": {
+			"_type": "slug",
+			"current": "it-consulting-training"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "IT Consulting & Training",
+			"id": "Konsultasi & Pelatihan IT"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-it-security-compliance",
+		"_type": "category",
+		"color": "#0F172A",
+		"description": {
+			"_type": "localizedText",
+			"en": "Security assessment, penetration testing, governance, compliance readiness, and risk mitigation best practices.",
+			"id": "Asesmen keamanan, penetration testing, tata kelola, kesiapan compliance, dan praktik mitigasi risiko."
+		},
+		"icon": "shield-check",
+		"slug": {
+			"_type": "slug",
+			"current": "it-security-compliance"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "IT Security & Compliance",
+			"id": "Keamanan IT & Compliance"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-mobile-app-solutions",
+		"_type": "category",
+		"color": "#0EA5E9",
+		"description": {
+			"_type": "localizedText",
+			"en": "Android and iOS application solutions for customer services, internal apps, and automation.",
+			"id": "Solusi aplikasi Android dan iOS untuk layanan pelanggan, aplikasi internal, dan otomasi."
+		},
+		"icon": "smartphone",
+		"slug": {
+			"_type": "slug",
+			"current": "mobile-app-solutions"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Mobile App Solutions",
+			"id": "Solusi Aplikasi Mobile"
+		},
+		"type": "both"
+	},
+	{
+		"_id": "category-web-business-systems",
+		"_type": "category",
+		"color": "#2563EB",
+		"description": {
+			"_type": "localizedText",
+			"en": "Web application development for company profiles, operations, and digital business processes.",
+			"id": "Pengembangan aplikasi web untuk company profile, operasional, dan proses bisnis digital."
+		},
+		"icon": "globe",
+		"slug": {
+			"_type": "slug",
+			"current": "web-business-systems"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Web & Business Systems",
+			"id": "Web & Sistem Bisnis"
+		},
+		"type": "both"
+	}
+]

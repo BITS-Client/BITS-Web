@@ -1,0 +1,114 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "portfolioPage",
+	"_rev": "XUBEWnVTdIC36u5VuXse7k",
+	"_system": {
+		"base": {
+			"id": "portfolioPage",
+			"rev": "zuW1OHkqCQ2Sn593fPaGkZ"
+		}
+	},
+	"_type": "portfolioPage",
+	"_updatedAt": "2026-02-27T21:14:17Z",
+	"cta": {
+		"exploreLink": "/services",
+		"exploreServices": {
+			"en": "Explore Our Services",
+			"id": "Jelajahi Layanan Kami"
+		},
+		"getStarted": {
+			"en": "Get Started",
+			"id": "Mulai Sekarang"
+		},
+		"getStartedLink": "/contact",
+		"heading": {
+			"en": "Ready to Start Your Project?",
+			"id": "Siap Memulai Proyek Anda?"
+		},
+		"text": {
+			"_type": "localizedText",
+			"en": "Bring your next digital initiative to life with a team that can execute from planning, implementation, and post-go-live support.",
+			"id": "Wujudkan inisiatif digital berikutnya bersama tim yang mampu mengeksekusi dari perencanaan, implementasi, hingga dukungan pasca go-live."
+		}
+	},
+	"hero": {
+		"badge": {
+			"en": "Our Portfolio",
+			"id": "Karya Kami"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Review implementation case studies showing how we deliver measurable business results through software engineering, cloud migration, infrastructure modernization, and process automation.",
+			"id": "Tinjau studi kasus implementasi yang menunjukkan bagaimana kami menghasilkan hasil bisnis terukur melalui software engineering, migrasi cloud, modernisasi infrastruktur, dan otomasi proses."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Digital Project Portfolio and Case Studies",
+			"id": "Portofolio Proyek Digital dan Studi Kasus"
+		}
+	},
+	"itemLabels": {
+		"challenge": {
+			"en": "Challenge",
+			"id": "Tantangan"
+		},
+		"galleryImage": {
+			"en": "Gallery Image",
+			"id": "Gambar Galeri"
+		},
+		"notFound": {
+			"en": "Project Not Found",
+			"id": "Proyek Tidak Ditemukan"
+		},
+		"notFoundDesc": {
+			"_type": "localizedText",
+			"en": "Try another category to explore projects from software, infrastructure, cloud, and consulting engagements.",
+			"id": "Coba kategori lain untuk melihat proyek dari layanan software, infrastruktur, cloud, dan konsultasi."
+		},
+		"result": {
+			"en": "Result",
+			"id": "Hasil"
+		},
+		"solution": {
+			"en": "Solution",
+			"id": "Solusi Kami"
+		},
+		"viewAllProjects": {
+			"_type": "localizedString",
+			"en": "View All Projects",
+			"id": "Lihat Semua Proyek"
+		}
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Explore Banten IT Solutions case studies across software development, infrastructure modernization, cloud and DevOps, and digital execution with measurable business results.",
+			"id": "Jelajahi studi kasus Banten IT Solutions pada pengembangan software, modernisasi infrastruktur, cloud dan DevOps, serta eksekusi digital dengan hasil bisnis yang terukur."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"portfolio proyek it",
+			"studi kasus software",
+			"implementasi sistem enterprise",
+			"modernisasi infrastruktur",
+			"cloud devops case study",
+			"portfolio transformasi digital",
+			"hasil implementasi sistem",
+			"client success story indonesia"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-f18acb4093214cfbd6525de3692b1da03f0d780b-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "BITS Portfolio | Digital Project Case Studies",
+			"id": "Portofolio BITS | Studi Kasus Proyek Digital"
+		}
+	}
+}

@@ -1,0 +1,1030 @@
+[
+	{
+		"_id": "service-software-development",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "pard4qnmctr9",
+				"_type": "localizedString",
+				"en": "Custom solutions tailored to your business needs",
+				"id": "Solusi khusus yang disesuaikan dengan kebutuhan bisnis Anda"
+			},
+			{
+				"_key": "1w22fcjn5jh9",
+				"_type": "localizedString",
+				"en": "Modern technology stack and best practices",
+				"id": "Teknologi modern dan praktik terbaik"
+			},
+			{
+				"_key": "pnuognzzild6",
+				"_type": "localizedString",
+				"en": "Scalable and maintainable architecture",
+				"id": "Arsitektur yang scalable dan mudah dipelihara"
+			},
+			{
+				"_key": "cxexil8rao7u",
+				"_type": "localizedString",
+				"en": "Experienced development team",
+				"id": "Tim pengembang berpengalaman"
+			},
+			{
+				"_key": "ya264sov6nle",
+				"_type": "localizedString",
+				"en": "Ongoing support and maintenance",
+				"id": "Dukungan dan pemeliharaan berkelanjutan"
+			},
+			{
+				"_key": "5dfd94fe3693",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "code",
+		"image": {
+			"_key": "i0rdnb2gfhfk",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-25355ccfab089a76839a6082e3d3da329c57d5b0-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "Our software development services focus on building solutions tailored to your actual workflow, ranging from custom web and mobile apps to enterprise-grade ERP systems. With an experienced team of developers, we utilize a wide array of modern tech stacks best suited for your specific project needs—whether it's for an interactive frontend, a robust backend, or a secure database architecture. Our goal is straightforward: to engineer digital ecosystems that are not only fast and stable today but also highly scalable, ensuring your software grows seamlessly alongside your expanding business and user base without the need for constant system rebuilds.",
+			"id": "Layanan pengembangan perangkat lunak kami berfokus pada pembuatan solusi yang benar-benar sesuai dengan alur kerja Anda, mulai dari aplikasi web dan mobile custom hingga sistem ERP berskala enterprise. Bersama tim developer yang berpengalaman, kami mengeksplorasi dan menggunakan berbagai tech stack modern yang paling relevan dengan kebutuhan spesifik proyek Anda—baik itu untuk frontend yang interaktif, backend yang tangguh, maupun arsitektur database yang aman. Tujuannya sederhana: membangun ekosistem digital yang tidak hanya cepat dan stabil saat ini, tapi juga sangat scalable agar siap menampung lonjakan pengguna dan pertumbuhan bisnis Anda di masa depan tanpa harus merombak sistem dari awal."
+		},
+		"order": 1,
+		"seo": {
+			"description": {
+				"_type": "localizedText",
+				"en": "Professional software development in Indonesia. We build scalable custom web apps, mobile apps, and enterprise ERP systems to drive your business.",
+				"id": "Layanan pengembangan software profesional di Indonesia. Kami membangun aplikasi web custom, mobile yang scalable untuk bisnis Anda."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"software development",
+				"custom software",
+				"web development",
+				"mobile app development",
+				"ERP system",
+				"enterprise software",
+				"aplikasi web",
+				"aplikasi mobile",
+				"pengembangan software",
+				"jasa software",
+				"software custom",
+				"sistem ERP"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "bhq1jfcaq45u",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-f18acb4093214cfbd6525de3692b1da03f0d780b-1408x768-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Software Development Services | Custom Web & Mobile Apps | Banten IT Solutions",
+				"id": "Jasa Pembuatan Software | Aplikasi Web & Mobile Custom | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "software-development"
+		},
+		"subServices": [
+			{
+				"_key": "nz8mu4ikansl",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Company Profile Website, E-commerce Platform, Web Application (SaaS), Content Management System (CMS), Progressive Web Apps (PWA)",
+					"id": "Website Company Profile, Platform E-commerce, Aplikasi Web (SaaS), Content Management System (CMS), Progressive Web Apps (PWA)"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Web Development",
+					"id": "Pengembangan Web"
+				}
+			},
+			{
+				"_key": "mbmffy2851jg",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Android Native Apps, iOS Native Apps, Cross-Platform Apps (Flutter, React Native), Mobile E-commerce Apps",
+					"id": "Aplikasi Android Native, Aplikasi iOS Native, Aplikasi Cross-Platform (Flutter, React Native), Aplikasi E-commerce Mobile"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Mobile Development",
+					"id": "Pengembangan Mobile"
+				}
+			},
+			{
+				"_key": "039dp295pzf8",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "ERP, CRM, HRM, Inventory & Warehouse Management, Point of Sales (POS) System, Accounting & Finance Software",
+					"id": "ERP, CRM, HRM, Manajemen Inventory & Gudang, Sistem Point of Sales (POS), Software Akuntansi & Keuangan"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Enterprise Software",
+					"id": "Software Enterprise"
+				}
+			},
+			{
+				"_key": "yq0pp5jw7vy9",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "API Development & Integration, Third-Party Integration (Payment Gateway, Shipping, etc), Microservices Architecture, System Integration",
+					"id": "Pengembangan & Integrasi API, Integrasi Third-Party (Payment Gateway, Shipping, dll), Arsitektur Microservices, Integrasi Sistem"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Integration & API",
+					"id": "Integrasi & API"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "Software Development",
+			"id": "Pembuatan Aplikasi"
+		}
+	},
+	{
+		"_id": "service-infrastructure-networking",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "bmun0wxjmdce",
+				"_type": "localizedString",
+				"en": "Enterprise-grade infrastructure solutions",
+				"id": "Solusi infrastruktur tingkat enterprise"
+			},
+			{
+				"_key": "jjoa26puba7j",
+				"_type": "localizedString",
+				"en": "24/7 monitoring and support",
+				"id": "Monitoring dan dukungan 24/7"
+			},
+			{
+				"_key": "mgm0vmrfier1",
+				"_type": "localizedString",
+				"en": "Scalable and future-proof design",
+				"id": "Desain yang scalable dan future-proof"
+			},
+			{
+				"_key": "1816f2upbnxq",
+				"_type": "localizedString",
+				"en": "Expert team with industry certifications",
+				"id": "Tim ahli dengan sertifikasi industri"
+			},
+			{
+				"_key": "4etokbo02w4t",
+				"_type": "localizedString",
+				"en": "Comprehensive security implementation",
+				"id": "Implementasi keamanan yang komprehensif"
+			},
+			{
+				"_key": "518b09eec37d",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "server",
+		"image": {
+			"_key": "b3r4cz9krih7",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-54ab70183fd9ded670cf19055c59e21c882479cd-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "Building a resilient technological foundation is key to smooth operations, and we provide exactly that through comprehensive, enterprise-grade IT infrastructure solutions. We handle the entire spectrum of your hardware and networking needs, from physical server setup and virtualization implementation using Proxmox for resource efficiency, to advanced network topology design optimized with reliable equipment like MikroTik. Beyond seamless connectivity, we secure your company's assets through professional CCTV installation and centralized NAS storage systems, all backed by a team of certified technicians ready to provide 24/7 monitoring and technical support to guarantee maximum uptime.",
+			"id": "Membangun fondasi teknologi yang tangguh adalah kunci kelancaran operasional, dan kami menyediakannya melalui solusi infrastruktur IT tingkat enterprise yang komprehensif. Kami menangani seluruh spektrum kebutuhan keras dan jaringan Anda, mulai dari setup server fisik, implementasi virtualisasi menggunakan Proxmox untuk efisiensi resource, hingga desain topologi jaringan tingkat lanjut yang dioptimalkan dengan perangkat andal seperti MikroTik. Selain kelancaran konektivitas, kami juga mengamankan aset perusahaan Anda melalui instalasi CCTV profesional dan sistem penyimpanan terpusat NAS, semuanya didukung oleh tim teknisi bersertifikat yang siap memberikan pengawasan dan dukungan teknis 24/7 untuk menjamin uptime maksimal."
+		},
+		"order": 2,
+		"seo": {
+			"description": {
+				"_type": "localizedText",
+				"en": "Enterprise IT infrastructure and network solutions in Indonesia. Expert server setup, network design, CCTV installation, and 24/7 certified support.",
+				"id": "Solusi infrastruktur IT dan jaringan enterprise di Indonesia. Layanan setup server, desain jaringan, CCTV, dan dukungan 24/7 oleh tim bersertifikat."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"IT infrastructure",
+				"network infrastructure",
+				"server setup",
+				"virtualization",
+				"Proxmox",
+				"CCTV installation",
+				"network security",
+				"NAS storage",
+				"infrastruktur IT",
+				"jaringan komputer",
+				"instalasi server",
+				"instalasi CCTV",
+				"keamanan jaringan"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "ae4cl0kwh641",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-01343672860418286dab7626aaeb336bffb5280d-1536x1024-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "IT Infrastructure & Networking Services | Server, Network, CCTV | Banten IT Solutions",
+				"id": "Jasa Infrastruktur IT & Jaringan | Server, Network, CCTV | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "infrastructure-networking"
+		},
+		"subServices": [
+			{
+				"_key": "ruywi2adry21",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Dedicated Server Setup & Configuration, Server Virtualization (Proxmox, VMware), Container Solutions (Docker), NAS & Storage Solutions (TrueNAS, Synology), Backup & Disaster Recovery, High Availability & Clustering",
+					"id": "Setup & Konfigurasi Dedicated Server, Virtualisasi Server (Proxmox, VMware, Hyper-V), Solusi Container (Docker), Solusi NAS & Storage (TrueNAS, Synology), Backup & Disaster Recovery, High Availability & Clustering"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Server Solutions",
+					"id": "Solusi Server"
+				}
+			},
+			{
+				"_key": "hvi8a994a0sv",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Enterprise Network Design & Implementation, LAN/WAN Setup & Configuration, Network Security & Firewall (pfSense, Mikrotik), VPN & Remote Access Solutions, Structured Cabling, Network Monitoring & Management",
+					"id": "Desain & Implementasi Jaringan Enterprise, Setup & Konfigurasi LAN/WAN, Keamanan Jaringan & Firewall (pfSense, Mikrotik), Solusi VPN & Remote Access, Structured Cabling, Monitoring & Manajemen Jaringan"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Network Infrastructure",
+					"id": "Infrastruktur Jaringan"
+				}
+			},
+			{
+				"_key": "cepns83ack4r",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "CCTV Installation & Monitoring (IP Camera, NVR/DVR), Access Control Systems (Fingerprint, Face Recognition, RFID), IoT & Smart Building Solutions, Intrusion Detection System",
+					"id": "Instalasi & Monitoring CCTV (IP Camera, NVR/DVR), Sistem Access Control (Fingerprint, Face Recognition, RFID), Solusi IoT & Smart Building, Intrusion Detection System"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Security Systems",
+					"id": "Sistem Keamanan"
+				}
+			},
+			{
+				"_key": "0gno0tvolree",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Server & Workstation, Network Equipment (Switch, Router, Access Point), Storage Devices, Security Hardware, Desktop PC, Notebook, Printing Devices, Power & Backup Solutions",
+					"id": "Server & Workstation, Perangkat Jaringan (Switch, Router, Access Point), Perangkat Storage, Hardware Keamanan, PC Desktop, Laptop, Perangkat Printer, Perangkat Power & Backup"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Hardware Procurement",
+					"id": "Pengadaan Hardware"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "Infrastructure & Networking",
+			"id": "Infrastruktur & Jaringan"
+		}
+	},
+	{
+		"_id": "service-cloud-devops",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "g7satlp97ia7",
+				"_type": "localizedString",
+				"en": "Faster time to market with CI/CD",
+				"id": "Waktu ke pasar lebih cepat dengan CI/CD"
+			},
+			{
+				"_key": "bbnmu32nbj7u",
+				"_type": "localizedString",
+				"en": "Reduced infrastructure costs",
+				"id": "Pengurangan biaya infrastruktur"
+			},
+			{
+				"_key": "7wddi3ew45nb",
+				"_type": "localizedString",
+				"en": "Improved scalability and reliability",
+				"id": "Peningkatan skalabilitas dan keandalan"
+			},
+			{
+				"_key": "guxy4p8yarx3",
+				"_type": "localizedString",
+				"en": "Automated deployment and monitoring",
+				"id": "Deployment dan monitoring otomatis"
+			},
+			{
+				"_key": "0sakycw89gl4",
+				"_type": "localizedString",
+				"en": "Multi-cloud expertise",
+				"id": "Keahlian multi-cloud"
+			},
+			{
+				"_key": "adf080617a58",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "cloud",
+		"image": {
+			"_key": "ync1nd5nptdj",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-37ff4d5d0a5a5ebda433352e327697811c08f233-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "To accelerate your product release cycles and reduce infrastructure operational costs, our Cloud and DevOps services are here to modernize how your technology team operates. We facilitate seamless, zero-downtime cloud migrations to leading platforms such as AWS, Azure, GCP, or VPS environments like DigitalOcean, tailored to your specific needs and budget constraints. By implementing infrastructure automation, CI/CD pipelines, and leveraging container technologies like Docker and Kubernetes, our certified team ensures that your application deployment processes are significantly faster, highly scalable, and robust enough to handle unexpected surges in user traffic without technical hiccups.",
+			"id": "Untuk mempercepat siklus rilis produk dan menekan biaya operasional infrastruktur, layanan Cloud & DevOps kami hadir untuk memodernisasi cara kerja tim teknologi Anda. Kami memfasilitasi proses migrasi cloud yang mulus dan tanpa downtime ke berbagai platform terkemuka seperti AWS, Azure, GCP, maupun environment VPS seperti DigitalOcean, menyesuaikan dengan kebutuhan spesifik dan anggaran perusahaan Anda. Dengan menerapkan otomasi infrastruktur dan praktik CI/CD pipeline, serta pemanfaatan teknologi container seperti Docker dan Kubernetes, tim kami yang bersertifikasi memastikan proses deployment aplikasi berjalan jauh lebih cepat, terukur, dan kebal terhadap kendala teknis saat terjadi lonjakan trafik pengguna."
+		},
+		"order": 3,
+		"seo": {
+			"_type": "seoSettings",
+			"description": {
+				"_type": "localizedText",
+				"en": "Expert Cloud and DevOps services in Indonesia. Accelerate deployment and lower costs with cloud migration, Kubernetes, and CI/CD pipeline automation.",
+				"id": "Layanan Cloud Computing dan DevOps di Indonesia. Percepat deployment dengan migrasi cloud, Kubernetes, CI/CD pipeline, dan otomasi infrastruktur."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"cloud computing",
+				"DevOps",
+				"cloud migration",
+				"Kubernetes",
+				"Docker",
+				"CI/CD",
+				"AWS",
+				"Azure",
+				"GCP",
+				"infrastructure as code",
+				"Terraform",
+				"layanan cloud",
+				"migrasi cloud",
+				"otomasi infrastruktur"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "r6pmh6cnkhme",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-a22080acd38eef7cc070c5ac61e7f7ed4cf10e72-1408x768-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Cloud & DevOps Services | AWS, Azure, Kubernetes, CI/CD | Banten IT Solutions",
+				"id": "Layanan Cloud & DevOps | AWS, Azure, Kubernetes, CI/CD | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "cloud-devops"
+		},
+		"subServices": [
+			{
+				"_key": "h4ecarondqz2",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Cloud Architecture Design, Cloud Migration (On-premise to Cloud), Multi-Cloud Strategy (AWS, Azure, GCP, DigitalOcean), Cloud Cost Optimization, Cloud Security & Compliance",
+					"id": "Desain Arsitektur Cloud, Migrasi Cloud (On-premise ke Cloud), Strategi Multi-Cloud (AWS, Azure, GCP, DigitalOcean), Optimasi Biaya Cloud, Keamanan & Compliance Cloud"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Cloud Solutions",
+					"id": "Solusi Cloud"
+				}
+			},
+			{
+				"_key": "wathd0tzwivg",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "CI/CD Pipeline Setup (GitLab CI, GitHub Actions), Infrastructure as Code (Terraform, Ansible), Container Orchestration (Kubernetes, Docker Swarm), Configuration Management, Monitoring & Logging (Prometheus, Grafana)",
+					"id": "Setup CI/CD Pipeline (GitLab CI, GitHub Actions), Infrastructure as Code (Terraform, Ansible), Container Orchestration (Kubernetes, Docker Swarm), Configuration Management, Monitoring & Logging (Prometheus, Grafana)"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "DevOps Implementation",
+					"id": "Implementasi DevOps"
+				}
+			},
+			{
+				"_key": "1mvp9d4me9w5",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Kubernetes Cluster Management, Service Mesh Implementation, GitOps Implementation (ArgoCD, Flux), Platform as a Service (PaaS) Setup",
+					"id": "Manajemen Kubernetes Cluster, Implementasi Service Mesh, Implementasi GitOps (ArgoCD, Flux), Setup Platform as a Service (PaaS)"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Platform Engineering",
+					"id": "Platform Engineering"
+				}
+			},
+			{
+				"_key": "87pxy6hpuxl8",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Deployment Automation, Infrastructure Automation, Testing Automation, Security Automation (DevSecOps)",
+					"id": "Otomasi Deployment, Otomasi Infrastruktur, Otomasi Testing, Otomasi Keamanan (DevSecOps)"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Automation",
+					"id": "Otomasi"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "Cloud & DevOps",
+			"id": "Cloud & DevOps"
+		}
+	},
+	{
+		"_id": "service-digital-printing-advertising",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "97lgufli63a3",
+				"_type": "localizedString",
+				"en": "High-quality printing with vibrant colors",
+				"id": "Cetakan berkualitas tinggi dengan warna vibrant"
+			},
+			{
+				"_key": "t6zl7pkvwg9y",
+				"_type": "localizedString",
+				"en": "Fast turnaround time",
+				"id": "Waktu pengerjaan cepat"
+			},
+			{
+				"_key": "n8hul3b7i13g",
+				"_type": "localizedString",
+				"en": "Durable materials for long-lasting results",
+				"id": "Material tahan lama untuk hasil yang awet"
+			},
+			{
+				"_key": "xishw27td32z",
+				"_type": "localizedString",
+				"en": "Professional design assistance available",
+				"id": "Bantuan desain profesional tersedia"
+			},
+			{
+				"_key": "krzynzb3yo23",
+				"_type": "localizedString",
+				"en": "Competitive pricing",
+				"id": "Harga kompetitif"
+			},
+			{
+				"_key": "4ba45ba95e1d",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "database",
+		"image": {
+			"_key": "cxns2mjke0rj",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e4ee4842cebaa353f2380362be56285729edcb50-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "Your brand's physical presence is just as critical as its digital footprint, and we bring it to life through high-quality digital printing and visual advertising services. We handle everything from large format printing for massive promotional materials to crafting elegant neon boxes and installing interactive LED signage designed to immediately capture your audience's attention. Beyond corporate needs, we also specialize in manufacturing custom, functional digital products such as running text displays and digital prayer schedules for public facilities and places of worship, always maintaining a strict commitment to fast turnaround times, precision, and the use of highly durable materials.",
+			"id": "Kehadiran brand Anda di dunia nyata sama pentingnya dengan ranah digital, dan kami mewujudkannya melalui layanan percetakan digital serta periklanan visual berkualitas tinggi. Kami melayani pembuatan materi promosi berskala besar (large format printing), perancangan neon box yang elegan, hingga instalasi LED signage interaktif yang dirancang untuk menarik perhatian audiens secara langsung. Tidak hanya untuk kebutuhan korporat, kami juga ahli dalam memproduksi perangkat produk digital fungsional custom seperti running text dan jadwal sholat digital untuk fasilitas umum maupun tempat ibadah, dengan komitmen kuat pada pengerjaan yang cepat, rapi, dan menggunakan material yang tahan lama."
+		},
+		"order": 4,
+		"seo": {
+			"description": {
+				"_type": "localizedText",
+				"en": "Professional digital printing and advertising in Indonesia. High-quality large format printing, LED signage, neon boxes, and fast turnaround times.",
+				"id": "Layanan percetakan digital dan periklanan profesional di Indonesia. Kami menyediakan Banner, Neon Box, Signage LED dan masih banyak lainnya."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"digital printing",
+				"large format printing",
+				"neon box",
+				"LED signage",
+				"running text",
+				"jadwal sholat digital",
+				"banner printing",
+				"spanduk",
+				"percetakan digital",
+				"cetak banner",
+				"papan nama",
+				"videotron"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "ssa7bjudx788",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-c1e056c6d9e2f29492ca71f4869622036bab7057-1408x768-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Digital Printing & Advertising Services | Banner, Neon Box, Running Text | Banten IT Solutions",
+				"id": "Jasa Percetakan Digital & Periklanan | Banner, Neon Box, Running Text | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "digital-printing-advertising"
+		},
+		"subServices": [
+			{
+				"_key": "nph4gjgnvmr0",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Spanduk & Banner, Backdrop & Photobooth, X-Banner & Roll Banner, Giant Banner & Baliho, Vinyl Sticker & Cutting Sticker",
+					"id": "Spanduk & Banner, Backdrop & Photobooth, X-Banner & Roll Banner, Giant Banner & Baliho, Vinyl Sticker & Cutting Sticker"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Large Format Printing",
+					"id": "Percetakan Format Besar"
+				}
+			},
+			{
+				"_key": "qbkfn3jddur6",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Neon Box (Backlit & Frontlit), LED Sign & Channel Letter, 3D Letter (Acrylic, Stainless, Galvanis), Papan Nama & Signboard, Totem & Pylon Sign",
+					"id": "Neon Box (Backlit & Frontlit), LED Sign & Channel Letter, 3D Letter (Acrylic, Stainless, Galvanis), Papan Nama & Signboard, Totem & Pylon Sign"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Digital Signage & Display",
+					"id": "Digital Signage & Display"
+				}
+			},
+			{
+				"_key": "3e9tp7od6wnv",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Jadwal Sholat Digital (LED/LCD), Running Text Masjid, Jam Digital Masjid, Mihrab Digital, Kaligrafi Digital",
+					"id": "Jadwal Sholat Digital (LED/LCD), Running Text Masjid, Jam Digital Masjid, Mihrab Digital, Kaligrafi Digital"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Islamic Digital Products",
+					"id": "Produk Digital Islami"
+				}
+			},
+			{
+				"_key": "bxuajyvwkhum",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Running Text (Indoor & Outdoor), LED Videotron, Video Wall, Digital Menu Board, Information Display System",
+					"id": "Running Text (Indoor & Outdoor), LED Videotron, Video Wall, Digital Menu Board, Information Display System"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Electronic Display",
+					"id": "Display Elektronik"
+				}
+			},
+			{
+				"_key": "p1vbj57ukch6",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Billboard, Reklame, Shop Sign, Vehicle Branding",
+					"id": "Billboard, Reklame, Shop Sign, Vehicle Branding"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Outdoor Advertising",
+					"id": "Periklanan Outdoor"
+				}
+			},
+			{
+				"_key": "450esf6c88vr",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Poster & Flyer, Wallpaper & Wall Sticker, Floor Graphics, Window Graphics, Acrylic Display",
+					"id": "Poster & Flyer, Wallpaper & Wall Sticker, Floor Graphics, Window Graphics, Acrylic Display"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Indoor Branding",
+					"id": "Branding Indoor"
+				}
+			},
+			{
+				"_key": "qgll7tw6cpod",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Booth Design & Fabrication, Display Stand & Counter, Backdrop & Stage Design, Event Branding Materials",
+					"id": "Desain & Fabrikasi Booth, Display Stand & Counter, Desain Backdrop & Panggung, Material Branding Event"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Event & Exhibition",
+					"id": "Event & Pameran"
+				}
+			},
+			{
+				"_key": "52a0fa4f1d52",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Tumblers, Mugs, Tote Bags, T-Shirts, ID Cards & Lanyards, Letterhead, Envelopes, Folders, Planners, Company Profile & Marketing Kits",
+					"id": "Tumbler, Mug, Tote Bag, Kaos, ID Card & Lanyard, Kop Surat, Amplop, Map, Agenda, Company Profile & Marketing Kit"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Promotional Media",
+					"id": "Media Promosi"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "Digital Printing & Advertising",
+			"id": "Percetakan Digital & Periklanan"
+		}
+	},
+	{
+		"_id": "service-it-consulting-training",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "i3ad8ghv65vv",
+				"_type": "localizedString",
+				"en": "Expert consultants with industry experience",
+				"id": "Konsultan ahli dengan pengalaman industri"
+			},
+			{
+				"_key": "j726cmm781bb",
+				"_type": "localizedString",
+				"en": "Hands-on practical training approach",
+				"id": "Pendekatan pelatihan praktis hands-on"
+			},
+			{
+				"_key": "6w8m5d3rev6h",
+				"_type": "localizedString",
+				"en": "Customized training programs",
+				"id": "Program pelatihan yang disesuaikan"
+			},
+			{
+				"_key": "o3acgvlbz8e4",
+				"_type": "localizedString",
+				"en": "Certification preparation support",
+				"id": "Dukungan persiapan sertifikasi"
+			},
+			{
+				"_key": "o4uitoc0aozo",
+				"_type": "localizedString",
+				"en": "Ongoing technical support",
+				"id": "Dukungan teknis berkelanjutan"
+			},
+			{
+				"_key": "51986f867e8d",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "globe",
+		"image": {
+			"_key": "0qywl1jzyh8p",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-1576331e8bc68b88218899de1c1f2444c4047d68-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "Maximize your company's human resource potential and system security through our strategic IT consulting and training services, led by experienced industry practitioners. We help formulate comprehensive IT strategy roadmaps, conduct thorough technology assessments, and provide vital security audit services, including advanced penetration testing (pentest), to identify and patch vulnerabilities within your applications. On the talent development front, we organize corporate training sessions, intensive developer bootcamps, and global certification preparation programs, all utilizing a practical, hands-on learning approach to ensure your team is fully equipped to tackle real-world technical challenges.",
+			"id": "Maksimalkan potensi sumber daya manusia dan keamanan sistem perusahaan Anda melalui layanan konsultasi strategis dan pelatihan IT kami yang dikelola oleh para praktisi industri berpengalaman. Kami membantu menyusun peta jalan strategi IT, melakukan asesmen teknologi secara menyeluruh, serta menyediakan layanan audit keamanan termasuk penetration testing (pentest) tingkat lanjut untuk mengidentifikasi dan menutup celah kerentanan pada aplikasi Anda. Dari sisi pengembangan talenta, kami menyelenggarakan training korporat, bootcamp developer intensif, hingga program persiapan sertifikasi global dengan pendekatan pembelajaran hands-on yang praktis agar tim Anda siap menghadapi tantangan teknis sesungguhnya di lapangan."
+		},
+		"order": 5,
+		"seo": {
+			"_type": "seoSettings",
+			"description": {
+				"_type": "localizedText",
+				"en": "Expert IT consulting and training services in Indonesia. Empower your team with corporate tech training, developer bootcamps, and IT strategy.",
+				"id": "Tingkatkan kapabilitas tim dengan konsultasi dan pelatihan IT di Indonesia. Tersedia corporate training, bootcamp developer, dan penyusunan strategi."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"IT consulting",
+				"IT training",
+				"corporate training",
+				"developer bootcamp",
+				"IT strategy",
+				"technology assessment",
+				"konsultasi IT",
+				"pelatihan IT",
+				"training korporat",
+				"bootcamp programming",
+				"kursus IT",
+				"webinar IT"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "vuky8fabjyv1",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-37156bd33158ff07cb119e18dd72709982c6cfd5-1408x768-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "IT Consulting & Training Services | Corporate Training, Bootcamp | Banten IT Solutions",
+				"id": "Jasa Konsultasi & Pelatihan IT | Training Korporat, Bootcamp | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "it-consulting-training"
+		},
+		"subServices": [
+			{
+				"_key": "keeiuc6nxrcf",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "IT Strategy & Roadmap Planning, Technology Assessment & Audit, Digital Transformation Consulting, IT Infrastructure Consulting, Security Consulting & Audit, Software Architecture Consulting, Vendor Selection & Evaluation",
+					"id": "Perencanaan Strategi & Roadmap IT, Asesmen & Audit Teknologi, Konsultasi Transformasi Digital, Konsultasi Infrastruktur IT, Konsultasi & Audit Keamanan, Konsultasi Arsitektur Software, Seleksi & Evaluasi Vendor"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "IT Consulting",
+					"id": "Konsultasi IT"
+				}
+			},
+			{
+				"_key": "ytf5gbsq22lc",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Full-Stack Web Developer, Mobile App Developer, DevOps Engineer, Cloud Engineer, UI/UX Designer",
+					"id": "Full-Stack Web Developer, Mobile App Developer, DevOps Engineer, Cloud Engineer, UI/UX Designer"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Developer Bootcamp",
+					"id": "Bootcamp Developer"
+				}
+			},
+			{
+				"_key": "mj4q1eoskdie",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Online Courses & Video Tutorials, Live Webinar & Workshop, E-learning Platform Development",
+					"id": "Kursus Online & Video Tutorial, Webinar & Workshop Live, Pengembangan Platform E-learning"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Online Learning",
+					"id": "Pembelajaran Online"
+				}
+			},
+			{
+				"_key": "m8o6nt6p5313",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Managed IT Services, Help Desk & Technical Support, System Maintenance & Updates, On-site & Remote Support, IT Outsourcing",
+					"id": "Managed IT Services, Help Desk & Dukungan Teknis, Pemeliharaan & Update Sistem, Dukungan On-site & Remote, IT Outsourcing"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Technical Support",
+					"id": "Dukungan Teknis"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "IT Consulting & Training",
+			"id": "Konsultasi & Pelatihan IT"
+		}
+	},
+	{
+		"_id": "service-creative-design",
+		"_type": "service",
+		"benefits": [
+			{
+				"_key": "115n7mazpxk9",
+				"_type": "localizedString",
+				"en": "Award-winning creative team",
+				"id": "Tim kreatif pemenang penghargaan"
+			},
+			{
+				"_key": "t24ganx66i76",
+				"_type": "localizedString",
+				"en": "User-centered design approach",
+				"id": "Pendekatan desain berpusat pada user"
+			},
+			{
+				"_key": "kdciut7cup1q",
+				"_type": "localizedString",
+				"en": "Fast iteration and revisions",
+				"id": "Iterasi dan revisi cepat"
+			},
+			{
+				"_key": "qo23ejdnt23t",
+				"_type": "localizedString",
+				"en": "Consistent brand experience",
+				"id": "Pengalaman brand yang konsisten"
+			},
+			{
+				"_key": "aesu84wxhetb",
+				"_type": "localizedString",
+				"en": "Design that drives conversions",
+				"id": "Desain yang mendorong konversi"
+			},
+			{
+				"_key": "9e9b5845fa2b",
+				"_type": "localizedString",
+				"en": "Best Quality Products & Professional Services",
+				"id": "Produk Berkualitas Terbaik & Layanan Profesional"
+			}
+		],
+		"icon": "palette",
+		"image": {
+			"_key": "ov1mrhs2ilap",
+			"_type": "image",
+			"asset": {
+				"_ref": "image-b09df3590349728258a6493bc8a4739f12652544-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"longDescription": {
+			"_type": "localizedText",
+			"en": "Strong visuals are the foundation of effective brand communication, and our creative design services are dedicated to building a visual identity that is professional, consistent, and strictly user-centered. From designing intuitive UI/UX interfaces for your applications and defining the philosophy behind a solid corporate brand identity, to executing captivating graphic design materials and digital marketing assets. Our proven team of designers also possesses the advanced capability to produce dynamic content such as motion graphics and 3D visualizations, ensuring that every visual element we create is not only aesthetically pleasing but strategically crafted to elevate your product's market value.",
+			"id": "Visual yang kuat adalah fondasi dari komunikasi brand yang efektif, dan layanan desain kreatif kami didedikasikan untuk membangun identitas visual yang profesional, konsisten, dan berpusat pada pengguna (user-centered). Mulai dari merancang antarmuka UI/UX yang intuitif untuk aplikasi Anda, merumuskan filosofi identitas brand perusahaan yang solid, hingga mengeksekusi materi desain grafis dan aset digital marketing yang memikat. Tim desainer kami juga memiliki kapabilitas mumpuni dalam memproduksi konten dinamis seperti motion graphics dan visualisasi 3D, memastikan setiap elemen visual yang kami ciptakan tidak sekadar estetis, tetapi secara strategis mampu meningkatkan nilai jual produk Anda."
+		},
+		"order": 6,
+		"seo": {
+			"_type": "seoSettings",
+			"description": {
+				"_type": "localizedText",
+				"en": "Professional creative design services in Indonesia. Elevate your brand with user-centered UI/UX, graphic design, 3D visualization, and motion graphics.",
+				"id": "Layanan desain kreatif dan UI/UX profesional di Indonesia. Tingkatkan identitas brand Anda melalui desain grafis, motion graphics, dan visualisasi 3D."
+			},
+			"excludeFromSitemap": false,
+			"keywords": [
+				"UI/UX design",
+				"brand identity",
+				"graphic design",
+				"logo design",
+				"web design",
+				"mobile app design",
+				"desain UI/UX",
+				"desain grafis",
+				"desain logo",
+				"identitas brand",
+				"desain website",
+				"desain aplikasi"
+			],
+			"noFollow": false,
+			"noIndex": false,
+			"ogImage": {
+				"_key": "u230iiy5bk08",
+				"_type": "image",
+				"asset": {
+					"_ref": "image-7bd424ec4b5d67b888b8f957f17f844ef800567e-1408x768-png",
+					"_type": "reference"
+				}
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Creative Design Services | UI/UX, Brand Identity, Graphic Design | Banten IT Solutions",
+				"id": "Jasa Desain Kreatif | UI/UX, Identitas Brand, Desain Grafis | Banten IT Solutions"
+			}
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "creative-design"
+		},
+		"subServices": [
+			{
+				"_key": "b5uenccd17wg",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Website UI/UX Design, Mobile App UI/UX Design, Dashboard & Admin Panel Design, User Research & Testing, Wireframing & Prototyping, Design System Development",
+					"id": "Desain UI/UX Website, Desain UI/UX Aplikasi Mobile, Desain Dashboard & Admin Panel, Riset & Testing User, Wireframing & Prototyping, Pengembangan Design System"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "UI/UX Design",
+					"id": "Desain UI/UX"
+				}
+			},
+			{
+				"_key": "bfe8gev1ks8u",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Marketing Materials (Brochure, Flyer, Catalog), Social Media Graphics, Presentation Design, Infographic Design, Packaging Design",
+					"id": "Material Marketing (Brosur, Flyer, Katalog), Grafis Media Sosial, Desain Presentasi, Desain Infografis, Desain Packaging"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Graphic Design",
+					"id": "Desain Grafis"
+				}
+			},
+			{
+				"_key": "f2zhrt6tf51u",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Social Media Content Design, Banner Ads & Display Ads, Email Newsletter Design, Landing Page Design, Digital Campaign Assets",
+					"id": "Desain Konten Media Sosial, Banner Ads & Display Ads, Desain Email Newsletter, Desain Landing Page, Aset Kampanye Digital"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Digital Marketing Design",
+					"id": "Desain Digital Marketing"
+				}
+			},
+			{
+				"_key": "0v21j5qmncbh",
+				"_type": "subService",
+				"description": {
+					"_type": "localizedText",
+					"en": "Animated Logo & Intro, Explainer Video, Product Demo Video, Social Media Video Content",
+					"id": "Logo & Intro Animasi, Video Explainer, Video Demo Produk, Konten Video Media Sosial"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Motion Graphics",
+					"id": "Motion Graphics"
+				}
+			}
+		],
+		"title": {
+			"_type": "localizedString",
+			"en": "Creative Design",
+			"id": "Desain Kreatif"
+		}
+	}
+]

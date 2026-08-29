@@ -1,0 +1,186 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "blogPage",
+	"_rev": "XUBEWnVTdIC36u5VuXseaC",
+	"_system": {
+		"base": {
+			"id": "blogPage",
+			"rev": "unIo2UW65gB1PasuKN7h68"
+		}
+	},
+	"_type": "blogPage",
+	"_updatedAt": "2026-02-27T21:14:18Z",
+	"content": {
+		"adjustSearchFilter": {
+			"_type": "localizedText",
+			"en": "Try adjusting your search or filter to find what you're looking for.",
+			"id": "Coba sesuaikan pencarian atau filter Anda untuk menemukan yang Anda cari."
+		},
+		"allCategories": {
+			"_type": "localizedString",
+			"en": "All Categories",
+			"id": "Semua Kategori"
+		},
+		"articlesCount": {
+			"_type": "localizedString",
+			"en": "Articles",
+			"id": "Artikel"
+		},
+		"categories": {
+			"_type": "localizedString",
+			"en": "Categories",
+			"id": "Kategori"
+		},
+		"clearFilters": {
+			"_type": "localizedString",
+			"en": "Clear",
+			"id": "Reset Filter"
+		},
+		"comingSoon": {
+			"_type": "localizedString",
+			"en": "Coming Soon",
+			"id": "Segera Hadir"
+		},
+		"latestArticles": {
+			"_type": "localizedString",
+			"en": "Latest Implementation Articles",
+			"id": "Artikel Implementasi Terbaru"
+		},
+		"loadMore": {
+			"_type": "localizedString",
+			"en": "Load More",
+			"id": "Muat Lebih Banyak"
+		},
+		"viewAllArticles": {
+			"_type": "localizedString",
+			"en": "View All Articles",
+			"id": "Lihat Semua Artikel"
+		}
+	},
+	"detail": {
+		"goHome": {
+			"en": "Go Home",
+			"id": "Kembali ke Beranda"
+		},
+		"inThisArticle": {
+			"en": "In This Article",
+			"id": "Dalam Artikel Ini"
+		},
+		"postNotFound": {
+			"en": "Post Not Found",
+			"id": "Artikel Tidak Ditemukan"
+		},
+		"postNotFoundDesc": {
+			"en": "The article you're looking for doesn't exist or has been moved.",
+			"id": "Artikel yang Anda cari tidak ada atau telah dipindahkan."
+		},
+		"readArticle": {
+			"en": "Read Article",
+			"id": "Baca Artikel"
+		},
+		"relatedBadge": {
+			"_type": "localizedString",
+			"en": "Related Articles",
+			"id": "Artikel Terkait"
+		},
+		"shareArticle": {
+			"en": "Share this article",
+			"id": "Bagikan artikel ini"
+		},
+		"writtenBy": {
+			"en": "Written by",
+			"id": "Ditulis oleh"
+		}
+	},
+	"hero": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Blog & Insight",
+			"id": "Blog & Wawasan"
+		},
+		"searchArticle": {
+			"_type": "localizedString",
+			"en": "Search articles, categories, tags...",
+			"id": "Cari artikel, kategori, tag..."
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Read practical articles on software, infrastructure, cloud, cybersecurity, and digital transformation to support measurable business outcomes.",
+			"id": "Baca artikel praktis seputar software, infrastruktur, cloud, keamanan siber, dan transformasi digital untuk mendukung hasil bisnis yang terukur."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Technology Insights and Implementation Guides",
+			"id": "Insight Teknologi dan Panduan Implementasi"
+		}
+	},
+	"searchModal": {
+		"noArticlesFound": {
+			"_type": "localizedString",
+			"en": "No Articles",
+			"id": "Tidak ada artikel"
+		},
+		"noResults": {
+			"_type": "localizedString",
+			"en": "No matching articles found. Try another keyword or category.",
+			"id": "Tidak ada artikel yang cocok. Coba kata kunci atau kategori lain."
+		},
+		"quickLinks": {
+			"_type": "localizedString",
+			"en": "Categories",
+			"id": "Kategori"
+		},
+		"resultsFor": {
+			"_type": "localizedString",
+			"en": "Results For",
+			"id": "Hasil untuk"
+		},
+		"toClose": {
+			"_type": "localizedString",
+			"en": "untuk menutup",
+			"id": "untuk menutup"
+		},
+		"toSelect": {
+			"_type": "localizedString",
+			"en": "to select",
+			"id": "untuk memilih"
+		},
+		"trendingTags": {
+			"_type": "localizedString",
+			"en": "Popular Tags",
+			"id": "Tag Populer"
+		}
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Explore practical insights on software engineering, infrastructure, cloud & DevOps, cybersecurity, and digital transformation for better business and technology decisions.",
+			"id": "Jelajahi insight praktis seputar software engineering, infrastruktur, cloud & DevOps, keamanan siber, dan transformasi digital untuk keputusan bisnis dan teknologi yang lebih tepat."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"blog teknologi bisnis",
+			"arsitektur software",
+			"infrastruktur jaringan",
+			"cloud devops indonesia",
+			"keamanan siber perusahaan",
+			"transformasi digital perusahaan",
+			"panduan implementasi sistem",
+			"best practice it enterprise"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-54ab70183fd9ded670cf19055c59e21c882479cd-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "BITS Blog | Technology Insights, Architecture, and Implementation Guides",
+			"id": "Blog BITS | Insight Teknologi, Arsitektur, dan Panduan Implementasi"
+		}
+	}
+}

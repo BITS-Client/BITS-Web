@@ -1,0 +1,46 @@
+{
+	"_createdAt": "2026-01-01T19:15:46Z",
+	"_id": "informationSettings",
+	"_rev": "XUBEWnVTdIC36u5VuXsg72",
+	"_system": {
+		"base": {
+			"id": "informationSettings",
+			"rev": "kD2Bf5mqCHk08kw0ZXnYNB"
+		}
+	},
+	"_type": "informationSettings",
+	"_updatedAt": "2026-02-27T21:14:24Z",
+	"github": "https://github.com/bitscoid",
+	"googleMaps": "https://www.google.com/maps/place/Farhan+Toys/@-6.1013248,106.1095845,21z/data=!4m15!1m8!3m7!1s0x2e418ba61803e839:0x68ea6667dc03d34c!2sJl.+Komp.+Taman+Pesona,+Kec.+Taktakan,+Kota+Serang,+Banten+42162!3b1!8m2!3d-6.1024861!4d106.1091505!16s%2Fg%2F11cm30m1vr!3m5!1s0x2e418b0cd11a746b:0x8d60c8d754133b4d!8m2!3d-6.1012433!4d106.1098258!16s%2Fg%2F11rq10dfv9?hl=en&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
+	"instagram": "https://www.instagram.com/bantenitsolutions/",
+	"siteAddress": "Jl. Komp. Taman Pesona Taktakan, Kota Serang, Banten 42162, Indonesia",
+	"siteDescription": {
+		"_type": "localizedString",
+		"en": "Comprehensive IT and creative solutions in Indonesia. From software development and cloud infrastructure to digital printing, we drive your business growth.",
+		"id": "Solusi IT dan kreatif komprehensif di Indonesia. Mulai dari pengembangan software, cloud, infrastruktur, hingga digital printing untuk memajukan bisnis Anda."
+	},
+	"siteEmail": "admin@bits.co.id",
+	"siteIcon": {
+		"_type": "image",
+		"alt": "Banten IT Solutions Icon",
+		"asset": {
+			"_ref": "image-591a382197a1171404c23c1e1055e11a350fd33b-512x512-png",
+			"_type": "reference"
+		}
+	},
+	"siteLogo": {
+		"_type": "image",
+		"alt": "Banten IT Solutions Logo",
+		"asset": {
+			"_ref": "image-591a382197a1171404c23c1e1055e11a350fd33b-512x512-png",
+			"_type": "reference"
+		}
+	},
+	"siteTagline": "Solusi IT Terlengkap untuk Akselerasi Bisnis Anda",
+	"siteTelp": "+62 819 678 048",
+	"siteTitle": "Banten IT Solutions",
+	"siteURL": "https://bits.co.id",
+	"siteWhatsApp": "62819678048",
+	"tiktok": "https://tiktok.com/bitscoid",
+	"youtube": "https://www.youtube.com/Bantenitsolution"
+}

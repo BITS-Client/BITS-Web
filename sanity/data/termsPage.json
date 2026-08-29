@@ -1,0 +1,298 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "termsPage",
+	"_rev": "T1sq5D24mk45gEbRVdjROb",
+	"_system": {
+		"base": {
+			"id": "termsPage",
+			"rev": "zuW1OHkqCQ2Sn593fNMJ27"
+		}
+	},
+	"_type": "termsPage",
+	"_updatedAt": "2026-02-27T21:14:20Z",
+	"contact": {
+		"title": {
+			"en": "Questions About Our Terms ?",
+			"id": "Pertanyaan Tentang Syarat & Ketentuan Kami ?"
+		}
+	},
+	"content": {
+		"noticeSubtitle": {
+			"_type": "localizedText",
+			"en": "By using our website, submitting inquiries, or engaging our services, you agree to these Terms of Service. If you do not agree with these terms, please do not use our services. We recommend reading this document in full.",
+			"id": "Dengan menggunakan website kami, mengirimkan pertanyaan, atau menggunakan layanan kami, Anda menyetujui Syarat dan Ketentuan Layanan ini. Jika Anda tidak setuju, mohon tidak menggunakan layanan kami. Kami menyarankan Anda membaca dokumen ini secara lengkap."
+		},
+		"noticeTitle": {
+			"_type": "localizedString",
+			"en": "Important Legal Notice",
+			"id": "Pemberitahuan Hukum Penting"
+		},
+		"sectionLabel": {
+			"_type": "localizedString",
+			"en": "Section",
+			"id": "Bagian"
+		},
+		"tocLabel": {
+			"_type": "localizedString",
+			"en": "Table of Contents",
+			"id": "Daftar Isi"
+		}
+	},
+	"hero": {
+		"badge": {
+			"en": "Legal Agreement",
+			"id": "Perjanjian Hukum"
+		},
+		"lastUpdated": {
+			"en": "Last updated: December 2025",
+			"id": "Terakhir diperbarui: Desember 2025"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "These terms explain service scope, project responsibilities, payment terms, and legal conditions for Banten IT Solutions software, infrastructure, cloud, design, printing, and IT advisory services.",
+			"id": "Syarat ini menjelaskan cakupan layanan, tanggung jawab proyek, ketentuan pembayaran, dan ketentuan hukum untuk layanan software, infrastruktur, cloud, desain, percetakan, dan advisory IT Banten IT Solutions."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Terms of Services",
+			"id": "Syarat dan Ketentuan Layanan"
+		}
+	},
+	"sections": [
+		{
+			"_key": "sec-acceptance",
+			"items": [
+				{
+					"_key": "item-agreement",
+					"key": "agreement",
+					"subtitle": {
+						"en": "Agreement to Terms",
+						"id": "Persetujuan terhadap Syarat"
+					},
+					"text": {
+						"en": "By accessing and using the Banten IT Solutions website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and all applicable laws and regulations.",
+						"id": "Dengan mengakses dan menggunakan website serta layanan Banten IT Solutions, Anda menyatakan telah membaca, memahami, dan setuju terikat pada Syarat ini serta peraturan perundang-undangan yang berlaku."
+					}
+				},
+				{
+					"_key": "item-capacity",
+					"key": "capacity",
+					"subtitle": {
+						"en": "Legal Capacity",
+						"id": "Kapasitas Hukum"
+					},
+					"text": {
+						"en": "You represent that you have legal capacity to enter into these Terms. If you engage our services on behalf of an organization, you confirm that you are authorized to bind that organization to these Terms and the relevant project agreement.",
+						"id": "Anda menyatakan memiliki kapasitas hukum untuk menyetujui Syarat ini. Jika Anda menggunakan layanan kami atas nama organisasi, Anda memastikan memiliki kewenangan untuk mengikat organisasi tersebut pada Syarat ini dan perjanjian proyek terkait."
+					}
+				}
+			],
+			"key": "acceptance",
+			"title": {
+				"en": "Acceptance of Terms",
+				"id": "Penerimaan Syarat"
+			}
+		},
+		{
+			"_key": "sec-services",
+			"items": [
+				{
+					"_key": "item-provided",
+					"key": "provided",
+					"subtitle": {
+						"en": "Services Provided",
+						"id": "Layanan yang Disediakan"
+					},
+					"text": {
+						"en": "Banten IT Solutions provides software development, IT infrastructure and networking, cloud and DevOps services, creative design services, digital printing and advertising services, and IT consulting and training services.",
+						"id": "Banten IT Solutions menyediakan layanan pengembangan software, infrastruktur dan jaringan IT, layanan cloud dan DevOps, layanan desain kreatif, layanan percetakan digital dan periklanan, serta layanan konsultasi dan pelatihan IT."
+					}
+				},
+				{
+					"_key": "item-modifications",
+					"key": "modifications",
+					"subtitle": {
+						"en": "Service Modifications",
+						"id": "Modifikasi Layanan"
+					},
+					"text": {
+						"en": "Service scope, deliverables, timeline, and support coverage are detailed in project proposals or service agreements. We may update service methods, tools, or workflows to maintain quality, security, and compliance.",
+						"id": "Cakupan layanan, deliverable, timeline, dan cakupan dukungan dijelaskan pada proposal proyek atau perjanjian layanan. Kami dapat menyesuaikan metode, tools, atau alur kerja layanan untuk menjaga kualitas, keamanan, dan kepatuhan."
+					}
+				}
+			],
+			"key": "services",
+			"title": {
+				"en": "Description of Services",
+				"id": "Deskripsi Layanan"
+			}
+		},
+		{
+			"_key": "sec-ip",
+			"items": [
+				{
+					"_key": "item-ownership",
+					"key": "ownership",
+					"subtitle": {
+						"en": "Ownership",
+						"id": "Kepemilikan"
+					},
+					"text": {
+						"en": "All website content, branding assets, documentation, frameworks, and materials developed by Banten IT Solutions remain protected under applicable intellectual property laws unless otherwise stated in a written agreement.",
+						"id": "Seluruh konten website, aset branding, dokumentasi, framework, dan materi yang dikembangkan Banten IT Solutions tetap dilindungi oleh peraturan kekayaan intelektual yang berlaku kecuali ditentukan lain dalam perjanjian tertulis."
+					}
+				},
+				{
+					"_key": "item-license",
+					"key": "license",
+					"subtitle": {
+						"en": "License to Use",
+						"id": "Lisensi Penggunaan"
+					},
+					"text": {
+						"en": "Clients may receive usage rights for final deliverables as defined in signed agreements. Reuse, resale, redistribution, reverse engineering, or unauthorized modification of protected materials is prohibited unless expressly permitted in writing.",
+						"id": "Klien dapat memperoleh hak penggunaan atas deliverable final sesuai perjanjian yang ditandatangani. Penggunaan ulang, penjualan ulang, distribusi ulang, reverse engineering, atau modifikasi tanpa izin atas materi yang dilindungi dilarang kecuali diizinkan secara tertulis."
+					}
+				}
+			],
+			"key": "intellectualProperty",
+			"title": {
+				"en": "Intellectual Property",
+				"id": "Kekayaan Intelektual"
+			}
+		},
+		{
+			"_key": "sec-user",
+			"items": [
+				{
+					"_key": "item-lawful",
+					"key": "lawful",
+					"subtitle": {
+						"en": "Lawful Use",
+						"id": "Penggunaan yang Sah"
+					},
+					"text": {
+						"en": "You agree to use our services only for lawful purposes and in accordance with these Terms, project agreements, and applicable regulations, including data protection and intellectual property rules.",
+						"id": "Anda setuju menggunakan layanan kami hanya untuk tujuan yang sah dan sesuai dengan Syarat ini, perjanjian proyek, serta peraturan yang berlaku, termasuk ketentuan perlindungan data dan kekayaan intelektual."
+					}
+				},
+				{
+					"_key": "item-prohibited",
+					"key": "prohibited",
+					"subtitle": {
+						"en": "Prohibited Activities",
+						"id": "Aktivitas Terlarang"
+					},
+					"text": {
+						"en": "You are prohibited from attempting unauthorized access to systems, introducing malicious code, abusing service resources, misusing credentials, submitting unlawful content, or engaging in activities that disrupt service operations.",
+						"id": "Anda dilarang melakukan akses tanpa izin ke sistem, memasukkan kode berbahaya, menyalahgunakan resource layanan, menyalahgunakan kredensial, mengirim konten melanggar hukum, atau melakukan aktivitas yang mengganggu operasional layanan."
+					}
+				}
+			],
+			"key": "userObligations",
+			"title": {
+				"en": "User Obligations",
+				"id": "Kewajiban Pengguna"
+			}
+		},
+		{
+			"_key": "sec-payment",
+			"items": [
+				{
+					"_key": "item-pricing",
+					"key": "pricing",
+					"subtitle": {
+						"en": "Pricing",
+						"id": "Penetapan Harga"
+					},
+					"text": {
+						"en": "Service fees, billing milestones, taxes, and payment schedules are specified in proposals, quotations, or contracts. Unless otherwise stated, prices are quoted in Indonesian Rupiah (IDR).",
+						"id": "Biaya layanan, milestone penagihan, pajak, dan jadwal pembayaran ditetapkan dalam proposal, penawaran, atau kontrak. Kecuali dinyatakan lain, harga menggunakan Rupiah Indonesia (IDR)."
+					}
+				},
+				{
+					"_key": "item-refunds",
+					"key": "refunds",
+					"subtitle": {
+						"en": "Refunds",
+						"id": "Pengembalian Dana"
+					},
+					"text": {
+						"en": "Cancellation, refund, and rescheduling terms depend on the service category, project phase, procurement status, and signed agreement. Any approved refund follows the provisions stated in the relevant contract.",
+						"id": "Ketentuan pembatalan, pengembalian dana, dan penjadwalan ulang bergantung pada kategori layanan, fase proyek, status pengadaan, serta perjanjian yang ditandatangani. Pengembalian dana yang disetujui mengikuti ketentuan pada kontrak terkait."
+					}
+				}
+			],
+			"key": "paymentTerms",
+			"title": {
+				"en": "Payment Terms",
+				"id": "Ketentuan Pembayaran"
+			}
+		},
+		{
+			"_key": "sec-liability",
+			"items": [
+				{
+					"_key": "item-disclaimer",
+					"key": "disclaimer",
+					"subtitle": {
+						"en": "Disclaimer",
+						"id": "Penafian"
+					},
+					"text": {
+						"en": "Except as expressly stated in a written agreement, services are provided on a commercially reasonable basis and outcomes may depend on client data quality, third-party systems, infrastructure conditions, and operational readiness.",
+						"id": "Kecuali dinyatakan secara tegas dalam perjanjian tertulis, layanan diberikan berdasarkan upaya profesional yang wajar secara komersial dan hasil dapat dipengaruhi oleh kualitas data klien, sistem pihak ketiga, kondisi infrastruktur, dan kesiapan operasional."
+					}
+				},
+				{
+					"_key": "item-maximum",
+					"key": "maximum",
+					"subtitle": {
+						"en": "Maximum Liability",
+						"id": "Tanggung Jawab Maksimum"
+					},
+					"text": {
+						"en": "To the extent permitted by law, our total liability for claims related to services is limited to the value paid by the client for the affected service scope, as defined in the applicable agreement.",
+						"id": "Sejauh diizinkan oleh hukum, total tanggung jawab kami atas klaim terkait layanan dibatasi sebesar nilai yang telah dibayarkan klien untuk cakupan layanan yang terdampak, sebagaimana ditetapkan dalam perjanjian yang berlaku."
+					}
+				}
+			],
+			"key": "limitationLiability",
+			"title": {
+				"en": "Limitation of Liability",
+				"id": "Batasan Tanggung Jawab"
+			}
+		}
+	],
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Terms of Service for Banten IT Solutions covering software, infrastructure, cloud, design, printing, and IT advisory engagements, including service scope, responsibilities, and payment terms.",
+			"id": "Syarat & Ketentuan Layanan Banten IT Solutions yang mencakup layanan software, infrastruktur, cloud, desain, percetakan, dan advisory IT, termasuk cakupan layanan, tanggung jawab, dan ketentuan pembayaran."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"syarat dan ketentuan",
+			"terms of service",
+			"ketentuan layanan it",
+			"perjanjian layanan teknologi",
+			"aturan penggunaan layanan",
+			"legal layanan it",
+			"kebijakan penggunaan situs"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-b09df3590349728258a6493bc8a4739f12652544-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Terms of Service",
+			"id": "Syarat & Ketentuan"
+		}
+	}
+}

@@ -1,0 +1,761 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "contactPage",
+	"_rev": "XUBEWnVTdIC36u5VuXseoQ",
+	"_system": {
+		"base": {
+			"id": "contactPage",
+			"rev": "unIo2UW65gB1PasuKJPaym"
+		}
+	},
+	"_type": "contactPage",
+	"_updatedAt": "2026-02-27T21:14:20Z",
+	"faq": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Frequently Asked Questions",
+			"id": "Frequently Asked Questions"
+		},
+		"email": {
+			"_type": "localizedString",
+			"en": "Email Us Directly",
+			"id": "Email Kami Langsung"
+		},
+		"faqItems": [
+			{
+				"_key": "faq-service-scope",
+				"answer": {
+					"_type": "localizedText",
+					"en": "We provide six core service lines: Software Development, Infrastructure & Networking, Cloud & DevOps, Creative Design, Digital Printing & Advertising, and IT Consulting & Training.",
+					"id": "Kami menyediakan enam lini layanan utama: Pengembangan Software, Infrastruktur & Jaringan, Cloud & DevOps, Desain Kreatif, Percetakan Digital & Periklanan, serta Konsultasi & Pelatihan IT."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "What products and services do you offer?",
+					"id": "Produk dan layanan apa saja yang Anda tawarkan?"
+				}
+			},
+			{
+				"_key": "faq-choose-service",
+				"answer": {
+					"_type": "localizedText",
+					"en": "If you need a business system or app, choose Software Development. If your issue is servers, network, CCTV, or hardware, choose Infrastructure & Networking. If you need cloud migration, CI/CD, or Kubernetes, choose Cloud & DevOps. For brand visuals and interfaces, choose Creative Design. For physical promotional media, choose Digital Printing & Advertising. For strategy and capability building, choose IT Consulting & Training.",
+					"id": "Jika Anda membutuhkan sistem bisnis atau aplikasi, pilih Pengembangan Software. Jika kendalanya server, jaringan, CCTV, atau hardware, pilih Infrastruktur & Jaringan. Jika membutuhkan migrasi cloud, CI/CD, atau Kubernetes, pilih Cloud & DevOps. Untuk visual brand dan antarmuka, pilih Desain Kreatif. Untuk media promosi fisik, pilih Percetakan Digital & Periklanan. Untuk strategi dan peningkatan kapabilitas tim, pilih Konsultasi & Pelatihan IT."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "How do we choose the right service for our business needs?",
+					"id": "Bagaimana memilih layanan yang paling sesuai dengan kebutuhan bisnis kami?"
+				}
+			},
+			{
+				"_key": "faq-combine-services",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Yes. Many clients combine services in one project, for example software development with cloud setup, infrastructure deployment, UI/UX design, and promotional materials for launch.",
+					"id": "Ya. Banyak klien menggabungkan beberapa layanan dalam satu proyek, misalnya pengembangan software dengan setup cloud, implementasi infrastruktur, desain UI/UX, serta materi promosi saat peluncuran."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "Can we combine multiple services in one engagement?",
+					"id": "Apakah beberapa layanan bisa digabung dalam satu kerja sama?"
+				}
+			},
+			{
+				"_key": "faq-deliverables",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Deliverables are adjusted by scope, such as source code and documentation (software), server/network topology and implementation report (infrastructure), deployment pipeline and observability setup (cloud/devops), design files and brand assets (creative), and ready-to-install print/display outputs (printing).",
+					"id": "Deliverable disesuaikan dengan lingkup, seperti source code dan dokumentasi (software), topologi server/jaringan dan laporan implementasi (infrastruktur), pipeline deployment dan setup observability (cloud/devops), file desain dan aset brand (kreatif), serta hasil cetak/display siap pasang (percetakan)."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "What deliverables will we receive?",
+					"id": "Output atau deliverable apa yang akan kami terima?"
+				}
+			},
+			{
+				"_key": "faq-implementation-support",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Absolutely. We support end-to-end implementation and post-launch support, including system maintenance, monitoring, technical support, and periodic optimization based on your service scope.",
+					"id": "Tentu. Kami mendukung implementasi end-to-end dan dukungan pasca go-live, termasuk maintenance sistem, monitoring, dukungan teknis, serta optimasi berkala sesuai lingkup layanan Anda."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "Do you provide implementation and post-go-live support?",
+					"id": "Apakah Anda menyediakan implementasi dan dukungan setelah go-live?"
+				}
+			},
+			{
+				"_key": "faq-pricing-model",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Pricing can be project-based (fixed scope), milestone-based, or recurring (maintenance/retainer), depending on complexity, timeline, required resources, and expected deliverables.",
+					"id": "Skema biaya dapat berupa project-based (lingkup tetap), milestone-based, atau recurring (maintenance/retainer), tergantung kompleksitas, timeline, kebutuhan resource, dan deliverable yang disepakati."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "How does pricing work?",
+					"id": "Bagaimana skema harga atau biayanya?"
+				}
+			},
+			{
+				"_key": "faq-timeline-process",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Timeline depends on scope. Digital printing requests may finish in days, while software, infrastructure, and cloud projects generally start with discovery and planning, then continue in phased milestones. We provide a clear proposal with scope, cost, and schedule at the beginning.",
+					"id": "Timeline bergantung pada lingkup kerja. Kebutuhan percetakan digital bisa selesai dalam hitungan hari, sedangkan proyek software, infrastruktur, dan cloud umumnya dimulai dari discovery dan perencanaan lalu berjalan per milestone. Di awal, kami menyiapkan proposal yang jelas terkait scope, biaya, dan jadwal."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "How long does a typical project take and what is the process?",
+					"id": "Berapa lama proyek biasanya berjalan dan bagaimana prosesnya?"
+				}
+			},
+			{
+				"_key": "faq-integration-security",
+				"answer": {
+					"_type": "localizedText",
+					"en": "Yes. We can integrate with existing systems through API and data migration planning. For security, we apply access control, backup strategy, environment separation, and monitoring based on project requirements.",
+					"id": "Ya. Kami dapat terintegrasi dengan sistem existing melalui API dan perencanaan migrasi data. Untuk keamanan, kami menerapkan kontrol akses, strategi backup, pemisahan environment, dan monitoring sesuai kebutuhan proyek."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "Can you integrate with our existing system and handle security?",
+					"id": "Apakah bisa terintegrasi dengan sistem existing kami sekaligus menjaga keamanannya?"
+				}
+			},
+			{
+				"_key": "faq-coverage",
+				"answer": {
+					"_type": "localizedText",
+					"en": "We support both remote and on-site delivery depending on your location and service type. Our team can coordinate hybrid execution for implementation, training, and support.",
+					"id": "Kami mendukung delivery remote maupun on-site sesuai lokasi dan tipe layanan. Tim kami dapat mengatur eksekusi hybrid untuk implementasi, pelatihan, dan dukungan."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "Do you serve projects outside your city or region?",
+					"id": "Apakah melayani proyek di luar kota atau luar wilayah?"
+				}
+			},
+			{
+				"_key": "faq-preparation",
+				"answer": {
+					"_type": "localizedText",
+					"en": "To speed up consultation, prepare your business goals, current pain points, required timeline, target budget range, and available technical assets (domain, hosting/server, existing system, or brand guideline if any).",
+					"id": "Agar konsultasi lebih cepat, siapkan tujuan bisnis, kendala utama saat ini, target timeline, kisaran budget, serta aset teknis yang sudah tersedia (domain, hosting/server, sistem existing, atau brand guideline jika ada)."
+				},
+				"question": {
+					"_type": "localizedString",
+					"en": "What should we prepare before initial consultation?",
+					"id": "Apa yang perlu kami siapkan sebelum konsultasi awal?"
+				}
+			}
+		],
+		"helpDesc": {
+			"_type": "localizedText",
+			"en": "Find answers to commonly asked questions about our services",
+			"id": "Temukan jawaban atas pertanyaan umum tentang layanan kami"
+		},
+		"helpTitle": {
+			"_type": "localizedString",
+			"en": "Can't find what you're looking for?",
+			"id": "Tidak menemukan yang Anda cari?"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Find practical answers about service scope, process, timeline, pricing, and support before starting your project.",
+			"id": "Temukan jawaban praktis seputar cakupan layanan, proses, timeline, biaya, dan dukungan sebelum memulai proyek Anda."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Service & Project FAQs",
+			"id": "FAQ Layanan & Proyek"
+		},
+		"whatsapp": {
+			"_type": "localizedString",
+			"en": "Chat on WhatsApp",
+			"id": "Chat di WhatsApp"
+		}
+	},
+	"form": {
+		"email": {
+			"en": "Email Address",
+			"id": "Alamat Email"
+		},
+		"emailPlaceholder": {
+			"en": "john@bits.co.id",
+			"id": "ahmad@bits.co.id"
+		},
+		"errorDesc": {
+			"_type": "localizedText",
+			"en": "Something went wrong. Please try again.",
+			"id": "Terjadi Kesalahan. Silahkan Coba Lagi."
+		},
+		"errorTitle": {
+			"_type": "localizedString",
+			"en": "Error",
+			"id": "Kesalahan"
+		},
+		"inquiryTypeItems": [
+			{
+				"_key": "cf5a968a87e2",
+				"description": {
+					"_type": "localizedString",
+					"en": "Web, mobile, ERP, and custom software",
+					"id": "Web, mobile, ERP, dan software custom"
+				},
+				"detailItems": [
+					{
+						"_key": "sw-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "Web Development",
+							"id": "Pengembangan Web"
+						},
+						"value": "web-development"
+					},
+					{
+						"_key": "sw-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "Mobile Development",
+							"id": "Pengembangan Mobile"
+						},
+						"value": "mobile-development"
+					},
+					{
+						"_key": "sw-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "ERP / CRM / Internal System",
+							"id": "ERP / CRM / Sistem Internal"
+						},
+						"value": "enterprise-software"
+					},
+					{
+						"_key": "sw-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "API Integration",
+							"id": "Integrasi API"
+						},
+						"value": "api-integration"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Software Detail",
+					"id": "Rincian Aplikasi"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select software type",
+					"id": "Pilih tipe aplikasi"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "Software Development",
+					"id": "Pengembangan Software"
+				},
+				"value": "software"
+			},
+			{
+				"_key": "adfd0f7cc73d",
+				"description": {
+					"_type": "localizedString",
+					"en": "Server, network, CCTV, and hardware",
+					"id": "Server, jaringan, CCTV, dan hardware"
+				},
+				"detailItems": [
+					{
+						"_key": "infra-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "Server Solutions",
+							"id": "Solusi Server"
+						},
+						"value": "server-solutions"
+					},
+					{
+						"_key": "infra-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "Network Infrastructure",
+							"id": "Infrastruktur Jaringan"
+						},
+						"value": "network-infrastructure"
+					},
+					{
+						"_key": "infra-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "Security Systems",
+							"id": "Sistem Keamanan"
+						},
+						"value": "security-systems"
+					},
+					{
+						"_key": "infra-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "Hardware Procurement",
+							"id": "Pengadaan Hardware"
+						},
+						"value": "hardware-procurement"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Infrastructure Service Focus",
+					"id": "Fokus Layanan Infrastruktur"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select infrastructure service",
+					"id": "Pilih layanan infrastruktur"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "Infrastructure & Networking",
+					"id": "Infrastruktur & Jaringan"
+				},
+				"value": "infrastructure"
+			},
+			{
+				"_key": "77734b4de73f",
+				"description": {
+					"_type": "localizedString",
+					"en": "Cloud migration, CI/CD, and automation",
+					"id": "Migrasi cloud, CI/CD, dan otomasi"
+				},
+				"detailItems": [
+					{
+						"_key": "cloud-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "Cloud Solutions",
+							"id": "Solusi Cloud"
+						},
+						"value": "cloud-solutions"
+					},
+					{
+						"_key": "cloud-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "DevOps Implementation",
+							"id": "Implementasi DevOps"
+						},
+						"value": "devops-implementation"
+					},
+					{
+						"_key": "cloud-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "Kubernetes & Platform Engineering",
+							"id": "Kubernetes & Platform Engineering"
+						},
+						"value": "kubernetes-platform"
+					},
+					{
+						"_key": "cloud-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "Automation",
+							"id": "Otomasi"
+						},
+						"value": "automation"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Cloud & DevOps Focus",
+					"id": "Fokus Cloud & DevOps"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select cloud/devops service",
+					"id": "Pilih layanan cloud/devops"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "Cloud & DevOps",
+					"id": "Cloud & DevOps"
+				},
+				"value": "cloud"
+			},
+			{
+				"_key": "98be2720c9de",
+				"description": {
+					"_type": "localizedString",
+					"en": "UI/UX, branding, and visual design",
+					"id": "UI/UX, branding, dan desain visual"
+				},
+				"detailItems": [
+					{
+						"_key": "design-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "UI/UX Design",
+							"id": "Desain UI/UX"
+						},
+						"value": "ui-ux-design"
+					},
+					{
+						"_key": "design-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "Graphic Design",
+							"id": "Desain Grafis"
+						},
+						"value": "graphic-design"
+					},
+					{
+						"_key": "design-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "Digital Marketing Design",
+							"id": "Desain Digital Marketing"
+						},
+						"value": "digital-marketing-design"
+					},
+					{
+						"_key": "design-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "Motion Graphics",
+							"id": "Motion Graphics"
+						},
+						"value": "motion-graphics"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Creative Design Focus",
+					"id": "Fokus Desain Kreatif"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select design service",
+					"id": "Pilih layanan desain"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "Creative Design",
+					"id": "Desain Kreatif"
+				},
+				"value": "design"
+			},
+			{
+				"_key": "8e36f4fa3ae3",
+				"description": {
+					"_type": "localizedString",
+					"en": "Digital printing and advertising production",
+					"id": "Produksi percetakan digital dan periklanan"
+				},
+				"detailItems": [
+					{
+						"_key": "print-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "Large Format Printing",
+							"id": "Percetakan Format Besar"
+						},
+						"value": "large-format-printing"
+					},
+					{
+						"_key": "print-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "Digital Signage & Display",
+							"id": "Digital Signage & Display"
+						},
+						"value": "digital-signage"
+					},
+					{
+						"_key": "print-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "Islamic Digital Products",
+							"id": "Produk Digital Islami"
+						},
+						"value": "islamic-digital-products"
+					},
+					{
+						"_key": "print-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "Electronic Display",
+							"id": "Display Elektronik"
+						},
+						"value": "electronic-display"
+					},
+					{
+						"_key": "print-detail-5",
+						"label": {
+							"_type": "localizedString",
+							"en": "Event & Exhibition",
+							"id": "Event & Pameran"
+						},
+						"value": "event-exhibition"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Printing & Advertising Focus",
+					"id": "Fokus Percetakan & Periklanan"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select printing/advertising service",
+					"id": "Pilih layanan percetakan/periklanan"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "Digital Printing & Advertising",
+					"id": "Percetakan Digital & Periklanan"
+				},
+				"value": "printing"
+			},
+			{
+				"_key": "690965b59d7f",
+				"description": {
+					"_type": "localizedString",
+					"en": "IT strategy, training, and advisory",
+					"id": "Strategi IT, pelatihan, dan advisory"
+				},
+				"detailItems": [
+					{
+						"_key": "consult-detail-1",
+						"label": {
+							"_type": "localizedString",
+							"en": "IT Consulting",
+							"id": "Konsultasi IT"
+						},
+						"value": "it-consulting"
+					},
+					{
+						"_key": "consult-detail-2",
+						"label": {
+							"_type": "localizedString",
+							"en": "Developer Bootcamp",
+							"id": "Bootcamp Developer"
+						},
+						"value": "developer-bootcamp"
+					},
+					{
+						"_key": "consult-detail-3",
+						"label": {
+							"_type": "localizedString",
+							"en": "Online Learning",
+							"id": "Pembelajaran Online"
+						},
+						"value": "online-learning"
+					},
+					{
+						"_key": "consult-detail-4",
+						"label": {
+							"_type": "localizedString",
+							"en": "Technical Support & Mentoring",
+							"id": "Dukungan Teknis & Mentoring"
+						},
+						"value": "technical-support"
+					}
+				],
+				"detailLabel": {
+					"_type": "localizedString",
+					"en": "Consulting & Training Focus",
+					"id": "Fokus Konsultasi & Pelatihan"
+				},
+				"detailPlaceholder": {
+					"_type": "localizedString",
+					"en": "Select consulting/training topic",
+					"id": "Pilih topik konsultasi/pelatihan"
+				},
+				"label": {
+					"_type": "localizedString",
+					"en": "IT Consulting & Training",
+					"id": "Konsultasi & Pelatihan IT"
+				},
+				"value": "consultation"
+			}
+		],
+		"message": {
+			"en": "Your Message",
+			"id": "Pesan Anda"
+		},
+		"messagePlaceholder": {
+			"_type": "localizedString",
+			"en": "Type your messages",
+			"id": "Isikan pesan anda"
+		},
+		"name": {
+			"en": "Your Name",
+			"id": "Nama Anda"
+		},
+		"namePlaceholder": {
+			"en": "Your Name",
+			"id": "Nama Anda"
+		},
+		"phone": {
+			"en": "Phone Number",
+			"id": "Nomor Telepon"
+		},
+		"phonePlaceholder": {
+			"en": "+62 812 3456 7890",
+			"id": "+62 812 3456 7890"
+		},
+		"send": {
+			"_type": "localizedString",
+			"en": "Send",
+			"id": "Kirim"
+		},
+		"sending": {
+			"en": "Sending...",
+			"id": "Mengirim..."
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Share your goals, priority services, timeline, and budget range so we can prepare the most relevant solution proposal.",
+			"id": "Sampaikan tujuan, prioritas layanan, target timeline, dan kisaran budget agar kami dapat menyiapkan proposal solusi yang paling relevan."
+		},
+		"successDesc": {
+			"_type": "localizedText",
+			"en": "Thank you for reaching out. Our team will review your message and get back to you within 24 hours.",
+			"id": "Terima kasih telah menghubungi. Tim kami akan meninjau pesan Anda dan menghubungi Anda dalam 24 jam."
+		},
+		"successTitle": {
+			"_type": "localizedString",
+			"en": "Message Sent Successfully !",
+			"id": "Pesan Berhasil Terkirim !"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Request Consultation & Proposal",
+			"id": "Minta Konsultasi & Proposal"
+		},
+		"turnstileComplete": {
+			"_type": "localizedString",
+			"en": "Verification Completed",
+			"id": "Verifikasi Sukses"
+		},
+		"turnstileRequired": {
+			"en": "Please complete verification.",
+			"id": "Mohon selesaikan verifikasi."
+		},
+		"type": {
+			"_type": "localizedString",
+			"en": "Inquiry Type",
+			"id": "Jenis Pertanyaan"
+		},
+		"verification": {
+			"en": "Security Verification",
+			"id": "Verifikasi Keamanan"
+		},
+		"verified": {
+			"en": "Verified",
+			"id": "Terverifikasi"
+		}
+	},
+	"hero": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Let's Connect",
+			"id": "Hubungi Sekarang"
+		},
+		"email": {
+			"_type": "localizedString",
+			"en": "Email",
+			"id": "Email"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Tell us your business goals and current bottlenecks. We will map the right service scope, architecture, timeline, and budget estimate for your project.",
+			"id": "Sampaikan tujuan bisnis dan bottleneck saat ini. Kami akan memetakan cakupan layanan, arsitektur, timeline, dan estimasi biaya yang tepat untuk proyek Anda."
+		},
+		"telp": {
+			"_type": "localizedString",
+			"en": "Call Now",
+			"id": "Telp Sekarang"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Consult Our Team Today",
+			"id": "Konsultasi Tim Kami Sekarang"
+		},
+		"whatsapp": {
+			"en": "WhatsApp",
+			"id": "WhatsApp"
+		}
+	},
+	"info": {
+		"callUs": {
+			"en": "Call Us",
+			"id": "Hubungi Kami"
+		},
+		"chatWhatsApp": {
+			"_type": "localizedString",
+			"en": "Chat on WhatsApp",
+			"id": "Chat di WhatsApp"
+		},
+		"contactInfo": {
+			"_type": "localizedString",
+			"en": "Contact Information",
+			"id": "Informasi Kontak"
+		},
+		"emailUs": {
+			"en": "Email Us",
+			"id": "Email Kami"
+		},
+		"helpDesc": {
+			"_type": "localizedText",
+			"en": "Our team responds quickly to software, infrastructure, cloud, creative, printing, and IT consulting requests. Select your inquiry type for faster handling.",
+			"id": "Tim kami merespons cepat untuk kebutuhan software, infrastruktur, cloud, kreatif, percetakan, dan konsultasi IT. Pilih jenis kebutuhan Anda agar penanganan lebih cepat dan tepat."
+		},
+		"needHelp": {
+			"_type": "localizedString",
+			"en": "Need Immediate Help?",
+			"id": "Butuh Bantuan Langsung?"
+		},
+		"visit": {
+			"_type": "localizedString",
+			"en": "Visit Us",
+			"id": "Kantor Kami"
+		}
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Get in touch with Banten IT Solutions for software development, infrastructure & networking, cloud & DevOps, digital printing & advertising, creative design, and IT consulting & training.",
+			"id": "Hubungi Banten IT Solutions untuk kebutuhan pengembangan software, infrastruktur & jaringan, cloud & DevOps, percetakan digital & periklanan, desain kreatif, serta konsultasi & pelatihan IT."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"hubungi banten it solutions",
+			"konsultasi it gratis",
+			"penawaran proyek software",
+			"kontak software house",
+			"jasa pembuatan aplikasi banten",
+			"layanan infrastruktur jaringan",
+			"layanan cloud devops",
+			"percetakan digital periklanan",
+			"jasa desain kreatif",
+			"konsultasi pelatihan it"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e4ee4842cebaa353f2380362be56285729edcb50-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Contact Us",
+			"id": "Hubungi Kami"
+		}
+	}
+}

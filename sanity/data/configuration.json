@@ -1,0 +1,24 @@
+{
+	"_createdAt": "2026-01-03T06:44:23Z",
+	"_id": "configuration",
+	"_rev": "WUwDz2nhDGjX2BFeJbllRY",
+	"_system": {
+		"base": {
+			"id": "configuration",
+			"rev": "B0s6AZdtCxBUnQBWS9Icc2"
+		}
+	},
+	"_type": "configuration",
+	"_updatedAt": "2026-02-27T21:14:25Z",
+	"homepage": {
+		"featuredProjects": 4,
+		"featuredServices": 6,
+		"latestPosts": 4,
+		"teamMembers": 4
+	},
+	"listingPages": {
+		"postsPerPage": 12,
+		"projectsPerPage": 12,
+		"servicesPerPage": 6
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"_createdAt": "2026-01-01T21:27:23Z",
+	"_id": "generalSettings",
+	"_rev": "WUwDz2nhDGjX2BFeJbllNy",
+	"_system": {
+		"base": {
+			"id": "generalSettings",
+			"rev": "zBudQggpE33GRtng6kcCzk"
+		}
+	},
+	"_type": "generalSettings",
+	"_updatedAt": "2026-02-27T21:14:23Z",
+	"closeMenu": {
+		"en": "Close menu",
+		"id": "Tutup menu"
+	},
+	"connectWithUs": {
+		"en": "Connect with us",
+		"id": "Terhubung dengan kami"
+	},
+	"craftedWith": {
+		"en": "Crafted with",
+		"id": "Dibuat dengan"
+	},
+	"emailPlaceholder": {
+		"en": "Enter your email",
+		"id": "Masukkan email Anda"
+	},
+	"inIndonesia": {
+		"en": "in Indonesia",
+		"id": "di Indonesia"
+	},
+	"locationTitle": {
+		"en": "Location",
+		"id": "Lokasi"
+	},
+	"newsletterBadge": {
+		"en": "Newsletter",
+		"id": "Newsletter"
+	},
+	"newsletterButton": {
+		"en": "Subscribe",
+		"id": "Berlangganan"
+	},
+	"newsletterSubtitle": {
+		"en": "Get the latest updates on our services and technology insights.",
+		"id": "Dapatkan pembaruan terbaru tentang layanan dan wawasan teknologi kami."
+	},
+	"newsletterTitle": {
+		"en": "Stay Updated",
+		"id": "Tetap Update"
+	},
+	"openMenu": {
+		"en": "Open menu",
+		"id": "Buka menu"
+	},
+	"privacyPolicy": {
+		"en": "Privacy Policy",
+		"id": "Kebijakan Privasi"
+	},
+	"quickLinksTitle": {
+		"en": "Quick Links",
+		"id": "Tautan Cepat"
+	},
+	"servicesFooterTitle": {
+		"en": "Services",
+		"id": "Layanan"
+	},
+	"skipToContent": {
+		"en": "Skip to main content",
+		"id": "Lewati ke konten utama"
+	},
+	"socialLabels": {
+		"email": {
+			"_type": "localizedString",
+			"en": "Email",
+			"id": "Email"
+		},
+		"github": {
+			"en": "GitHub",
+			"id": "GitHub"
+		},
+		"instagram": {
+			"en": "Instagram",
+			"id": "Instagram"
+		},
+		"maps": {
+			"_type": "localizedString",
+			"en": "Maps",
+			"id": "Maps"
+		},
+		"phone": {
+			"_type": "localizedString",
+			"en": "Phone",
+			"id": "Telp"
+		},
+		"tiktok": {
+			"en": "TikTok",
+			"id": "TikTok"
+		},
+		"whatsapp": {
+			"_type": "localizedString",
+			"en": "WhatsApp",
+			"id": "WhatsApp"
+		},
+		"youtube": {
+			"en": "YouTube",
+			"id": "YouTube"
+		}
+	},
+	"subscribeSuccess": {
+		"en": "✓ Subscribed successfully!",
+		"id": "✓ Berhasil berlangganan!"
+	},
+	"termsOfService": {
+		"en": "Terms of Service",
+		"id": "Syarat Layanan"
+	}
+}

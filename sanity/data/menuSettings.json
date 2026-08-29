@@ -1,0 +1,70 @@
+{
+	"_createdAt": "2026-01-01T19:01:29Z",
+	"_id": "menuSettings",
+	"_rev": "T1sq5D24mk45gEbRVdjSG9",
+	"_system": {
+		"base": {
+			"id": "menuSettings",
+			"rev": "unIo2UW65gB1PasuKFj78C"
+		}
+	},
+	"_type": "menuSettings",
+	"_updatedAt": "2026-02-27T21:14:26Z",
+	"navigation": [
+		{
+			"_key": "ee2c27c762fa",
+			"href": "/",
+			"label": {
+				"_type": "localizedString",
+				"en": "Home",
+				"id": "Beranda"
+			}
+		},
+		{
+			"_key": "40c138a67683",
+			"href": "/services",
+			"isService": true,
+			"label": {
+				"_type": "localizedString",
+				"en": "Services",
+				"id": "Layanan"
+			}
+		},
+		{
+			"_key": "d3bd0c84011b",
+			"href": "/portfolio",
+			"label": {
+				"_type": "localizedString",
+				"en": "Portfolio",
+				"id": "Portofolio"
+			}
+		},
+		{
+			"_key": "a37dc0d4e678",
+			"href": "/blog",
+			"label": {
+				"_type": "localizedString",
+				"en": "Blog",
+				"id": "Blog"
+			}
+		},
+		{
+			"_key": "f3a4c5d09f04",
+			"href": "/about",
+			"label": {
+				"_type": "localizedString",
+				"en": "About",
+				"id": "Tentang"
+			}
+		},
+		{
+			"_key": "c8d3318cecec",
+			"href": "/contact",
+			"label": {
+				"_type": "localizedString",
+				"en": "Contact",
+				"id": "Hubungi"
+			}
+		}
+	]
+}

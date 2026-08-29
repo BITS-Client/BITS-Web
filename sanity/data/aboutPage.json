@@ -1,0 +1,365 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "aboutPage",
+	"_rev": "XUBEWnVTdIC36u5VuXsdom",
+	"_system": {
+		"base": {
+			"id": "aboutPage",
+			"rev": "sDDheU0x0O5vmoyWoQ4Y5c"
+		}
+	},
+	"_type": "aboutPage",
+	"_updatedAt": "2026-02-27T21:14:16Z",
+	"hero": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Established in 2009",
+			"id": "Berdiri sejak 2009"
+		},
+		"client": {
+			"_type": "localizedString",
+			"en": "Clients",
+			"id": "Pelanggan"
+		},
+		"clientValue": "70+",
+		"contact": {
+			"_type": "localizedString",
+			"en": "Work With Us",
+			"id": "Bekerja Dengan Kami"
+		},
+		"experience": {
+			"_type": "localizedString",
+			"en": "Years of Excellence",
+			"id": "Tahun Pengalaman"
+		},
+		"experienceValue": "17+",
+		"portfolio": {
+			"_type": "localizedString",
+			"en": "See Our Work",
+			"id": "Lihat Karya Kami"
+		},
+		"project": {
+			"_type": "localizedString",
+			"en": "Projects",
+			"id": "Proyek"
+		},
+		"projectValue": "200+",
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Since 2009, we help companies execute software, infrastructure, cloud, creative, and digital advertising initiatives with measurable business outcomes.",
+			"id": "Sejak 2009, kami membantu perusahaan mengeksekusi inisiatif software, infrastruktur, cloud, kreatif, dan periklanan digital dengan hasil bisnis yang terukur."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Trusted Digital Implementation Partner",
+			"id": "Mitra Implementasi Digital Tepercaya"
+		}
+	},
+	"principles": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Core Principles",
+			"id": "Prinsip Inti"
+		},
+		"connect": {
+			"_type": "localizedString",
+			"en": "Let's Connect",
+			"id": "Mari Terhubung"
+		},
+		"keys": [
+			{
+				"_key": "1b01716a49f9",
+				"description": {
+					"_type": "localizedText",
+					"en": "We prioritize understanding your needs and delivering solutions that exceed expectations.",
+					"id": "Kami memprioritaskan pemahaman kebutuhan Anda dan memberikan solusi yang melebihi ekspektasi."
+				},
+				"icon": "Heart",
+				"title": {
+					"_type": "localizedString",
+					"en": "Client Oriented",
+					"id": "Fokus Pelanggan"
+				}
+			},
+			{
+				"_key": "86d680d1db36",
+				"description": {
+					"_type": "localizedText",
+					"en": "We maintain the highest standards in everything we do, from code quality to customer service.",
+					"id": "Kami mempertahankan standar tertinggi dalam semua yang kami lakukan, dari kualitas kode hingga layanan pelanggan."
+				},
+				"icon": "Award",
+				"title": {
+					"_type": "localizedString",
+					"en": "Excellence",
+					"id": "Keunggulan"
+				}
+			},
+			{
+				"_key": "75930f426512",
+				"description": {
+					"_type": "localizedText",
+					"en": "We stay ahead of technology trends to bring you cutting-edge solutions that give you a competitive advantage.",
+					"id": "Kami tetap terdepan dalam tren teknologi untuk membawa solusi mutakhir yang memberi Anda keunggulan kompetitif."
+				},
+				"icon": "Zap",
+				"title": {
+					"_type": "localizedString",
+					"en": "Innovation",
+					"id": "Inovasi"
+				}
+			},
+			{
+				"_key": "4e8e938f16b0",
+				"description": {
+					"_type": "localizedText",
+					"en": "We build trust through transparency, honest communication, and ethical business practices.",
+					"id": "Kami membangun kepercayaan melalui transparansi, komunikasi jujur, dan praktik bisnis yang etis."
+				},
+				"icon": "Shield",
+				"title": {
+					"_type": "localizedString",
+					"en": "Integrity",
+					"id": "Integritas"
+				}
+			}
+		],
+		"ready": {
+			"_type": "localizedString",
+			"en": "Ready to Collaborate?",
+			"id": "Siap untuk Berkolaborasi?"
+		},
+		"readySubtitle": {
+			"_type": "localizedText",
+			"en": "Let's build something great together",
+			"id": "Mari kita bangun sesuatu yang hebat bersama-sama"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Principles that guide quality, collaboration, and accountability in every project.",
+			"id": "Prinsip yang memandu kualitas, kolaborasi, dan akuntabilitas dalam setiap proyek."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Core Values",
+			"id": "Nilai Inti Perusahaan"
+		}
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Learn about Banten IT Solutions, an Indonesian digital implementation partner since 2009 for software, infrastructure, cloud & DevOps, creative services, digital printing, and IT consulting.",
+			"id": "Kenali Banten IT Solutions, mitra implementasi digital di Indonesia sejak 2009 untuk software, infrastruktur, cloud & DevOps, layanan kreatif, percetakan digital, dan konsultasi IT."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"banten it solutions",
+			"tentang bits",
+			"software house banten",
+			"jasa infrastruktur jaringan",
+			"cloud devops indonesia",
+			"jasa desain kreatif",
+			"percetakan digital serang",
+			"konsultasi it",
+			"perusahaan it sejak 2009"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-832870934377e1e5f90daa25ffa15c783e8eaf55-1920x1080-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "About Banten IT Solutions | Digital Solutions Since 2009",
+			"id": "Tentang Banten IT Solutions | Solusi Digital Sejak 2009"
+		}
+	},
+	"teams": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Leadership Team",
+			"id": "Tim Kepemimpinan"
+		},
+		"ctaButton": {
+			"_type": "localizedString",
+			"en": "Join Our Team",
+			"id": "Bergabunglah dengan Tim Kami"
+		},
+		"ctaIcon": "Users",
+		"ctaSubtitle": {
+			"_type": "localizedText",
+			"en": "We're always looking for talented individuals to join our growing team",
+			"id": "Kami selalu mencari individu berbakat untuk bergabung dengan tim kami yang terus berkembang."
+		},
+		"ctaTitle": {
+			"_type": "localizedString",
+			"en": "Want to Join Our Team?",
+			"id": "Ingin Bergabung dengan Tim Kami?"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "The talented people driving our mission forward",
+			"id": "Orang-orang berbakat yang mendorong misi kami"
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Meet Our Leadership",
+			"id": "Kenali Kepemimpinan Kami"
+		}
+	},
+	"timeline": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Established 2009",
+			"id": "Berdiri 2009"
+		},
+		"end": {
+			"_type": "localizedString",
+			"en": "The Future Awaits",
+			"id": "Masa Depan Menanti"
+		},
+		"stories": [
+			{
+				"_key": "961b01ad7219",
+				"description": {
+					"_type": "localizedText",
+					"en": "Banten IT Solutions was founded to help companies execute digital initiatives with reliable and practical outcomes.",
+					"id": "Banten IT Solutions didirikan untuk membantu perusahaan mengeksekusi inisiatif digital dengan hasil yang andal dan praktis."
+				},
+				"icon": "Star",
+				"title": {
+					"_type": "localizedString",
+					"en": "Company Founded",
+					"id": "Perusahaan Berdiri"
+				},
+				"year": "2009"
+			},
+			{
+				"_key": "91695df904ec",
+				"description": {
+					"_type": "localizedText",
+					"en": "Delivered major implementation projects and strengthened execution standards for enterprise-grade solutions.",
+					"id": "Menyelesaikan proyek implementasi skala besar dan memperkuat standar eksekusi untuk solusi kelas enterprise."
+				},
+				"icon": "Award",
+				"title": {
+					"_type": "localizedString",
+					"en": "Major Implementation Milestone",
+					"id": "Pencapaian Implementasi Skala Besar"
+				},
+				"year": "2012"
+			},
+			{
+				"_key": "15061cc47d12",
+				"description": {
+					"_type": "localizedText",
+					"en": "Expanded services into infrastructure and networking implementation to support broader operational needs.",
+					"id": "Memperluas layanan ke implementasi infrastruktur dan jaringan untuk mendukung kebutuhan operasional yang lebih luas."
+				},
+				"icon": "Users",
+				"title": {
+					"_type": "localizedString",
+					"en": "Infrastructure Expansion",
+					"id": "Ekspansi Infrastruktur"
+				},
+				"year": "2016"
+			},
+			{
+				"_key": "42471d22ca22",
+				"description": {
+					"_type": "localizedText",
+					"en": "Launched cloud and DevOps services to improve deployment speed, reliability, and scalability.",
+					"id": "Meluncurkan layanan cloud dan DevOps untuk meningkatkan kecepatan deployment, keandalan, dan skalabilitas."
+				},
+				"icon": "Zap",
+				"title": {
+					"_type": "localizedString",
+					"en": "Cloud & DevOps Launch",
+					"id": "Peluncuran Cloud & DevOps"
+				},
+				"year": "2019"
+			},
+			{
+				"_key": "484364a01924",
+				"description": {
+					"_type": "localizedText",
+					"en": "Accelerated creative and digital printing services to support integrated brand and campaign execution.",
+					"id": "Mempercepat layanan kreatif dan percetakan digital untuk mendukung eksekusi brand dan kampanye secara terintegrasi."
+				},
+				"icon": "Circle Check Big",
+				"title": {
+					"_type": "localizedString",
+					"en": "Creative & Printing Acceleration",
+					"id": "Akselerasi Kreatif & Percetakan"
+				},
+				"year": "2022"
+			},
+			{
+				"_key": "0d706412d2b0",
+				"description": {
+					"_type": "localizedText",
+					"en": "Today we deliver integrated end-to-end services, from strategy and implementation to post-go-live support.",
+					"id": "Saat ini kami menghadirkan layanan terintegrasi end-to-end, mulai dari strategi, implementasi, hingga dukungan pasca go-live."
+				},
+				"icon": "Globe",
+				"title": {
+					"_type": "localizedString",
+					"en": "Integrated End-to-End Services",
+					"id": "Layanan Terintegrasi End-to-End"
+				},
+				"year": "2025+"
+			}
+		],
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Key phases since 2009 that shaped our integrated service capabilities.",
+			"id": "Fase utama sejak 2009 yang membentuk kapabilitas layanan terintegrasi kami."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Company Journey",
+			"id": "Perjalanan Perusahaan"
+		}
+	},
+	"vision": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Our Purpose",
+			"id": "Tujuan Kami"
+		},
+		"missionDesc": {
+			"_type": "localizedText",
+			"en": "We deliver secure, scalable, and practical solutions across software development, infrastructure, cloud and DevOps, creative services, digital advertising, and strategic IT consulting.",
+			"id": "Kami menghadirkan solusi yang aman, skalabel, dan praktis pada pengembangan software, infrastruktur, cloud dan DevOps, layanan kreatif, periklanan digital, serta konsultasi IT strategis."
+		},
+		"missionTitle": {
+			"_type": "localizedString",
+			"en": "Our Mission",
+			"id": "Misi Kami"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Our long-term direction and operational commitment in delivering end-to-end digital solutions.",
+			"id": "Arah jangka panjang dan komitmen operasional kami dalam menghadirkan solusi digital end-to-end."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Our Vision and Mission",
+			"id": "Visi Misi Kami"
+		},
+		"visionDesc": {
+			"_type": "localizedText",
+			"en": "To become Indonesia's most trusted end-to-end digital transformation partner, delivering measurable business impact through software, infrastructure, cloud, creative, and strategic IT execution.",
+			"id": "Menjadi mitra transformasi digital end-to-end paling tepercaya di Indonesia, dengan dampak bisnis terukur melalui software, infrastruktur, cloud, layanan kreatif, dan eksekusi IT strategis."
+		},
+		"visionTitle": {
+			"_type": "localizedString",
+			"en": "Our Vision",
+			"id": "Visi Kami"
+		}
+	}
+}

@@ -1,0 +1,229 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "homePage",
+	"_rev": "T1sq5D24mk45gEbRVdjOHp",
+	"_system": {
+		"base": {
+			"id": "homePage",
+			"rev": "3d2JLpUTPM5qppQf8PKNaw"
+		}
+	},
+	"_type": "homePage",
+	"_updatedAt": "2026-02-27T21:14:15Z",
+	"blogSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Insights & Best Practices",
+			"id": "Insight & Praktik Terbaik"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Read practical guidance on architecture, cloud operations, cybersecurity, and digital transformation execution.",
+			"id": "Baca panduan praktis tentang arsitektur, operasi cloud, keamanan siber, dan eksekusi transformasi digital."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Latest Insights for Business Technology",
+			"id": "Insight Terbaru untuk Teknologi Bisnis"
+		},
+		"viewAllPosts": {
+			"_type": "localizedString",
+			"en": "Read All Articles",
+			"id": "Baca Semua Artikel"
+		},
+		"viewAllPostsLink": "/blog"
+	},
+	"companyStatsSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Performance Snapshot",
+			"id": "Ringkasan Performa"
+		},
+		"items": [
+			{
+				"_key": "afa315af57f1",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Happy Clients",
+					"id": "Klien Bahagia"
+				},
+				"value": "70+"
+			},
+			{
+				"_key": "df57eb08f9e0",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Projects Done",
+					"id": "Proyek Selesai"
+				},
+				"value": "200+"
+			},
+			{
+				"_key": "2f685cd06766",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Years Experience",
+					"id": "Tahun Pengalaman"
+				},
+				"value": "17+"
+			},
+			{
+				"_key": "b9e2e298e2f3",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Client Satisfaction",
+					"id": "Kepuasan Klien"
+				},
+				"value": "97%"
+			},
+			{
+				"_key": "815a38eaa52d",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Technologies",
+					"id": "Teknologi"
+				},
+				"value": "40+"
+			},
+			{
+				"_key": "88d655b19eb8",
+				"_type": "stat",
+				"label": {
+					"_type": "localizedString",
+					"en": "Support",
+					"id": "Dukungan"
+				},
+				"value": "24/7"
+			}
+		],
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Track record metrics that reflect execution quality, customer trust, and long-term partnership value.",
+			"id": "Metrik rekam jejak yang mencerminkan kualitas eksekusi, kepercayaan pelanggan, dan nilai kemitraan jangka panjang."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Business Growth Metrics from IT Services",
+			"id": "Metrik Pertumbuhan Bisnis dari Layanan IT"
+		}
+	},
+	"hero": {
+		"cta": {
+			"_type": "localizedString",
+			"en": "Consult Your Project",
+			"id": "Konsultasikan Proyek Anda"
+		},
+		"ctaLink": "/contact",
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Banten IT Solutions delivers end-to-end services across software development, infrastructure and networking, cloud and DevOps, creative services, digital printing and advertising, and IT consulting to improve efficiency, security, and measurable business outcomes.",
+			"id": "Banten IT Solutions menghadirkan layanan end-to-end pada pengembangan software, infrastruktur dan jaringan, cloud dan DevOps, layanan kreatif, percetakan digital dan periklanan, serta konsultasi IT untuk meningkatkan efisiensi, keamanan, dan hasil bisnis yang terukur."
+		},
+		"title": {
+			"_type": "localizedText",
+			"en": "Digital Solutions for Business Growth",
+			"id": "Solusi Digital untuk Pertumbuhan Bisnis"
+		},
+		"viewWork": {
+			"_type": "localizedString",
+			"en": "View Case Studies",
+			"id": "Lihat Studi Kasus"
+		},
+		"viewWorkLink": "/portfolio"
+	},
+	"portfolioSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Featured Projects",
+			"id": "Proyek Unggulan"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Explore implementation case studies from enterprise, public sector, and growing businesses with clear measurable impact.",
+			"id": "Jelajahi studi kasus implementasi dari enterprise, sektor publik, dan bisnis berkembang dengan dampak terukur yang jelas."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Proven Delivery Across Industries",
+			"id": "Eksekusi Terbukti di Berbagai Industri"
+		},
+		"viewAllProject": {
+			"_type": "localizedString",
+			"en": "See All Projects",
+			"id": "Lihat Semua Proyek"
+		},
+		"viewAllProjectLink": "/portfolio"
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Banten IT Solutions provides software development, infrastructure and networking, cloud and DevOps, creative services, digital printing and advertising, and IT consulting to help companies achieve secure, efficient, and scalable digital operations.",
+			"id": "Banten IT Solutions menyediakan pengembangan software, infrastruktur dan jaringan, cloud dan DevOps, layanan kreatif, percetakan digital dan periklanan, serta konsultasi IT untuk membantu perusahaan mencapai operasional digital yang aman, efisien, dan skalabel."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"banten it solutions",
+			"jasa pengembangan software",
+			"jasa infrastruktur jaringan",
+			"layanan cloud dan devops",
+			"jasa desain kreatif",
+			"percetakan digital periklanan",
+			"konsultasi it perusahaan",
+			"mitra transformasi digital indonesia",
+			"solusi it perusahaan"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-85e03ae8670db7067f4b3140884effcfdf2509d9-1280x720-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Banten IT Solutions | Software, Infrastructure, Cloud, Creative, and IT Consulting",
+			"id": "Banten IT Solutions | Software, Infrastruktur, Cloud, Kreatif, dan Konsultasi IT"
+		}
+	},
+	"servicesSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Professional Services",
+			"id": "Layanan Profesional"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "From planning to implementation, we provide practical IT services to accelerate execution, stabilize operations, and support long-term scalability.",
+			"id": "Dari perencanaan hingga implementasi, kami menyediakan layanan IT praktis untuk mempercepat eksekusi, menstabilkan operasional, dan mendukung skalabilitas jangka panjang."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "IT Services for Business Growth",
+			"id": "Layanan IT untuk Pertumbuhan Bisnis"
+		}
+	},
+	"testimonialsSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Client Trust",
+			"id": "Kepercayaan Klien"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Companies choose us for reliable execution, transparent communication, and measurable project results.",
+			"id": "Perusahaan memilih kami karena eksekusi yang andal, komunikasi transparan, dan hasil proyek yang terukur."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Trusted Partner for Business Results",
+			"id": "Mitra Tepercaya untuk Hasil Bisnis"
+		}
+	}
+}

@@ -1,0 +1,884 @@
+[
+	{
+		"_id": "client-andaru-jaya-perdana",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-75d5dc7d78d9b466d4a247c70b937a743442d133-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-847d883dd5e27ee1562424afd66fa07d6c24ba64-1400x536-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Andaru Jaya Perdana",
+		"order": 1,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-ans-chemicals",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-02c3d6c9523fd9737e1550673d12899f6cd550a0-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-dd90ccf309e0c09414ab23e36ed53d95ca5cf0b7-1203x441-png",
+				"_type": "reference"
+			}
+		},
+		"name": "ANS Chemicals",
+		"order": 2,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-aqa-consultant",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-1cfc12b525bc95f88c08282154a7592c49f3cf76-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-56ab84756d207c9d78c74cd8f5d297175a052daf-1220x346-png",
+				"_type": "reference"
+			}
+		},
+		"name": "AQA Consultant",
+		"order": 3,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-aya-kopi",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-83616b4dffd8f267f61ac5eb29347053839968c8-512x512-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-8164a97702f4a13b4dc4a0beffa6286d49a42eed-666x254-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Aya Kopi",
+		"order": 4,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-bakoel-cemal-cemil",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-08eb8e7b64d0839c39c9915e0d6b1b2a6b95b5ec-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-cdbe2061b0417de02a77cb26c2b226fddd59e909-1178x402-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Bakoel Cemal Cemil",
+		"order": 5,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-banten-it-solutions",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-591a382197a1171404c23c1e1055e11a350fd33b-512x512-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-5f9dd49c5aaee85fc3274ad8b184003c433d0d07-714x334-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Banten IT Solutions",
+		"order": 6,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-banyu-mili",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-a2021303d33ac288975bc5e73bf991d523d99145-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-1d5a064382c00a1edc5de315211b7685856373f9-512x318-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Banyu Mili",
+		"order": 7,
+		"website": "https://banyumili.com"
+	},
+	{
+		"_id": "client-bata-bagus",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-2fec90245fb1bf6fda2780b5aa92078f1ad207f3-640x640-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-826b8eab8cdb9d7bc1b17d115ce2be719605ac65-1233x411-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Bata Bagus",
+		"order": 8,
+		"website": "https://batabagus.com"
+	},
+	{
+		"_id": "client-berita-fakta",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-00bc8a01e1191f3477f56981570c984063906e0b-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-7f46d08f1d323144ccfd62a7f91378b6befea18b-1173x406-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Berita Fakta",
+		"order": 9,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-bhakti-purna-husada-serang",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-2805ad2da63bc688acf4c076620bb788a54e952a-300x298-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-47b36aa013d46f0db199972d64fed724348aa2df-1437x555-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Bhakti Purna Husada Serang",
+		"order": 10,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-bintang-wallpaper",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e0b11b7d7b4bd2d349720f5cb61540c05d1226d3-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-77a21c54bf0cbde2e3a724dd96c52b82bbfb3113-1064x388-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Bintang Wallpaper",
+		"order": 11,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-bola-nasional",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-088d7b6007479cb837868bbb8a28b62b6e618e91-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-5ac99b5ccb0bfb3b2d955e6d48241495da32ce19-1312x437-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Bola Nasional",
+		"order": 12,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-cetak-aja-online",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e7e557b6e1b90d91e8637410f5d5f86f37c2b998-512x512-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-2d57a849d38aa095fb27c7579616c6ee7d7e0ca4-348x120-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Cetak Aja Online",
+		"order": 13,
+		"website": "https://cetakaja.online"
+	},
+	{
+		"_id": "client-fkwt-kota-serang",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e1d990f10f5b5c6474ac5e6ef6a1d3bb842615f1-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-f1268408dcd0a09a6fe7ceb9bf2d66655bb89ad6-1492x608-png",
+				"_type": "reference"
+			}
+		},
+		"name": "FKWT Kota Serang",
+		"order": 14,
+		"website": "https://komunikasikotaserang.com"
+	},
+	{
+		"_id": "client-gandasari-shipyard",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-9add983d115f5bec509d43ffa30d0bf6189ec66f-1536x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-20788928113835204914ee53e76421e421393d26-1090x244-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Gandasari Shipyard",
+		"order": 15,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-gubah-massa-studio",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-3b7507ced8b24190f0fd7464ce6d10112ba2a150-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-4ed4f1d62a70cfa826cbf02e1fd6c7ab8c712d97-1335x481-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Gubah Massa Studio",
+		"order": 16,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-hijrah-wisata-religi",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-802893dca8143f7894d0f48a9e9ad929e8000902-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-bba3ab86d081e76a06a8644facb2fb9245a018b9-1261x397-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Hijrah Wisata Religi",
+		"order": 17,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-honda-auto-serang",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-c931dae8ece94af63d4dfbe684010cdb22a449e7-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-519989caa18d4cbec1dafb533389d395f75c95ef-1085x298-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Honda Auto Serang",
+		"order": 18,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-jamkrida-banten",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-91a0255b74caec741775c9b0e05fb8b77ee544b0-1000x1000-jpg",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-7beb90f424ed63bdb29f82f9bc12920c873fa866-1370x358-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Jamkrida Banten",
+		"order": 19,
+		"website": "https://jamkridabanten.co.id"
+	},
+	{
+		"_id": "client-jamkrida-kalteng",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e374463c00d9f2c97a9e43459ba469d8345abf7a-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-ebdd5d59342d7a6fc48719c56f408173af5a938d-1391x448-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Jamkrida Kalteng",
+		"order": 20,
+		"website": "https://jamkridakalteng.co.id"
+	},
+	{
+		"_id": "client-jamkrida-ntt",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e4f095e917c8eff9a3ede1925062140b2c7ddbb5-512x512-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-18e10ff805244a8da82fc4dce548b493ff47f677-1178x458-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Jamkrida NTT",
+		"order": 21,
+		"website": "https://jamkridantt.co.id"
+	},
+	{
+		"_id": "client-jual-sapi-kerbau",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-afe6bca82c02cf35c6399b500ee75e51ed1468fc-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-389f66e3c453a256519559dd3e598b167e74c143-1331x506-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Jual Sapi & Kerbau",
+		"order": 22,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-kabar-6",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e0649844e9db6e3d3f159b051175b323c477658b-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-89ab9d17b0ad9d48dc3caa6ec54f5fbdc7d03ebf-1340x487-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Kabar 6",
+		"order": 23,
+		"website": "https://kabar6.com"
+	},
+	{
+		"_id": "client-konveksi-tas-serang",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-129cbcdda9b8c4d8ea98a82cb1e010bd0ca36ef6-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-f4b52fff023626b9346097b60f989d9ad8ff4a53-1136x332-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Konveksi Tas Serang",
+		"order": 24,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-lestari-smart-awning",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-c4a38004c47d259a9e8f8572888a293d860773e9-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-4eab47326cca0a0e115bd567b82a04b6052bbdf0-1192x381-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Lestari Smart Awning",
+		"order": 25,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-mitra-karya-banten",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-22119d465718845913f2983cad9a61b1718c833f-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-47fd5d882a9517f46bfa7b3367bf8b6b76e74a5f-1261x411-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Mitra Karya Banten",
+		"order": 26,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-mubadala-bangun-sejahtera",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-1525a0b5f19889ed73745b9668cd0254f4324880-594x594-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-3e386f331d3938426a105ebf616b4492477c895b-1213x295-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Mubadala Bangun Sejahtera",
+		"order": 27,
+		"website": "https://mbsapp.net"
+	},
+	{
+		"_id": "client-pantau-banten",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-89e40521f92750f37d97aa3b1d4b1fc134ab7770-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-2532c745b78299d3aa0266b308797842e6c33a90-1291x402-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Pantau Banten",
+		"order": 28,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-pengajian-islami",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-b389d4d70800b990904e25bfd4365eb181214a11-800x800-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-807f5c5a5546a7d455349e649abf015a123d1c6e-564x174-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Pengajian Islami",
+		"order": 29,
+		"website": "https://abuyauci.com"
+	},
+	{
+		"_id": "client-pln-indonesia-power",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-08996b3ce954c7c8b57df497ebd3745aec6f6ff5-800x800-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-4e27c38a79621822bc091a7042259733ee02f499-909x272-png",
+				"_type": "reference"
+			}
+		},
+		"name": "PLN Indonesia Power",
+		"order": 30,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-polda-banten",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-9de6c4a811d6383c6457d5971a338a1ad0191bca-500x673-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-9db34d66ffe3f58006337b9f8e3a2ee672c38008-974x527-png",
+				"_type": "reference"
+			}
+		},
+		"name": "POLDA BANTEN",
+		"order": 31,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-polres-metro-tangerang-kota",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-5b6b1765e3a151af5de9ea5772c8ef17d06d7565-1536x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e7213ad5bf1e44812ff39ade76ad8b1c37947327-1536x548-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Polres Metro Tangerang Kota",
+		"order": 32,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-prima-galeri-phone-shop",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-c70b307acbf76e8230ac88dda7da542968d3acd1-1440x1440-jpg",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-c3e7f5726f1ccea5b8c4927a38eaef6ec7b10ea7-770x344-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Prima Galeri Phone Shop",
+		"order": 33,
+		"website": "https://pgps.co.id"
+	},
+	{
+		"_id": "client-qienzu-putri",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-a760e90c8ef64d2f3c60a586a590bd508d7b0ff0-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-6e34219a784753b8a4cabb5adb4245ace356870b-1141x362-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Qienzu Putri",
+		"order": 34,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-riza-putra",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-aa129042d4caf4067744a615d06ec14b8766dfa0-512x512-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-bdb09d1b5adf11780041a29081f5b9b2e619d88e-859x255-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Riza Putra",
+		"order": 35,
+		"website": "https://rizaputra.com"
+	},
+	{
+		"_id": "client-rupbasan-serang",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-65f1479da8787f6d02d384c682f6fa9b78ed1233-709x774-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-4b867c61b08aa57d97c547571d4eed803b53d103-1240x390-png",
+				"_type": "reference"
+			}
+		},
+		"name": "RUPBASAN SERANG",
+		"order": 36,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-santri-online",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-20c5264c00777b46ca217ef15afd46e879ca1c47-600x600-jpg",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-27117b6c588fc37a9aea1f1f120449bf1e981049-1046x372-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Santri Online",
+		"order": 37,
+		"website": "https://abuyauci.it.com"
+	},
+	{
+		"_id": "client-smkn-3-kota-cilegon",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-becf9ebf6c1452ca72e37a6df4df1114d2fabf86-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-eba3d4157882837b7c767b17d95571a9aaa7a665-1338x502-png",
+				"_type": "reference"
+			}
+		},
+		"name": "SMKN 3 Kota Cilegon",
+		"order": 38,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-tibbul-fahhs",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-5339536e145ff79d4cbd073d63b38255cb48e29e-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-1710c21f5bf127f5a452eefbda658fee329052fd-1194x413-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Tibbul Fahhs",
+		"order": 39,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-universal-online-shop",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-a470c4d0094977c467ce96e7030da627258d88bd-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-2b85eaaf5b921817812b804e2ca0be0dae92dbf3-1356x400-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Universal Online Shop",
+		"order": 40,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-universitas-sultan-ageng-tirtayasa",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-0f202bf9a97de16dba8ae953e66855f62e3a1798-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-280ad2bb644f2277b19e382d9633221dce27d156-1463x518-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Universitas Sultan Ageng Tirtayasa",
+		"order": 41,
+		"website": "https://bits.co.id"
+	},
+	{
+		"_id": "client-yayasan-hidayatut-thalibin",
+		"_type": "client",
+		"icon": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-0c7bd3bc413c745b7e52102b511ac3a8bea0912e-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"logo": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-d513a83485da7d94c7869c41c762543f1835d03a-1238x349-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Yayasan Hidayatut Thalibin",
+		"order": 42,
+		"website": "https://bits.co.id"
+	}
+]

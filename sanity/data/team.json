@@ -1,0 +1,168 @@
+[
+	{
+		"_id": "team-ahmad-rizki",
+		"_type": "team",
+		"bio": {
+			"en": "Nurul Imam is the CEO and founder of Banten IT Solutions with over 15 years of experience in technology leadership.",
+			"id": "Nurul Imam adalah CEO dan pendiri Banten IT Solutions dengan pengalaman lebih dari 15 tahun dalam kepemimpinan teknologi."
+		},
+		"email": "imam@bits.co.id",
+		"image": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-8ee0e53478f94328fa682400e16eac1de04bd691-1024x1024-png",
+				"_type": "reference"
+			},
+			"crop": {
+				"_type": "sanity.imageCrop",
+				"bottom": 0.3511326745486186,
+				"left": 0.23616133835545686,
+				"right": 0.17633685399535387,
+				"top": 0.03494873981495555
+			},
+			"hotspot": {
+				"_type": "sanity.imageHotspot",
+				"height": 0.5888377634398795,
+				"width": 0.5684341581286033,
+				"x": 0.5203784174197585,
+				"y": 0.3293676215348953
+			}
+		},
+		"name": "Nurul Imam",
+		"order": 1,
+		"role": {
+			"en": "CEO & Founder",
+			"id": "CEO & Pendiri"
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "nurulimam"
+		},
+		"social": {
+			"github": "https://github.com/bitscoid",
+			"instagram": "https://instagram.com/bitscoid",
+			"youtube": "https://github.com/bitscoid"
+		}
+	},
+	{
+		"_id": "team-linda-wijaya",
+		"_type": "team",
+		"bio": {
+			"en": "Farhan leads our development team with expertise in modern web technologies and performance optimization.",
+			"id": "Farhan memimpin tim pengembangan kami dengan keahlian dalam teknologi web modern dan optimasi performa."
+		},
+		"email": "farhan@bits.co.id",
+		"image": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-cbedd210165dcd82cbdd9a21e0b5620470c101ca-1024x1024-png",
+				"_type": "reference"
+			},
+			"crop": {
+				"_type": "sanity.imageCrop",
+				"bottom": 0.34044220185903273,
+				"left": 0.474944046252549,
+				"right": 0.12833355420741782,
+				"top": 0.24299698297423905
+			},
+			"hotspot": {
+				"_type": "sanity.imageHotspot",
+				"height": 0.41656081516672816,
+				"width": 0.39672239954003313,
+				"x": 0.6733052460225656,
+				"y": 0.4512773905576032
+			}
+		},
+		"name": "Farhanul Jawhary",
+		"order": 2,
+		"role": {
+			"en": "Project Manager",
+			"id": "Project Manager"
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "farhan"
+		},
+		"social": {
+			"github": "https://github.com/bitscoid",
+			"instagram": "https://instagram.com/bitscoid",
+			"youtube": "https://github.com/bitscoid"
+		}
+	},
+	{
+		"_id": "team-budi-santoso",
+		"_type": "team",
+		"bio": {
+			"en": "Akhfa brings 10+ years of experience in enterprise software implementation and business process optimization.",
+			"id": "Akhfa membawa 10+ tahun pengalaman dalam implementasi perangkat lunak enterprise dan optimasi proses bisnis."
+		},
+		"email": "akhfa@bits.co.id",
+		"image": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-6d8bcc1d1b9960a4ab40935aad7730117267eb0f-1024x1024-png",
+				"_type": "reference"
+			},
+			"crop": {
+				"_type": "sanity.imageCrop",
+				"bottom": 0.28205733434810976,
+				"left": 0.10392075147039376,
+				"right": 0.37302718690401293,
+				"top": 0.2047588541581255
+			},
+			"hotspot": {
+				"_type": "sanity.imageHotspot",
+				"height": 0.5131838114937647,
+				"width": 0.5230520616255934,
+				"x": 0.3654467822831904,
+				"y": 0.46135075990500785
+			}
+		},
+		"name": "Shofiyatul Akhfa",
+		"order": 3,
+		"role": {
+			"en": "System Analyst",
+			"id": "System Analyst"
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "akhfa"
+		},
+		"social": {
+			"github": "https://github.com/bitscoid",
+			"instagram": "https://instagram.com/bitscoid",
+			"youtube": "https://github.com/bitscoid"
+		}
+	},
+	{
+		"_id": "team-sarah-putri",
+		"_type": "team",
+		"bio": {
+			"en": "Yuliana oversees our technical strategy and is passionate about design systems and developer experience.",
+			"id": "Yuliana mengawasi strategi teknis kami dan bersemangat tentang sistem desain dan pengalaman developer."
+		},
+		"email": "yuliana@bits.co.id",
+		"image": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-e5fd215463462b8d9c17a658e2f71656d592446a-1024x1024-png",
+				"_type": "reference"
+			}
+		},
+		"name": "Yuliana",
+		"order": 4,
+		"role": {
+			"en": "Full Stack Developer",
+			"id": "Full Stack Developer"
+		},
+		"slug": {
+			"_type": "slug",
+			"current": "yuliana"
+		},
+		"social": {
+			"github": "https://github.com/bitscoid",
+			"instagram": "https://instagram.com/bitscoid",
+			"youtube": "https://github.com/bitscoid"
+		}
+	}
+]

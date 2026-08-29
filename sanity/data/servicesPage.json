@@ -1,0 +1,392 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "servicesPage",
+	"_rev": "T1sq5D24mk45gEbRVdjPa9",
+	"_system": {
+		"base": {
+			"id": "servicesPage",
+			"rev": "unIo2UW65gB1PasuKSq2NM"
+		}
+	},
+	"_type": "servicesPage",
+	"_updatedAt": "2026-02-27T21:14:16Z",
+	"ctaSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Plan Your Next Initiative",
+			"id": "Rencanakan Inisiatif Berikutnya"
+		},
+		"ctaLink1": "/contact",
+		"ctaLink2": "/portfolio",
+		"ctaText1": {
+			"_type": "localizedString",
+			"en": "Get Free Consultation",
+			"id": "Dapatkan Konsultasi Gratis"
+		},
+		"ctaText2": {
+			"_type": "localizedString",
+			"en": "View Our Work",
+			"id": "Lihat Karya Kami"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Discuss your priorities and we will recommend the right scope, timeline, and architecture.",
+			"id": "Diskusikan prioritas Anda dan kami akan merekomendasikan scope, timeline, dan arsitektur yang tepat."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Ready to Start?",
+			"id": "Siap Memulai?"
+		}
+	},
+	"hero": {
+		"badge": {
+			"en": "Premium Digital Solutions",
+			"id": "Solusi Digital Premium"
+		},
+		"ctaLink1": "/contact",
+		"ctaLink2": "#services-section",
+		"ctaText1": {
+			"_type": "localizedString",
+			"en": "Get Free Consultation",
+			"id": "Dapatkan Konsultasi Gratis"
+		},
+		"ctaText2": {
+			"_type": "localizedString",
+			"en": "Explore Services",
+			"id": "Jelajahi Layanan"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Select services aligned to your priorities across software development, infrastructure and networking, cloud and DevOps, creative services, digital printing and advertising, and IT consulting and training.",
+			"id": "Pilih layanan yang selaras dengan prioritas perusahaan Anda pada pengembangan software, infrastruktur dan jaringan, cloud dan DevOps, layanan kreatif, percetakan digital dan periklanan, serta konsultasi dan pelatihan IT."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Professional IT Services for Business Growth",
+			"id": "Layanan IT Profesional untuk Pertumbuhan Bisnis"
+		}
+	},
+	"processSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Our Process",
+			"id": "Proses Kami"
+		},
+		"processItems": [
+			{
+				"_key": "5c865a1fd674",
+				"icon": "Lightbulb",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "We start by understanding your needs and goals",
+					"id": "Kami mulai dengan memahami kebutuhan dan tujuan Anda"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Discovery & Planning",
+					"id": "Discovery & Perencanaan"
+				}
+			},
+			{
+				"_key": "b2f30eeb1708",
+				"icon": "Target",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Our experts create and build your solution",
+					"id": "Para ahli kami menciptakan dan membangun solusi Anda"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Design & Development",
+					"id": "Desain & Pengembangan"
+				}
+			},
+			{
+				"_key": "153e2d6c125a",
+				"icon": "Rocket",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Rigorous testing to ensure quality and performance",
+					"id": "Pengujian ketat untuk memastikan kualitas dan kinerja"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Testing & Refinement",
+					"id": "Pengujian & Penyempurnaan"
+				}
+			},
+			{
+				"_key": "7fdd9be95585",
+				"icon": "Circle Check",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Seamless deployment with ongoing support",
+					"id": "Penerapan tanpa gangguan dengan dukungan berkelanjutan"
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Launch & Support",
+					"id": "Peluncuran & Dukungan"
+				}
+			}
+		],
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Our execution model is transparent, milestone-driven, and optimized for speed without sacrificing quality.",
+			"id": "Model eksekusi kami transparan, berbasis milestone, dan dioptimalkan untuk kecepatan tanpa mengorbankan kualitas."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "How We Work",
+			"id": "Bagaimana Kami Bekerja"
+		}
+	},
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Explore Banten IT Solutions services for software development, infrastructure and networking, cloud and DevOps, creative services, digital printing and advertising, and IT consulting for measurable business outcomes.",
+			"id": "Jelajahi layanan Banten IT Solutions untuk pengembangan software, infrastruktur dan jaringan, cloud dan DevOps, layanan kreatif, percetakan digital dan periklanan, serta konsultasi IT dengan hasil bisnis yang terukur."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"layanan pengembangan software",
+			"jasa infrastruktur jaringan",
+			"layanan cloud devops",
+			"jasa desain kreatif",
+			"percetakan digital periklanan",
+			"konsultasi dan pelatihan it",
+			"jasa it perusahaan",
+			"solusi digital banten"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-25355ccfab089a76839a6082e3d3da329c57d5b0-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "BITS Services | Software, Infrastructure, Cloud, Creative, Printing, and IT Consulting",
+			"id": "Layanan BITS | Software, Infrastruktur, Cloud, Kreatif, Percetakan, dan Konsultasi IT"
+		}
+	},
+	"serviceDetail": {
+		"benefits": {
+			"badge": {
+				"_type": "localizedString",
+				"en": "Why Choose Us",
+				"id": "Mengapa Memilih Kami"
+			},
+			"stats": [
+				{
+					"_key": "5a5e67fdae87",
+					"label": {
+						"_type": "localizedString",
+						"en": "Projects",
+						"id": "Proyek"
+					},
+					"value": "200+"
+				},
+				{
+					"_key": "f075c9cf1314",
+					"label": {
+						"_type": "localizedString",
+						"en": "Satisfaction",
+						"id": "Kepuasan"
+					},
+					"value": "98%"
+				},
+				{
+					"_key": "b3fb35157cf4",
+					"label": {
+						"_type": "localizedString",
+						"en": "Support",
+						"id": "Dukungan"
+					},
+					"value": "24/7"
+				}
+			],
+			"subtitle": {
+				"_type": "localizedText",
+				"en": "Professional solutions built to scale with your business",
+				"id": "Solusi profesional yang dibangun untuk berkembang bersama bisnis Anda"
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Built for Excellence",
+				"id": "Dibangun untuk Keunggulan"
+			}
+		},
+		"cta": {
+			"btnCta": {
+				"_type": "localizedString",
+				"en": "Start Your Project",
+				"id": "Mulai Proyek Anda"
+			},
+			"linkCta": "/contact",
+			"subtitle": {
+				"_type": "localizedText",
+				"en": "Discuss your priorities and get a scoped recommendation with timeline, architecture, and budget direction.",
+				"id": "Diskusikan prioritas perusahaan Anda dan dapatkan rekomendasi scope, timeline, arsitektur, serta arah anggaran."
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Ready to Start?",
+				"id": "Siap Memulai?"
+			}
+		},
+		"hero": {
+			"badge": {
+				"_type": "localizedString",
+				"en": "Web Design Solutions",
+				"id": "Solusi Desain Web"
+			},
+			"buttonCta": {
+				"_type": "localizedString",
+				"en": "Get Started",
+				"id": "Mulai Sekarang"
+			}
+		},
+		"subService": {
+			"badge": {
+				"_type": "localizedString",
+				"en": "What We Offer",
+				"id": "Apa yang Kami Tawarkan"
+			},
+			"subtitle": {
+				"_type": "localizedText",
+				"en": "Service modules designed to support execution speed, quality, and long-term maintainability.",
+				"id": "Modul layanan yang dirancang untuk mendukung kecepatan eksekusi, kualitas, dan maintainability jangka panjang."
+			},
+			"title": {
+				"_type": "localizedString",
+				"en": "Comprehensive Solutions",
+				"id": "Solusi Lengkap"
+			}
+		}
+	},
+	"servicesSection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Our Services",
+			"id": "Layanan Kami"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "Each service is designed to solve operational bottlenecks and build a scalable digital foundation.",
+			"id": "Setiap layanan dirancang untuk menyelesaikan bottleneck operasional dan membangun fondasi digital yang skalabel."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Solutions for Modern Companies",
+			"id": "Solusi untuk Perusahaan Modern"
+		}
+	},
+	"whySection": {
+		"badge": {
+			"_type": "localizedString",
+			"en": "Why Choose Us",
+			"id": "Mengapa Memilih Kami"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "You get one accountable team from discovery to post-launch support, with clear communication and measurable progress.",
+			"id": "Anda mendapatkan satu tim yang bertanggung jawab penuh dari discovery hingga dukungan pasca peluncuran, dengan komunikasi jelas dan progres terukur."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Why Companies Choose BITS",
+			"id": "Mengapa Perusahaan Memilih BITS"
+		},
+		"whyItems": [
+			{
+				"_key": "3f642e5ff5c6",
+				"icon": "Award",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Over 10 years of experience delivering solutions across diverse industries.",
+					"id": "Pengalaman lebih dari 10 tahun dalam memberikan solusi di berbagai industri."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Industry Expertise",
+					"id": "Keahlian Industri"
+				}
+			},
+			{
+				"_key": "b557f8c502e7",
+				"icon": "Users",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Skilled professionals committed to your project's success.",
+					"id": "Profesional terampil yang berkomitmen pada kesuksesan proyek Anda."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Dedicated Team",
+					"id": "Tim yang Berdedikasi"
+				}
+			},
+			{
+				"_key": "9d0882a4fdad",
+				"icon": "Clock",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "We respect deadlines and deliver quality work on schedule.",
+					"id": "Kami menghargai tenggat waktu dan memberikan kualitas kerja sesuai jadwal."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "On-Time Delivery",
+					"id": "Pengiriman Tepat Waktu"
+				}
+			},
+			{
+				"_key": "fa902b250966",
+				"icon": "Shield",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Security-first approach in every solution we design and implement.",
+					"id": "Pendekatan security-first pada setiap solusi yang kami rancang dan implementasikan."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Secure Solutions",
+					"id": "Solusi Aman"
+				}
+			},
+			{
+				"_key": "e590d80c873e",
+				"icon": "Heart Handshack",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Round-the-clock support to keep your business running.",
+					"id": "Dukungan sepanjang waktu untuk menjaga bisnis Anda berjalan."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "24/7 Support",
+					"id": "Dukungan 24/7"
+				}
+			},
+			{
+				"_key": "81e69edc83ff",
+				"icon": "Globe",
+				"subtitle": {
+					"_type": "localizedText",
+					"en": "Following international best practices and coding standards.",
+					"id": "Mengikuti praktik terbaik internasional dan standar pengkodean."
+				},
+				"title": {
+					"_type": "localizedString",
+					"en": "Global Standards",
+					"id": "Standar Global"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,288 @@
+{
+	"_createdAt": "2025-12-29T08:27:26Z",
+	"_id": "privacyPage",
+	"_rev": "WUwDz2nhDGjX2BFeJbll9e",
+	"_system": {
+		"base": {
+			"id": "privacyPage",
+			"rev": "zuW1OHkqCQ2Sn593fNMRat"
+		}
+	},
+	"_type": "privacyPage",
+	"_updatedAt": "2026-02-27T21:14:22Z",
+	"contact": {
+		"title": {
+			"en": "Questions About Our Privacy Policy ?",
+			"id": "Pertanyaan Tentang Kebijakan Privasi Kami ?"
+		}
+	},
+	"content": {
+		"noticeSubtitle": {
+			"_type": "localizedText",
+			"en": "By using our website, submitting inquiries, or engaging our services, you agree to the collection and use of information in accordance with this policy. We recommend reading this document in full to understand how we handle project, communication, and customer data.",
+			"id": "Dengan menggunakan situs web kami, mengirimkan pertanyaan, atau menggunakan layanan kami, Anda menyetujui pengumpulan dan penggunaan informasi sesuai kebijakan ini. Kami menyarankan Anda membaca dokumen ini secara lengkap untuk memahami bagaimana kami menangani data proyek, komunikasi, dan data pelanggan."
+		},
+		"noticeTitle": {
+			"_type": "localizedString",
+			"en": "Important Notice",
+			"id": "Pemberitahuan Penting"
+		},
+		"sectionLabel": {
+			"_type": "localizedString",
+			"en": "Section",
+			"id": "Bagian"
+		},
+		"tocLabel": {
+			"_type": "localizedString",
+			"en": "Table of Contents",
+			"id": "Daftar Isi"
+		}
+	},
+	"hero": {
+		"badge": {
+			"en": "Your Privacy Matters",
+			"id": "Privasi Anda Penting"
+		},
+		"lastUpdated": {
+			"en": "Last updated: December 2025",
+			"id": "Terakhir diperbarui: Desember 2025"
+		},
+		"subtitle": {
+			"_type": "localizedText",
+			"en": "This policy explains how we collect, process, store, and protect personal data when you use our website, request consultations or quotations, and use our software, infrastructure, cloud, design, printing, or IT advisory services.",
+			"id": "Kebijakan ini menjelaskan bagaimana kami mengumpulkan, memproses, menyimpan, dan melindungi data pribadi saat Anda menggunakan website, meminta konsultasi atau penawaran, dan menggunakan layanan software, infrastruktur, cloud, desain, percetakan, atau advisory IT kami."
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Privacy Policy",
+			"id": "Kebijakan Privasi"
+		}
+	},
+	"sections": [
+		{
+			"_key": "sec-collection",
+			"items": [
+				{
+					"_key": "item-personal",
+					"key": "personal",
+					"subtitle": {
+						"en": "Personal Information",
+						"id": "Informasi Pribadi"
+					},
+					"text": {
+						"en": "We collect information you provide directly to us, including your name, email address, phone number, company name, project requirements, and related documents when you fill out a contact form, request a quotation, discuss a service, or communicate with us.",
+						"id": "Kami mengumpulkan informasi yang Anda berikan langsung kepada kami, termasuk nama, alamat email, nomor telepon, nama perusahaan, kebutuhan proyek, dan dokumen terkait saat Anda mengisi formulir kontak, meminta penawaran, mendiskusikan layanan, atau berkomunikasi dengan kami."
+					}
+				},
+				{
+					"_key": "item-usage",
+					"key": "usage",
+					"subtitle": {
+						"en": "Usage Data",
+						"id": "Data Penggunaan"
+					},
+					"text": {
+						"en": "We automatically collect certain information when you visit our website, including your IP address, browser type, operating system, referring URLs, device information, and information about how you interact with our pages, forms, and service content.",
+						"id": "Kami secara otomatis mengumpulkan informasi tertentu saat Anda mengunjungi situs web kami, termasuk alamat IP, jenis browser, sistem operasi, URL perujuk, informasi perangkat, dan informasi tentang bagaimana Anda berinteraksi dengan halaman, formulir, dan konten layanan kami."
+					}
+				},
+				{
+					"_key": "item-cookies",
+					"key": "cookies",
+					"subtitle": {
+						"en": "Cookies & Tracking",
+						"id": "Cookie & Pelacakan"
+					},
+					"text": {
+						"en": "We use cookies and similar technologies to support site functionality, remember preferences, and understand website performance. You can instruct your browser to refuse cookies, but some features or form experiences may not function optimally.",
+						"id": "Kami menggunakan cookie dan teknologi serupa untuk mendukung fungsi situs, menyimpan preferensi, dan memahami performa website. Anda dapat mengatur browser untuk menolak cookie, namun beberapa fitur atau pengalaman formulir mungkin tidak berfungsi optimal."
+					}
+				}
+			],
+			"key": "informationCollection",
+			"title": {
+				"en": "Information We Collect",
+				"id": "Informasi yang Kami Kumpulkan"
+			}
+		},
+		{
+			"_key": "sec-use",
+			"items": [
+				{
+					"_key": "item-service",
+					"key": "service",
+					"subtitle": {
+						"en": "Service Delivery",
+						"id": "Pengiriman Layanan"
+					},
+					"text": {
+						"en": "To provide, deliver, and improve our services, including consultation, proposal preparation, project implementation, technical support, training, digital printing production, billing, and service-related communication.",
+						"id": "Untuk menyediakan, menjalankan, dan meningkatkan layanan kami, termasuk konsultasi, penyusunan proposal, implementasi proyek, dukungan teknis, pelatihan, produksi percetakan digital, penagihan, dan komunikasi terkait layanan."
+					}
+				},
+				{
+					"_key": "item-communication",
+					"key": "communication",
+					"subtitle": {
+						"en": "Communication",
+						"id": "Komunikasi"
+					},
+					"text": {
+						"en": "To communicate with you about inquiries, quotations, project timelines, support requests, invoices, and service updates. We may also send marketing information where permitted or based on your preferences.",
+						"id": "Untuk berkomunikasi dengan Anda terkait pertanyaan, penawaran, timeline proyek, permintaan dukungan, faktur, dan pembaruan layanan. Kami juga dapat mengirimkan informasi pemasaran jika diizinkan atau sesuai preferensi Anda."
+					}
+				},
+				{
+					"_key": "item-analytics",
+					"key": "analytics",
+					"subtitle": {
+						"en": "Analytics & Improvement",
+						"id": "Analitik & Peningkatan"
+					},
+					"text": {
+						"en": "To monitor and analyze trends, usage, and activities related to our website and service inquiries so we can improve user experience, content relevance, and service response quality.",
+						"id": "Untuk memantau dan menganalisis tren, penggunaan, dan aktivitas terkait website serta pertanyaan layanan agar kami dapat meningkatkan pengalaman pengguna, relevansi konten, dan kualitas respons layanan."
+					}
+				}
+			],
+			"key": "informationUse",
+			"title": {
+				"en": "How We Use Your Information",
+				"id": "Bagaimana Kami Menggunakan Informasi Anda"
+			}
+		},
+		{
+			"_key": "sec-protection",
+			"items": [
+				{
+					"_key": "item-security",
+					"key": "security",
+					"subtitle": {
+						"en": "Security Measures",
+						"id": "Langkah Keamanan"
+					},
+					"text": {
+						"en": "We implement appropriate technical and organizational security measures to protect personal and project-related information from unauthorized access, alteration, disclosure, or destruction, including access controls and operational safeguards.",
+						"id": "Kami menerapkan langkah keamanan teknis dan organisasi yang sesuai untuk melindungi informasi pribadi dan informasi terkait proyek dari akses, perubahan, pengungkapan, atau penghancuran yang tidak sah, termasuk kontrol akses dan pengamanan operasional."
+					}
+				},
+				{
+					"_key": "item-encryption",
+					"key": "encryption",
+					"subtitle": {
+						"en": "Encryption",
+						"id": "Enkripsi"
+					},
+					"text": {
+						"en": "Data transmitted between your browser and our website is protected using industry-standard SSL/TLS encryption. Additional security controls may apply depending on the service delivery channel used.",
+						"id": "Data yang ditransmisikan antara browser Anda dan website kami dilindungi menggunakan enkripsi SSL/TLS standar industri. Kontrol keamanan tambahan dapat diterapkan tergantung kanal delivery layanan yang digunakan."
+					}
+				}
+			],
+			"key": "dataProtection",
+			"title": {
+				"en": "Data Protection & Security",
+				"id": "Perlindungan & Keamanan Data"
+			}
+		},
+		{
+			"_key": "sec-rights",
+			"items": [
+				{
+					"_key": "item-access",
+					"key": "access",
+					"subtitle": {
+						"en": "Access & Correction",
+						"id": "Akses & Koreksi"
+					},
+					"text": {
+						"en": "You have the right to access, correct, or delete your personal information. You can also request a copy of the data we hold about you.",
+						"id": "Anda memiliki hak untuk mengakses, memperbaiki, atau menghapus informasi pribadi Anda. Anda juga dapat meminta salinan data yang kami simpan tentang Anda."
+					}
+				},
+				{
+					"_key": "item-optout",
+					"key": "optOut",
+					"subtitle": {
+						"en": "Opt-Out",
+						"id": "Berhenti Berlangganan"
+					},
+					"text": {
+						"en": "You may opt out of receiving promotional communications from us by following the unsubscribe instructions in those messages. Service, billing, security, and project communications may still be sent when necessary.",
+						"id": "Anda dapat berhenti menerima komunikasi promosi dari kami dengan mengikuti instruksi berhenti berlangganan pada pesan tersebut. Komunikasi layanan, penagihan, keamanan, dan proyek tetap dapat dikirim jika diperlukan."
+					}
+				}
+			],
+			"key": "yourRights",
+			"title": {
+				"en": "Your Rights",
+				"id": "Hak Anda"
+			}
+		},
+		{
+			"_key": "sec-updates",
+			"items": [
+				{
+					"_key": "item-changes",
+					"key": "changes",
+					"subtitle": {
+						"en": "Changes to This Policy",
+						"id": "Perubahan pada Kebijakan Ini"
+					},
+					"text": {
+						"en": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date.",
+						"id": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting Kebijakan Privasi baru di halaman ini dan memperbarui tanggal \"Terakhir diperbarui\"."
+					}
+				},
+				{
+					"_key": "item-notification",
+					"key": "notification",
+					"subtitle": {
+						"en": "Notification",
+						"id": "Pemberitahuan"
+					},
+					"text": {
+						"en": "For significant changes, we will provide a more prominent notice, which may include email notification or a notice on our homepage.",
+						"id": "Untuk perubahan signifikan, kami akan memberikan pemberitahuan yang lebih menonjol, yang dapat mencakup pemberitahuan email atau pemberitahuan di beranda kami."
+					}
+				}
+			],
+			"key": "updates",
+			"title": {
+				"en": "Policy Updates",
+				"id": "Pembaruan Kebijakan"
+			}
+		}
+	],
+	"seo": {
+		"description": {
+			"_type": "localizedText",
+			"en": "Privacy Policy for Banten IT Solutions covering website inquiries, customer communications, and data handling for software, infrastructure, cloud, design, printing, and IT services.",
+			"id": "Kebijakan Privasi Banten IT Solutions yang mencakup pertanyaan website, komunikasi pelanggan, dan pengelolaan data untuk layanan software, infrastruktur, cloud, desain, percetakan, dan IT."
+		},
+		"excludeFromSitemap": false,
+		"keywords": [
+			"kebijakan privasi",
+			"privacy policy",
+			"privasi layanan it",
+			"kebijakan data pelanggan",
+			"perlindungan data pengguna",
+			"keamanan data website",
+			"pengelolaan informasi pribadi"
+		],
+		"noFollow": false,
+		"noIndex": false,
+		"ogImage": {
+			"_type": "image",
+			"asset": {
+				"_ref": "image-7bd424ec4b5d67b888b8f957f17f844ef800567e-1408x768-png",
+				"_type": "reference"
+			}
+		},
+		"title": {
+			"_type": "localizedString",
+			"en": "Privacy Policy",
+			"id": "Kebijakan Privasi"
+		}
+	}
+}
