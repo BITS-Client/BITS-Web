@@ -4,11 +4,18 @@ import { visionTool } from '@sanity/vision';
 import { codeInput } from '@sanity/code-input';
 import { schemaTypes, singletonTypes } from './schemas';
 
+const projectId = import.meta.env.SANITY_STUDIO_PROJECT_ID;
+if (!projectId) {
+	throw new Error(
+		'Missing SANITY_STUDIO_PROJECT_ID — set it in sanity/.env (see sanity/.env.example)'
+	);
+}
+
 export default defineConfig({
 	name: 'default',
 	title: 'BITS Corporate Platform',
 
-	projectId: 'j996ej4v',
+	projectId,
 	dataset: 'production',
 	deployment: {
 		appId: 'u7xaaz8xs2citixbv7ts55uv'

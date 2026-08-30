@@ -29,11 +29,11 @@
 
 	let { data } = $props();
 
-	// Turnstile site key - use test key for development, real key in production
+	// Turnstile site key - Cloudflare test key in dev, real key from env in production
 	const isDev = import.meta.env.DEV;
 	const TURNSTILE_SITE_KEY = isDev
 		? '1x00000000000000000000AA'
-		: import.meta.env.VITE_TURNSTILE_SITE_KEY || '0x4AAAAAACEIn-rYc15eCGx7';
+		: import.meta.env.VITE_TURNSTILE_SITE_KEY;
 
 	// SEO schema
 	const webPageSchema = $derived(

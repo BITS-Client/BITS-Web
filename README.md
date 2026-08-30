@@ -193,20 +193,39 @@ Skip with `git commit --no-verify` / `git push --no-verify` if needed.
 
 ## ⚙️ Environment Configuration
 
-| Variable                  | Description                                      | Where to set                                         |
-| ------------------------- | ------------------------------------------------ | ---------------------------------------------------- |
-| `VITE_SANITY_PROJECT_ID`  | Sanity project ID.                               | `.env` + GitHub Actions secrets.                     |
-| `VITE_SANITY_DATASET`     | Sanity dataset (usually `production`).           | `.env` + GitHub Actions secrets.                     |
-| `VITE_SANITY_API_VERSION` | Sanity API version (pinned `2024-01-01` in CI).  | `.env`.                                              |
-| `VITE_TURNSTILE_SITE_KEY` | Turnstile site key (public).                     | `.env` + GitHub Actions secrets.                     |
-| `TURNSTILE_SECRET_KEY`    | Turnstile secret key (private).                  | `.env` + Cloudflare Pages secrets.                   |
-| `RESEND_API_KEY`          | [resend.com](https://resend.com) API key.        | `.env` + Cloudflare Pages secrets.                   |
-| `ADMIN_EMAIL`             | Recipient for contact/newsletter notifications.  | `.env` + Cloudflare Pages secrets.                   |
-| `CONTACT_FROM_EMAIL`      | Sender email for contact form (verified domain). | `.env` + Cloudflare Pages secrets.                   |
-| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter (verified domain).   | `.env` + Cloudflare Pages secrets.                   |
-| `SANITY_TOKEN`            | Sanity write token for export/seed scripts.      | Shell env only — never commit.                       |
-| `CLOUDFLARE_API_TOKEN`    | Token for GitHub Actions deploy.                 | GitHub → Settings → Secrets and variables → Actions. |
-| `CLOUDFLARE_ACCOUNT_ID`   | Cloudflare account ID.                           | GitHub Secrets.                                      |
+No hardcoded config in the source — every environment-specific value comes from env vars.
+**Local dev** uses `.env` (root, gitignored) and `sanity/.env` (Studio + scripts, gitignored). **CI/Production** uses GitHub Actions secrets. See [`.env.example`](./.env.example) and [`sanity/.env.example`](./sanity/.env.example).
+
+### App (`.env`)
+
+| Variable                  | Description                                      | Where to set (remote)                  |
+| ------------------------- | ------------------------------------------------ | -------------------------------------- |
+| `VITE_SANITY_PROJECT_ID`  | Sanity project ID (required, no fallback).       | GitHub Actions secrets.                |
+| `VITE_SANITY_DATASET`     | Sanity dataset (defaults `production`).          | GitHub Actions secrets.                |
+| `VITE_SANITY_API_VERSION` | Sanity API version (defaults `2024-01-01`).      | GitHub Actions secrets (pinned in CI). |
+| `VITE_TURNSTILE_SITE_KEY` | Turnstile site key (public).                     | GitHub Actions secrets.                |
+| `TURNSTILE_SECRET_KEY`    | Turnstile secret key (private).                  | GitHub Secrets → synced to Pages.      |
+| `RESEND_API_KEY`          | [resend.com](https://resend.com) API key.        | GitHub Secrets → synced to Pages.      |
+| `ADMIN_EMAIL`             | Recipient for contact/newsletter notifications.  | GitHub Secrets → synced to Pages.      |
+| `CONTACT_FROM_EMAIL`      | Sender email for contact form (verified domain). | GitHub Secrets → synced to Pages.      |
+| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter (verified domain).   | GitHub Secrets → synced to Pages.      |
+
+Dev note: in `import.meta.env.DEV` mode the app falls back to official Cloudflare Turnstile **test keys** (`1x00000000000000000000AA` / `1x0000000000000000000000000000000AA`) — no real keys needed locally.
+
+### Sanity Studio & scripts (`sanity/.env`)
+
+| Variable                   | Description                                           | Used by                              |
+| -------------------------- | ----------------------------------------------------- | ------------------------------------ |
+| `SANITY_STUDIO_PROJECT_ID` | Sanity project ID for Studio (required, no fallback). | `sanity.config.ts`, `sanity.cli.ts`. |
+| `SANITY_PROJECT_ID`        | Sanity project ID for export/seed scripts.            | `pnpm export`, `pnpm seed`.          |
+| `SANITY_TOKEN`             | Sanity write token — never commit.                    | `pnpm export`, `pnpm seed`.          |
+
+### GitHub Actions deploy secrets
+
+| Secret                  | Description                        | Where to get it                       |
+| ----------------------- | ---------------------------------- | ------------------------------------- |
+| `CLOUDFLARE_API_TOKEN`  | Deploy token (Pages `Edit` scope). | Cloudflare → My Profile → API Tokens. |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account ID.             | Cloudflare dashboard (right sidebar). |
 
 ---
 
@@ -238,7 +257,7 @@ Production URL: **https://bits.co.id**
 
 ```bash
 # Export published schema JSON only (default; lightweight)
-export SANITY_TOKEN=sk_your_token
+# Prereqs in sanity/.env: SANITY_PROJECT_ID + SANITY_TOKEN
 pnpm export
 
 # Full export: published + raw + assets

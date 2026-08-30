@@ -78,11 +78,6 @@ function checkRateLimit(ip: string): boolean {
 
 // Verify Cloudflare Turnstile token
 async function verifyTurnstile(token: string, secretKey: string, ip?: string): Promise<boolean> {
-	// If using test key, return true immediately (test key always passes)
-	if (secretKey === '0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI') {
-		return true;
-	}
-
 	const formData = new URLSearchParams();
 	formData.append('secret', secretKey);
 	formData.append('response', token);
@@ -266,11 +261,10 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		const ADMIN_EMAIL = import.meta.env.ADMIN_EMAIL;
 		const CONTACT_FROM_EMAIL = import.meta.env.CONTACT_FROM_EMAIL;
 
-		// Use test key for development, real key for production
+		// Cloudflare test secret key in dev (always passes verification), real key from env in production
 		const isDev = import.meta.env.DEV;
-		const TURNSTILE_SECRET_KEY = isDev
-			? '0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI' // Test secret key for development
-			: import.meta.env.TURNSTILE_SECRET_KEY || '0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI'; // Production key or fallback
+		const TURNSTILE_SECRET_KEY =
+			import.meta.env.TURNSTILE_SECRET_KEY || (isDev ? '1x0000000000000000000000000000000AA' : '');
 
 		// In development, allow fallback values for email service
 		if (!TURNSTILE_SECRET_KEY) {

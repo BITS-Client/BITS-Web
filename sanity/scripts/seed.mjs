@@ -18,15 +18,21 @@ const envVars = Object.fromEntries(
 			return [key.trim(), rest.join('=').trim()];
 		})
 );
-process.env.SANITY_TOKEN = envVars.SANITY_TOKEN;
+process.env.SANITY_TOKEN = envVars.SANITY_TOKEN ?? process.env.SANITY_TOKEN;
+process.env.SANITY_PROJECT_ID = envVars.SANITY_PROJECT_ID ?? process.env.SANITY_PROJECT_ID;
 
-const projectId = 'j996ej4v';
+const projectId = process.env.SANITY_PROJECT_ID;
 const dataset = 'production';
 const apiVersion = '2024-01-01';
 const token = process.env.SANITY_TOKEN;
 
+if (!projectId) {
+	console.error('❌ Please set SANITY_PROJECT_ID environment variable (or add it to sanity/.env)');
+	process.exit(1);
+}
+
 if (!token) {
-	console.error('❌ Please set SANITY_TOKEN environment variable');
+	console.error('❌ Please set SANITY_TOKEN environment variable (or add it to sanity/.env)');
 	process.exit(1);
 }
 
