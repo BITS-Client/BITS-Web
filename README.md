@@ -194,21 +194,21 @@ Skip with `git commit --no-verify` / `git push --no-verify` if needed.
 ## ⚙️ Environment Configuration
 
 No hardcoded config in the source — every environment-specific value comes from env vars.
-**Local dev** uses `.env` (root, gitignored) and `sanity/.env` (Studio + scripts, gitignored). **CI/Production** uses GitHub Actions secrets. See [`.env.example`](./.env.example) and [`sanity/.env.example`](./sanity/.env.example).
+**Local dev** uses `.env` (root, gitignored) and `sanity/.env` (Studio + scripts, gitignored). **CI/Production** follows the `CetakAjaOnline-Web` pattern: non-sensitive config lives in GitHub **Variables**, only true secrets in GitHub **Secrets**. See [`.env.example`](./.env.example) and [`sanity/.env.example`](./sanity/.env.example).
 
 ### App (`.env`)
 
-| Variable                  | Description                                      | Where to set (remote)                  |
-| ------------------------- | ------------------------------------------------ | -------------------------------------- |
-| `VITE_SANITY_PROJECT_ID`  | Sanity project ID (required, no fallback).       | GitHub Actions secrets.                |
-| `VITE_SANITY_DATASET`     | Sanity dataset (defaults `production`).          | GitHub Actions secrets.                |
-| `VITE_SANITY_API_VERSION` | Sanity API version (defaults `2024-01-01`).      | GitHub Actions secrets (pinned in CI). |
-| `VITE_TURNSTILE_SITE_KEY` | Turnstile site key (public).                     | GitHub Actions secrets.                |
-| `TURNSTILE_SECRET_KEY`    | Turnstile secret key (private).                  | GitHub Secrets → synced to Pages.      |
-| `RESEND_API_KEY`          | [resend.com](https://resend.com) API key.        | GitHub Secrets → synced to Pages.      |
-| `ADMIN_EMAIL`             | Recipient for contact/newsletter notifications.  | GitHub Secrets → synced to Pages.      |
-| `CONTACT_FROM_EMAIL`      | Sender email for contact form (verified domain). | GitHub Secrets → synced to Pages.      |
-| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter (verified domain).   | GitHub Secrets → synced to Pages.      |
+| Variable                  | Description                                      | Remote store                                   |
+| ------------------------- | ------------------------------------------------ | ---------------------------------------------- |
+| `VITE_SANITY_PROJECT_ID`  | Sanity project ID (required, no fallback).       | GitHub Actions **variable**.                   |
+| `VITE_SANITY_DATASET`     | Sanity dataset (defaults `production`).          | GitHub Actions **variable**.                   |
+| `VITE_SANITY_API_VERSION` | Sanity API version (defaults `2024-01-01`).      | GitHub Actions **variable**.                   |
+| `VITE_TURNSTILE_SITE_KEY` | Turnstile site key (public).                     | GitHub Actions **variable**.                   |
+| `TURNSTILE_SECRET_KEY`    | Turnstile secret key (private).                  | GitHub **secret** → synced to Pages.           |
+| `RESEND_API_KEY`          | [resend.com](https://resend.com) API key.        | GitHub **secret** → synced to Pages.           |
+| `ADMIN_EMAIL`             | Recipient for contact/newsletter notifications.  | GitHub Actions **variable** → synced to Pages. |
+| `CONTACT_FROM_EMAIL`      | Sender email for contact form (verified domain). | GitHub Actions **variable** → synced to Pages. |
+| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter (verified domain).   | GitHub Actions **variable** → synced to Pages. |
 
 Dev note: in `import.meta.env.DEV` mode the app falls back to official Cloudflare Turnstile **test keys** (`1x00000000000000000000AA` / `1x0000000000000000000000000000000AA`) — no real keys needed locally.
 
@@ -246,8 +246,9 @@ Dev note: in `import.meta.env.DEV` mode the app falls back to official Cloudflar
 - **Project**: `bits-web` on Cloudflare Pages. Output: `build/` (static).
 - **Custom Domain**: `bits.co.id` — add once via Dashboard → `Workers & Pages → bits-web → Settings → Custom domains`. After the first add, all future `git push` deploys auto-serve the domain.
 - **Dependabot**: `.github/dependabot.yml` — weekly `github-actions` (Mon 02:30) + `npm` for `/` and `/sanity` (Mon 03:00/03:30), grouped dev-deps minor/patch, ignores `typescript` major.
-- **Secrets (GitHub)**: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `VITE_SANITY_PROJECT_ID`, `VITE_SANITY_DATASET`, `VITE_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL`.
-- **Cloudflare Variables (set-when-deploy)**: `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL` — synced via `wrangler pages secret put` in CI (see `🔐 Set Cloudflare Pages Secrets`).
+- **Secrets (GitHub)**: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY` — secrets only.
+- **Variables (GitHub)**: `VITE_SANITY_PROJECT_ID`, `VITE_SANITY_DATASET`, `VITE_SANITY_API_VERSION`, `VITE_TURNSTILE_SITE_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL` — non-sensitive config.
+- **Cloudflare Pages secrets (set-when-deploy)**: `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL` — synced via `wrangler pages secret put` in CI (see `🔐 Set Cloudflare Pages Secrets`).
 
 Production URL: **https://bits.co.id**
 

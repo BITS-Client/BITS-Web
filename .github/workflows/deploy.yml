@@ -58,10 +58,10 @@ jobs:
       - name: '🏗️ Build'
         run: pnpm build
         env:
-          VITE_SANITY_PROJECT_ID: ${{ secrets.VITE_SANITY_PROJECT_ID }}
-          VITE_SANITY_DATASET: ${{ secrets.VITE_SANITY_DATASET }}
-          VITE_SANITY_API_VERSION: '2024-01-01'
-          VITE_TURNSTILE_SITE_KEY: ${{ secrets.VITE_TURNSTILE_SITE_KEY }}
+          VITE_SANITY_PROJECT_ID: ${{ vars.VITE_SANITY_PROJECT_ID }}
+          VITE_SANITY_DATASET: ${{ vars.VITE_SANITY_DATASET }}
+          VITE_SANITY_API_VERSION: ${{ vars.VITE_SANITY_API_VERSION }}
+          VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
 
       - name: '🏗️ Ensure Pages project exists'
         if: github.event_name != 'pull_request'
@@ -82,9 +82,9 @@ jobs:
           echo "🔐 Syncing Pages secrets to bits-web (set-when-deploy)..."
           printf "%s" "${{ secrets.TURNSTILE_SECRET_KEY }}" | npx wrangler pages secret put TURNSTILE_SECRET_KEY --project-name=bits-web || echo "⚠️ TURNSTILE_SECRET_KEY skip (project may not exist yet)"
           printf "%s" "${{ secrets.RESEND_API_KEY }}" | npx wrangler pages secret put RESEND_API_KEY --project-name=bits-web || echo "⚠️ RESEND_API_KEY skip"
-          printf "%s" "${{ secrets.ADMIN_EMAIL }}" | npx wrangler pages secret put ADMIN_EMAIL --project-name=bits-web || echo "⚠️ ADMIN_EMAIL skip"
-          printf "%s" "${{ secrets.CONTACT_FROM_EMAIL }}" | npx wrangler pages secret put CONTACT_FROM_EMAIL --project-name=bits-web || echo "⚠️ CONTACT_FROM_EMAIL skip"
-          printf "%s" "${{ secrets.NEWSLETTER_FROM_EMAIL }}" | npx wrangler pages secret put NEWSLETTER_FROM_EMAIL --project-name=bits-web || echo "⚠️ NEWSLETTER_FROM_EMAIL skip"
+          printf "%s" "${{ vars.ADMIN_EMAIL }}" | npx wrangler pages secret put ADMIN_EMAIL --project-name=bits-web || echo "⚠️ ADMIN_EMAIL skip"
+          printf "%s" "${{ vars.CONTACT_FROM_EMAIL }}" | npx wrangler pages secret put CONTACT_FROM_EMAIL --project-name=bits-web || echo "⚠️ CONTACT_FROM_EMAIL skip"
+          printf "%s" "${{ vars.NEWSLETTER_FROM_EMAIL }}" | npx wrangler pages secret put NEWSLETTER_FROM_EMAIL --project-name=bits-web || echo "⚠️ NEWSLETTER_FROM_EMAIL skip"
           echo "✅ Secrets sync done"
 
       - name: '🚀 Deploy to Cloudflare Pages'
