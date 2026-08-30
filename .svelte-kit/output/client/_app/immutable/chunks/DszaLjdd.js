@@ -1,1 +1,0 @@
-import{o as e,s as t}from"./B46eZZnu.js";import"./xihTtKlq.js";import{l as n}from"./CO95ceK-.js";var r=new Set([`$$slots`,`$$events`,`$$legacy`]);function i(i,a){let o=e(a,r),s=[[`rect`,{width:`18`,height:`11`,x:`3`,y:`11`,rx:`2`,ry:`2`}],[`path`,{d:`M7 11V7a5 5 0 0 1 10 0v4`}]];n(i,t({name:`lock`},()=>o,{get iconNode(){return s}}))}export{i as t};
