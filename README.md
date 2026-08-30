@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/Lucide-F56565?style=flat&logo=lucide&logoColor=white" alt="Lucide" />
     <img src="https://img.shields.io/badge/Cloudflare%20Pages-F38020?style=flat&logo=cloudflarepages&logoColor=white" alt="Cloudflare Pages" />
     <img src="https://img.shields.io/badge/Resend-000000?style=flat&logo=resend&logoColor=white" alt="Resend" />
-    <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=flat" alt="All Rights Reserved" />
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="MIT License" />
   </p>
 </div>
 
@@ -281,7 +281,7 @@ Notes:
 
 ## 📄 License
 
-Copyright © 2025 Banten IT Solutions. All rights reserved.
+MIT License. See [`LICENSE`](./LICENSE).
 
 ---
 
