@@ -1,0 +1,12 @@
+# Language fallback — bare slugs default to Indonesian (/id)
+/about /id/about 301
+/services /id/services 301
+/services/* /id/services/:splat 301
+/portfolio /id/portfolio 301
+/portfolio/* /id/portfolio/:splat 301
+/blog /id/blog 301
+/blog/* /id/blog/:splat 301
+/contact /id/contact 301
+/privacy /id/privacy 301
+/terms /id/terms 301
+/sitemap.xml /id/sitemap.xml 301
