@@ -1,14 +1,21 @@
+import {
+	PUBLIC_SANITY_API_VERSION,
+	PUBLIC_SANITY_DATASET,
+	PUBLIC_SANITY_PROJECT_ID
+} from '$env/static/public';
 import { createClient } from '@sanity/client';
 import { createImageUrlBuilder } from '@sanity/image-url';
 import type { SanityImageSource } from '@sanity/image-url';
 
 // Environment variables — required, no hardcoded fallbacks
-const projectId = import.meta.env.VITE_SANITY_PROJECT_ID;
+const projectId = PUBLIC_SANITY_PROJECT_ID;
 if (!projectId) {
-	throw new Error('Missing VITE_SANITY_PROJECT_ID — set it in .env (local) or GitHub secrets (CI)');
+	throw new Error(
+		'Missing PUBLIC_SANITY_PROJECT_ID — set it in .env (local) or GitHub variables (CI)'
+	);
 }
-const dataset = import.meta.env.VITE_SANITY_DATASET || 'production';
-const apiVersion = import.meta.env.VITE_SANITY_API_VERSION || '2024-01-01';
+const dataset = PUBLIC_SANITY_DATASET || 'production';
+const apiVersion = PUBLIC_SANITY_API_VERSION || '2024-01-01';
 const useCdn = !import.meta.env.DEV;
 
 // Create the Sanity client

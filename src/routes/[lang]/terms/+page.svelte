@@ -5,7 +5,7 @@
 	import LegalContent from '$lib/components/ui/content/LegalContent.svelte';
 	import ContactCard from '$lib/components/ui/card/ContactCard.svelte';
 
-	import { generateWebPageSchema } from '$lib/utils/seo';
+	import { generateWebPageSchema, seoConfig } from '$lib/utils/seo';
 
 	let { data } = $props();
 
@@ -126,8 +126,8 @@
 <section class="py-10 lg:py-16">
 	<div class="container-base">
 		<ContactCard
-			email="admin@bits.co.id"
-			phone="+62 819 678 048"
+			email={seoConfig.contactEmail}
+			phone={seoConfig.phoneDisplay}
 			address="Jl. Komp. Taman Pesona, Taktakan, Kota Serang, Banten 42162, Indonesia"
 			title={contactTitle}
 		/>

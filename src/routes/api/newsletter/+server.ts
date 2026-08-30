@@ -1,3 +1,4 @@
+import { PUBLIC_CONTACT_FROM_EMAIL, PUBLIC_CONTACT_TO_EMAIL } from '$env/static/public';
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { z } from 'zod';
 
@@ -72,7 +73,7 @@ function formatEmailContent(email: string): string {
 async function sendNotificationEmail(
 	email: string,
 	resendApiKey: string,
-	adminEmail: string,
+	toEmail: string,
 	fromEmail: string
 ): Promise<boolean> {
 	try {
@@ -84,7 +85,7 @@ async function sendNotificationEmail(
 			},
 			body: JSON.stringify({
 				from: fromEmail,
-				to: [adminEmail],
+				to: [toEmail],
 				reply_to: email,
 				subject: `New Newsletter Subscription from ${email}`,
 				html: formatEmailContent(email)
@@ -181,10 +182,10 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	try {
 		// Get environment variables (server-side only, no VITE_ prefix)
 		const RESEND_API_KEY = import.meta.env.RESEND_API_KEY;
-		const ADMIN_EMAIL = import.meta.env.ADMIN_EMAIL;
-		const NEWSLETTER_FROM_EMAIL = import.meta.env.NEWSLETTER_FROM_EMAIL;
+		const CONTACT_TO_EMAIL = PUBLIC_CONTACT_TO_EMAIL;
+		const CONTACT_FROM_EMAIL = PUBLIC_CONTACT_FROM_EMAIL;
 
-		if (!RESEND_API_KEY || !ADMIN_EMAIL || !NEWSLETTER_FROM_EMAIL) {
+		if (!RESEND_API_KEY || !CONTACT_TO_EMAIL || !CONTACT_FROM_EMAIL) {
 			console.error('Missing required environment variables');
 			return json(
 				{
@@ -254,12 +255,12 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		const notificationSent = await sendNotificationEmail(
 			email,
 			RESEND_API_KEY,
-			ADMIN_EMAIL,
-			NEWSLETTER_FROM_EMAIL
+			CONTACT_TO_EMAIL,
+			CONTACT_FROM_EMAIL
 		);
 
 		// Send welcome email to subscriber
-		const welcomeSent = await sendWelcomeEmail(email, RESEND_API_KEY, NEWSLETTER_FROM_EMAIL);
+		const welcomeSent = await sendWelcomeEmail(email, RESEND_API_KEY, CONTACT_FROM_EMAIL);
 
 		// If either email failed, log the error but still confirm subscription
 		if (!notificationSent) {

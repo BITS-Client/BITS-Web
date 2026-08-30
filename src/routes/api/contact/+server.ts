@@ -1,3 +1,4 @@
+import { PUBLIC_CONTACT_FROM_EMAIL, PUBLIC_CONTACT_TO_EMAIL } from '$env/static/public';
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { z } from 'zod';
 
@@ -221,7 +222,7 @@ function formatEmailContent(data: ContactFormData): string {
 async function sendEmail(
 	data: ContactFormData,
 	resendApiKey: string,
-	adminEmail: string,
+	toEmail: string,
 	fromEmail: string
 ): Promise<boolean> {
 	try {
@@ -233,7 +234,7 @@ async function sendEmail(
 			},
 			body: JSON.stringify({
 				from: fromEmail,
-				to: [adminEmail],
+				to: [toEmail],
 				reply_to: data.email,
 				subject: `New ${data.inquiryType} Inquiry from ${data.name}`,
 				html: formatEmailContent(data)
@@ -258,8 +259,8 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	try {
 		// Get environment variables
 		const RESEND_API_KEY = import.meta.env.RESEND_API_KEY;
-		const ADMIN_EMAIL = import.meta.env.ADMIN_EMAIL;
-		const CONTACT_FROM_EMAIL = import.meta.env.CONTACT_FROM_EMAIL;
+		const CONTACT_TO_EMAIL = PUBLIC_CONTACT_TO_EMAIL;
+		const CONTACT_FROM_EMAIL = PUBLIC_CONTACT_FROM_EMAIL;
 
 		// Cloudflare test secret key in dev (always passes verification), real key from env in production
 		const isDev = import.meta.env.DEV;
@@ -289,11 +290,11 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 
 		// Use fallback values for email service in development
 		const resendApiKey = RESEND_API_KEY || 're_dev_fallback_key';
-		const adminEmail = ADMIN_EMAIL || 'dev@example.com';
+		const toEmail = CONTACT_TO_EMAIL || 'dev@example.com';
 		const fromEmail = CONTACT_FROM_EMAIL || 'contact@example.com';
 
-		if (!RESEND_API_KEY || !ADMIN_EMAIL) {
-			console.warn('RESEND_API_KEY or ADMIN_EMAIL not set, using fallback values');
+		if (!RESEND_API_KEY || !CONTACT_TO_EMAIL) {
+			console.warn('RESEND_API_KEY or PUBLIC_CONTACT_TO_EMAIL not set, using fallback values');
 		}
 
 		// Get client IP for rate limiting
@@ -373,9 +374,9 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 
 		// Send email only if API keys are properly configured
 		let emailSent = true; // Assume success by default
-		if (resendApiKey && resendApiKey.startsWith('re_') && adminEmail && adminEmail.includes('@')) {
+		if (resendApiKey && resendApiKey.startsWith('re_') && toEmail && toEmail.includes('@')) {
 			// Only attempt to send email if we have what looks like valid credentials
-			emailSent = await sendEmail(sanitizedData, resendApiKey, adminEmail, fromEmail);
+			emailSent = await sendEmail(sanitizedData, resendApiKey, toEmail, fromEmail);
 		} else {
 			// In development, log the form submission instead of sending email
 			// Consider this as successful since we're just logging in development

@@ -1,18 +1,29 @@
+import {
+	PUBLIC_CONTACT_EMAIL,
+	PUBLIC_PHONE_DISPLAY,
+	PUBLIC_SITE_URL,
+	PUBLIC_WHATSAPP_NUMBER
+} from '$env/static/public';
+
 /**
  * SEO Helper Utilities for Banten IT Solutions Corporate Platform
  * Provides functions for generating meta tags, JSON-LD structured data, and SEO configuration
  */
 
 // Default SEO Configuration
+// contactEmail/siteUrl: env-driven with canonical fallback (project identity, not env-specific)
 export const seoConfig = {
 	siteName: 'Banten IT Solutions',
-	siteUrl: 'https://bits.co.id',
+	siteUrl: PUBLIC_SITE_URL || 'https://bits.co.id',
+	contactEmail: PUBLIC_CONTACT_EMAIL || 'admin@bits.co.id',
 	defaultTitle: 'Banten IT Solutions - Digital Solutions That Drive Growth',
 	defaultDescription:
 		'Banten IT Solutions - Digital Solutions That Drive Growth. Custom software development, web design, ERP systems, AI & automation services.',
 	defaultImage: '', // Will be populated from Sanity in components
 	twitterHandle: '@bitscoid',
 	locale: 'id_ID',
+	phoneDisplay: PUBLIC_PHONE_DISPLAY || '+62 819 678 048',
+	whatsappNumber: PUBLIC_WHATSAPP_NUMBER || '62819678048',
 	themeColor: '#ff3e00',
 	sitemapPriority: 0.5,
 	sitemapChangeFreq: 'monthly'
@@ -370,9 +381,9 @@ export function generateOrganizationSchema(
 		},
 		contactPoint: {
 			'@type': 'ContactPoint',
-			telephone: '+62-819-678-048',
+			telephone: seoConfig.phoneDisplay,
 			contactType: 'customer service',
-			email: 'admin@bits.co.id',
+			email: seoConfig.contactEmail,
 			availableLanguage: ['English', 'Indonesian']
 		},
 		...overrides
@@ -620,8 +631,8 @@ export function generateLocalBusinessSchema(
 		description: seoConfig.defaultDescription,
 		url: seoConfig.siteUrl,
 		image: overrides?.image || '',
-		telephone: '+62-819-678-048',
-		email: 'admin@bits.co.id',
+		telephone: seoConfig.phoneDisplay,
+		email: seoConfig.contactEmail,
 		address: {
 			'@type': 'PostalAddress',
 			streetAddress: 'Jl. Komp. Taman Pesona',
