@@ -8,8 +8,8 @@ This file is for coding agents working at repository root.
 
 - Primary scope: `/code/production/bits.co.id`
 - Sub-guides:
-  - `sanity/AGENTS.md` for Sanity Studio/schema workflows
-  - `src/lib/components/AGENTS.md` for UI component patterns
+  - `studio/AGENTS.md` for Sanity Studio/schema workflows
+  - `web/src/lib/components/AGENTS.md` for UI component patterns
 - Cursor rules:
   - `.cursor/rules/` not found
   - `.cursorrules` not found
@@ -47,9 +47,9 @@ There is no dedicated unit-test runner configured (no `vitest`/`jest`/`playwrigh
 Use these focused checks instead:
 
 - Lint a single file:
-  - `pnpm lint -- src/lib/components/Header.svelte`
+  - `pnpm lint -- web/src/lib/components/Header.svelte`
 - Lint a folder:
-  - `pnpm lint -- src/routes/[lang]/blog`
+  - `pnpm lint -- web/src/routes/[lang]/blog`
 - Type-check project quickly (closest to test gate):
   - `pnpm check`
 
@@ -69,7 +69,7 @@ If true unit tests are added later, document the single-test command here immedi
 - Safe seed (audit first, then seed):
   - `pnpm seed:safe -- --only=projects --skip-assets`
 
-### Sanity Studio (run in `sanity/`)
+### Sanity Studio (run in `studio/`)
 
 - `pnpm dev`
 - `pnpm build`
@@ -143,12 +143,12 @@ import type { Locale } from '$lib/types';
 
 ## Paths And Architecture Notes
 
-- App routes: `src/routes/`
-- Localized pages: `src/routes/[lang]/...`
-- API endpoints: `src/routes/api/.../+server.ts`
-- Sanity queries/client: `src/lib/sanity/`
-- Types: `src/lib/types/`
-- Sanity schemas/scripts/data: `sanity/`
+- App routes: `web/src/routes/`
+- Localized pages: `web/src/routes/[lang]/...`
+- API endpoints: `web/src/routes/api/.../+server.ts`
+- Sanity queries/client: `web/src/lib/sanity/`
+- Types: `web/src/lib/types/`
+- Sanity schemas/scripts/data: `studio/`
 
 ## Suggested PR / Change Verification
 

@@ -39,7 +39,7 @@ updates:
           - 'patch'
 
   - package-ecosystem: 'npm'
-    directory: '/sanity'
+    directory: '/studio'
     schedule:
       interval: 'weekly'
       day: 'monday'

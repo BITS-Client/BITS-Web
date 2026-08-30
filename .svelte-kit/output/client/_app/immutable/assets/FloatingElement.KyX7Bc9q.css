@@ -1,0 +1,1 @@
+.floating-element.svelte-2c9w9a{animation:svelte-2c9w9a-float var(--float-duration,3s) ease-in-out infinite}@keyframes svelte-2c9w9a-float{0%,to{transform:translateY(0)}50%{transform:translateY(calc(-1 * var(--float-amplitude,20px)))}}@media (prefers-reduced-motion:reduce){.floating-element.svelte-2c9w9a{animation:none}}

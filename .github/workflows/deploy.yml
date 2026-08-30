@@ -5,6 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  repository_dispatch:
+    types: [sanity-update]
   workflow_dispatch:
     inputs:
       ref:
@@ -27,15 +29,6 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: read
-    env:
-      # Public build config — needed by every step so `svelte-kit sync` can
-      # generate $env/static/public types for the Typecheck step
-      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
-      PUBLIC_SANITY_PROJECT_ID: ${{ vars.PUBLIC_SANITY_PROJECT_ID }}
-      PUBLIC_SANITY_DATASET: ${{ vars.PUBLIC_SANITY_DATASET }}
-      PUBLIC_SANITY_API_VERSION: ${{ vars.PUBLIC_SANITY_API_VERSION }}
-      PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
-      PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
     steps:
       - name: '📥 Checkout'
         uses: actions/checkout@v7
@@ -66,6 +59,15 @@ jobs:
 
       - name: '🏗️ Build'
         run: pnpm build
+        env:
+          PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+          PUBLIC_SANITY_PROJECT_ID: ${{ vars.PUBLIC_SANITY_PROJECT_ID }}
+          PUBLIC_SANITY_DATASET: ${{ vars.PUBLIC_SANITY_DATASET }}
+          PUBLIC_SANITY_API_VERSION: ${{ vars.PUBLIC_SANITY_API_VERSION }}
+          PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
+          PUBLIC_WHATSAPP_NUMBER: ${{ vars.PUBLIC_WHATSAPP_NUMBER }}
+          PUBLIC_PHONE_DISPLAY: ${{ vars.PUBLIC_PHONE_DISPLAY }}
+          PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
 
       - name: '🏗️ Ensure Pages project exists'
         if: github.event_name != 'pull_request'
@@ -86,21 +88,22 @@ jobs:
           echo "🔐 Syncing Pages secrets to bits-web (set-when-deploy)..."
           printf "%s" "${{ secrets.TURNSTILE_SECRET_KEY }}" | npx wrangler pages secret put TURNSTILE_SECRET_KEY --project-name=bits-web || echo "⚠️ TURNSTILE_SECRET_KEY skip (project may not exist yet)"
           printf "%s" "${{ secrets.RESEND_API_KEY }}" | npx wrangler pages secret put RESEND_API_KEY --project-name=bits-web || echo "⚠️ RESEND_API_KEY skip"
-          printf "%s" "${{ vars.PUBLIC_CONTACT_TO_EMAIL }}" | npx wrangler pages secret put PUBLIC_CONTACT_TO_EMAIL --project-name=bits-web || echo "⚠️ PUBLIC_CONTACT_TO_EMAIL skip"
           printf "%s" "${{ vars.PUBLIC_CONTACT_FROM_EMAIL }}" | npx wrangler pages secret put PUBLIC_CONTACT_FROM_EMAIL --project-name=bits-web || echo "⚠️ PUBLIC_CONTACT_FROM_EMAIL skip"
+          printf "%s" "${{ vars.PUBLIC_CONTACT_TO_EMAIL }}" | npx wrangler pages secret put PUBLIC_CONTACT_TO_EMAIL --project-name=bits-web || echo "⚠️ PUBLIC_CONTACT_TO_EMAIL skip"
           echo "✅ Secrets sync done"
 
       - name: '🚀 Deploy to Cloudflare Pages'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'repository_dispatch' || github.event_name == 'workflow_dispatch'
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: web
           command: pages deploy build --project-name=bits-web --branch=${{ github.ref_name }}
 
       - name: '🎉 Summary'
         if: success()
         run: |
-          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]] || [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]] || [[ "${{ github.event_name }}" == "repository_dispatch" ]] || [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "::notice::🚀 Deployed ${GIT_REF} to Cloudflare Pages (project=bits-web • https://bits.co.id)"
           fi

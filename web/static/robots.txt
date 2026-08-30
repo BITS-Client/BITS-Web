@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bits.co.id/sitemap.xml

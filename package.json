@@ -1,5 +1,7 @@
 {
 	"name": "bits-web",
+	"version": "0.0.1",
+	"private": true,
 	"description": "BITS Corporate Website — multilingual corporate site for Banten IT Solutions on SvelteKit, deployed to Cloudflare Pages",
 	"keywords": [
 		"bits",
@@ -15,8 +17,6 @@
 		"typescript"
 	],
 	"license": "MIT",
-	"private": true,
-	"version": "0.0.1",
 	"author": {
 		"name": "Banten IT Solutions",
 		"email": "admin@bits.co.id",
@@ -30,60 +30,24 @@
 		"url": "https://github.com/BITS-Client/BITS-Web/issues"
 	},
 	"homepage": "https://bits.co.id",
-	"packageManager": "pnpm@10.34.0",
-	"engines": {
-		"node": ">=20"
-	},
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev --host",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
+		"build": "pnpm --filter bits-web-app build && pnpm --filter bits-studio build",
+		"check": "pnpm --filter bits-web-app check",
+		"lint": "pnpm --filter bits-web-app lint",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
-		"audit:seed": "node sanity/scripts/audit-seed.mjs",
-		"seed:safe": "node sanity/scripts/seed-safe.mjs",
-		"seed": "node sanity/scripts/seed.mjs",
-		"export": "node sanity/scripts/export.mjs",
-		"prepare": "svelte-kit sync || echo '' && simple-git-hooks || echo ''"
+		"audit:seed": "node studio/scripts/audit-seed.mjs",
+		"seed": "node studio/scripts/seed.mjs",
+		"seed:safe": "node studio/scripts/seed-safe.mjs",
+		"export": "node studio/scripts/export.mjs",
+		"prepare": "simple-git-hooks || echo ''"
 	},
 	"devDependencies": {
-		"@eslint/js": "^10.0.1",
-		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.70.3",
-		"@sveltejs/vite-plugin-svelte": "^7.3.0",
-		"@tailwindcss/vite": "^4.3.3",
-		"eslint": "^10.9.1",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.23.0",
-		"globals": "^17.11.0",
 		"lint-staged": "^17.4.1",
 		"prettier": "^3.9.6",
 		"prettier-plugin-svelte": "^4.1.1",
-		"simple-git-hooks": "^2.14.0",
-		"svelte": "^5.57.0",
-		"svelte-check": "^4.7.6",
-		"tailwindcss": "^4.3.3",
-		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.68.0",
-		"vite": "^8.2.2",
-		"wrangler": "^4.127.1"
-	},
-	"dependencies": {
-		"@lucide/svelte": "^1.37.0",
-		"@portabletext/svelte": "^4.0.0",
-		"@sanity/client": "^8.4.0",
-		"@sanity/image-url": "^2.1.1",
-		"groq": "^6.11.0",
-		"react": "^19.2.8",
-		"react-dom": "^19.2.8",
-		"sanity": "^6.11.0",
-		"styled-components": "^6.5.3",
-		"zod": "^4.5.4"
+		"simple-git-hooks": "^2.14.0"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx --no-install lint-staged",
@@ -91,9 +55,7 @@
 	},
 	"lint-staged": {
 		"*.{js,ts,svelte,json,css,md,yml,yaml}": "prettier --write",
-		"src/**/*.{ts,svelte}": "eslint --fix"
+		"web/**/*.{ts,svelte}": "pnpm --filter bits-web-app exec eslint --fix"
 	},
-	"trustedDependencies": [
-		"@swc/core"
-	]
+	"packageManager": "pnpm@10.34.0"
 }

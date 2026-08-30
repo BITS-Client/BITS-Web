@@ -1,35 +1,30 @@
-node_modules
+# Dependencies
+node_modules/
 
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
-/dist
+# Build outputs
+web/build/
+web/.svelte-kit/
+studio/dist/
+studio/.sanity/
+**/dist/
+
+# Env
+.env
+.env.*
+**/.env
+**/.env.local
+!.env.example
+!**/.env.example
+.env.backup
 
 # OS
 .DS_Store
 Thumbs.db
 
-# OMC
-.omc
-
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
-.env.backup
-
-# Package managers (we use pnpm)
-package-lock.json
-package-lock.json
-
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
 
 # IDE
 .idea/
@@ -37,37 +32,22 @@ vite.config.ts.timestamp-*
 *.swp
 *.swo
 
-# Logs
-*.log
-npm-debug.log*
-
 # Testing
 coverage/
 .nyc_output/
 
 # Static assets (except favicon)
-static/images/
-!static/images/favicon.svg
+web/static/images/
+!web/static/images/favicon.svg
 
-# Sanity - exclude bloat backup (157M assets + raw duplicates)
-# Keep only sanity/data/*.json (published, ~5MB) for seed --skip-assets
-sanity/data/assets/
-sanity/data/*.raw.json
-sanity/data/all-documents.raw.json
-sanity/data/all-data.raw.json
-sanity/data/drafts-data.json
-sanity/data/assets-manifest.json
+# Sanity data — keep only published seed JSON
+studio/data/assets/
+studio/data/*.raw.json
+studio/data/all-documents.raw.json
+studio/data/all-data.raw.json
+studio/data/drafts-data.json
+studio/data/assets-manifest.json
 
-# Sanity build & cache (artifacts)
-sanity/dist/
-sanity/.sanity/
-.sanity/
-
-# Env token - ensure nested sanity/.env is ignored (root .env already above)
-**/.env
-**/.env.local
-sanity/.env
-
-# Ensure node_modules ignored at all levels
-**/node_modules/
-pnpm-debug.log*
+# Package managers (we use pnpm)
+package-lock.json
+yarn.lock

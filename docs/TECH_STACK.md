@@ -29,7 +29,7 @@
 
 ### Custom CSS
 
-- **Location**: `src/app.css`
+- **Location**: `web/src/app.css`
 - **Features**:
   - CSS Custom Properties (variables)
   - Design tokens (colors, spacing, typography)
@@ -139,10 +139,10 @@
 
 ### Sanity Export/Import
 
-Located in `sanity/scripts/`:
+Located in `studio/scripts/`:
 
-- **`export.mjs`** - Exports all content from Sanity CMS to `sanity/data/`
-- **`seed.mjs`** - Imports per-type JSON data from `sanity/data/*.json` to Sanity
+- **`export.mjs`** - Exports all content from Sanity CMS to `studio/data/`
+- **`seed.mjs`** - Imports per-type JSON data from `studio/data/*.json` to Sanity
 
 **Usage**:
 

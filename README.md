@@ -29,11 +29,11 @@
 | Feature                           | Description                                                                                                                                 |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Multilingual (i18n)**           | Indonesian (`id`) & English (`en`) via `/[lang]/` route segment — locale-specific fields in Sanity, URL-based language switching.           |
-| **Sanity CMS**                    | Headless content for services, portfolio, blog, pages & settings — live GROQ queries via `src/lib/sanity`.                                  |
+| **Sanity CMS**                    | Headless content for services, portfolio, blog, pages & settings — live GROQ queries via `web/src/lib/sanity`.                              |
 | **Contact + Newsletter + Resend** | Server-side Zod validation, sanitization, Cloudflare Turnstile CAPTCHA, Resend email delivery + rate limiting.                              |
 | **SEO Optimized**                 | Dynamic meta, OpenGraph, JSON-LD, canonical URLs, `sitemap.xml` per locale, `robots.txt`.                                                   |
 | **Dark / Light Theme**            | Theme store + `dark:` variants, persisted preference.                                                                                       |
-| **Animations**                    | Scroll-reveal, counters, floating elements — localized in `src/lib/components/animations`.                                                  |
+| **Animations**                    | Scroll-reveal, counters, floating elements — localized in `web/src/lib/components/animations`.                                              |
 | **Static-First**                  | `@sveltejs/adapter-static` SSG + `404.html` fallback; dynamic routes served by Cloudflare Functions.                                        |
 | **Icon System**                   | `@lucide/svelte` with centralized re-export (`$lib/icons/lucide`) + local brand SVGs (`$lib/icons/brand`) + CMS-driven `iconMap`.           |
 | **Cloudflare Native**             | Deployed to Cloudflare Pages via GitHub Actions (`wrangler pages deploy`).                                                                  |
@@ -65,37 +65,41 @@ BITS-Web/
 │   │   └── deploy.yml       # GitHub Actions → Cloudflare Pages
 │   └── dependabot.yml       # Weekly deps + GitHub Actions updates
 ├── docs/                    # PRD, tech stack, coding standards, best practices
-├── sanity/
+├── studio/                  # Sanity Studio (CMS workspace)
 │   ├── schemas/             # Sanity document schemas (post, project, service, client…)
 │   ├── scripts/             # export.mjs, seed.mjs, seed-safe.mjs, audit-seed.mjs
 │   ├── data/                # Exported JSON seed data
 │   ├── sanity.config.ts
-│   └── sanity.cli.ts
-├── static/                  # Favicons, robots.txt, shared.css
-├── src/
-│   ├── app.html             # HTML template
-│   ├── app.css              # Tailwind v4 @theme + global styles
-│   ├── app.d.ts             # SvelteKit type overrides
-│   ├── hooks.server.ts      # Security headers
-│   ├── lib/
-│   │   ├── components/      # ui/ (animation, card, content, cta, form, header, hero, layout, misc, navigation, section, seo) + SEO.svelte
-│   │   ├── icons/           # lucide.ts (centralized re-export) + brand/ (local brand SVGs)
-│   │   ├── sanity/          # Sanity client + GROQ queries
-│   │   ├── stores/          # theme store
-│   │   ├── types/           # Locale type: 'id' | 'en', content types
-│   │   └── utils/           # seo, share, helpers
-│   └── routes/
-│       ├── +layout.svelte / +error.svelte
-│       ├── [lang]/          # Home, about, services, portfolio, blog, contact, privacy, terms, sitemap.xml
-│       └── api/             # contact/, newsletter/ → Resend
-├── eslint.config.js
-├── svelte.config.js         # adapter-static (output: build/)
-├── vite.config.ts           # tailwindcss() + sveltekit()
-├── tailwind.config.js
-├── tsconfig.json
+│   ├── sanity.cli.ts
+│   └── package.json         # bits-studio
+├── web/                     # SvelteKit app
+│   ├── src/
+│   │   ├── app.html         # HTML template
+│   │   ├── app.css          # Tailwind v4 @theme + global styles
+│   │   ├── app.d.ts         # SvelteKit type overrides
+│   │   ├── hooks.server.ts  # Security headers
+│   │   ├── lib/
+│   │   │   ├── components/  # ui/ (animation, card, content, cta, form, header, hero, layout, misc, navigation, section, seo) + SEO.svelte
+│   │   │   ├── icons/       # lucide.ts (centralized re-export) + brand/ (local brand SVGs)
+│   │   │   ├── sanity/      # Sanity client + GROQ queries
+│   │   │   ├── stores/      # theme store
+│   │   │   ├── types/       # Locale type: 'id' | 'en', content types
+│   │   │   └── utils/       # seo, share, helpers
+│   │   └── routes/
+│   │       ├── +layout.svelte / +error.svelte
+│   │       ├── [lang]/      # Home, about, services, portfolio, blog, contact, privacy, terms, sitemap.xml
+│   │       └── api/         # contact/, newsletter/ → Resend
+│   ├── static/              # Favicons, robots.txt, shared.css
+│   ├── eslint.config.js
+│   ├── svelte.config.js     # adapter-static (output: build/)
+│   ├── vite.config.ts       # tailwindcss() + sveltekit()
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   └── package.json         # bits-web-app
 ├── .prettierrc
 ├── .prettierignore
-└── package.json
+├── pnpm-workspace.yaml
+└── package.json             # bits-web (workspace root)
 ```
 
 ---
@@ -120,10 +124,10 @@ pnpm install
 ### 2. Configure (Local)
 
 ```bash
-cp .env.example .env
+cp web/.env.example web/.env
 ```
 
-Edit `.env` — see [Environment Configuration](#️-environment-configuration).
+Edit `web/.env` — see [Environment Configuration](#️-environment-configuration).
 
 ### 3. Develop
 
@@ -132,14 +136,14 @@ pnpm dev
 # → http://localhost:5173
 
 # Sanity Studio:
-cd sanity && pnpm dev
+cd studio && pnpm dev
 ```
 
 ### 4. Build
 
 ```bash
 pnpm build
-# → outputs to build/ (static SSG + 404.html fallback)
+# → outputs to web/build/ (static SSG + 404.html fallback)
 ```
 
 ### 5. Deploy
@@ -155,7 +159,7 @@ Production deploys run automatically via GitHub Actions on `push` to `main` and 
 | Command                        | Description                                                     |
 | ------------------------------ | --------------------------------------------------------------- |
 | `pnpm dev`                     | Start SvelteKit dev server with HMR (`vite dev --host`).        |
-| `pnpm build`                   | Build static site (`@sveltejs/adapter-static` → `build/`).      |
+| `pnpm build`                   | Build app + Studio (workspace filters).                         |
 | `pnpm preview`                 | Preview the production build with Vite.                         |
 | `pnpm check`                   | `svelte-kit sync` + `svelte-check` type-check.                  |
 | `pnpm check:watch`             | Type-check in watch mode.                                       |
@@ -163,11 +167,11 @@ Production deploys run automatically via GitHub Actions on `push` to `main` and 
 | `pnpm lint:fix`                | Apply automatic ESLint fixes.                                   |
 | `pnpm format`                  | Format all files with Prettier.                                 |
 | `pnpm format:check`            | Verify formatting without writing.                              |
-| `pnpm export`                  | Export published Sanity data to `sanity/data/*.json`.           |
+| `pnpm export`                  | Export published Sanity data to `studio/data/*.json`.           |
 | `pnpm export -- --with-raw`    | Export + raw snapshots and full raw dumps.                      |
 | `pnpm export -- --with-assets` | Export + download assets (`assets-manifest.json`).              |
 | `pnpm audit:seed`              | Validate seed JSON integrity (unique names/orders, `_key`s).    |
-| `pnpm seed`                    | Import `sanity/data/*.json` into Sanity (needs `SANITY_TOKEN`). |
+| `pnpm seed`                    | Import `studio/data/*.json` into Sanity (needs `SANITY_TOKEN`). |
 | `pnpm seed:safe`               | Audit first, then seed.                                         |
 
 ### Code Style
@@ -178,7 +182,7 @@ Production deploys run automatically via GitHub Actions on `push` to `main` and 
 - **Styling**: Tailwind 4 + `dark:` variants; Header/Footer keep separate CSS files, everything else uses Tailwind.
 - **Content**: never hardcode business content — all copy lives in Sanity CMS with `{ id, en }` locale fields.
 
-More conventions: [`AGENTS.md`](./AGENTS.md), [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md), [`src/lib/components/AGENTS.md`](./src/lib/components/AGENTS.md), [`sanity/AGENTS.md`](./sanity/AGENTS.md).
+More conventions: [`AGENTS.md`](./AGENTS.md), [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md), [`web/src/lib/components/AGENTS.md`](./web/src/lib/components/AGENTS.md), [`studio/AGENTS.md`](./studio/AGENTS.md).
 
 ### Git Hooks
 
@@ -194,9 +198,9 @@ Skip with `git commit --no-verify` / `git push --no-verify` if needed.
 ## ⚙️ Environment Configuration
 
 No hardcoded config in the source — every environment-specific value comes from env vars.
-**Local dev** uses `.env` (root, gitignored) and `sanity/.env` (Studio + scripts, gitignored). **CI/Production** keeps non-sensitive config in GitHub **Variables** and true secrets in GitHub **Secrets**. See [`.env.example`](./.env.example) and [`sanity/.env.example`](./sanity/.env.example).
+**Local dev** uses `web/.env` (app, gitignored) and `studio/.env` (Studio + scripts, gitignored). **CI/Production** keeps non-sensitive config in GitHub **Variables** and true secrets in GitHub **Secrets**. See [`web/.env.example`](./web/.env.example) and [`studio/.env.example`](./studio/.env.example).
 
-### App (`.env`)
+### App (`web/.env`)
 
 | Variable                    | Description                                       | Remote store                           |
 | --------------------------- | ------------------------------------------------- | -------------------------------------- |
@@ -213,7 +217,7 @@ No hardcoded config in the source — every environment-specific value comes fro
 
 Dev note: in `import.meta.env.DEV` mode the app falls back to official Cloudflare Turnstile **test keys** (`1x00000000000000000000AA` / `1x0000000000000000000000000000000AA`) — no real keys needed locally.
 
-### Sanity Studio & scripts (`sanity/.env`)
+### Sanity Studio & scripts (`studio/.env`)
 
 | Variable                   | Description                                           | Used by                              |
 | -------------------------- | ----------------------------------------------------- | ------------------------------------ |
@@ -244,7 +248,7 @@ Dev note: in `import.meta.env.DEV` mode the app falls back to official Cloudflar
 - **CI file**: `.github/workflows/deploy.yml` (aligned with `BataBagus-Web` — proven pattern).
 - **Triggers**: `push` to `main`, `pull_request` (CI only), `workflow_dispatch` (manual, optional `ref` input).
 - **Job**: `☁️ Deploy to Cloudflare` (single job) — `📥 Checkout` → `📦 Setup pnpm` → `🟢 Setup Node.js 24` → `📚 Install` → `🔍 Typecheck` → `🧹 Lint` → `🎨 Format check` → `🏗️ Build` (with `PUBLIC_SANITY_*` + `PUBLIC_TURNSTILE_SITE_KEY`) → `🏗️ Ensure Pages project exists` → `🔐 Set Pages Secrets (when deploy)` → `🚀 Deploy` (`wrangler pages deploy build`) → `🎉 Summary`.
-- **Project**: `bits-web` on Cloudflare Pages. Output: `build/` (static).
+- **Project**: `bits-web` on Cloudflare Pages. Output: `web/build/` (static, deploy step runs in `web/`).
 - **Custom Domain**: `bits.co.id` — add once via Dashboard → `Workers & Pages → bits-web → Settings → Custom domains`. After the first add, all future `git push` deploys auto-serve the domain.
 - **Dependabot**: `.github/dependabot.yml` — weekly `github-actions` (Mon 02:30) + `npm` for `/` and `/sanity` (Mon 03:00/03:30), grouped dev-deps minor/patch, ignores `typescript` major.
 - **Secrets (GitHub)**: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY` — secrets only.
@@ -259,7 +263,7 @@ Production URL: **https://bits.co.id**
 
 ```bash
 # Export published schema JSON only (default; lightweight)
-# Prereqs in sanity/.env: SANITY_PROJECT_ID + SANITY_TOKEN
+# Prereqs in studio/.env: SANITY_PROJECT_ID + SANITY_TOKEN
 pnpm export
 
 # Full export: published + raw + assets
@@ -277,10 +281,10 @@ pnpm seed -- --only=posts --skip-assets
 
 Notes:
 
-- `pnpm seed` reads per-schema JSON files in `sanity/data/*.json`.
+- `pnpm seed` reads per-schema JSON files in `studio/data/*.json`.
 - `clients` data must have unique `name` and unique numeric `order` (enforced by audit + export).
 - Posts use `category` type `blog`/`both`; projects use `portfolio`/`both`.
-- See [`sanity/scripts/README.md`](./sanity/scripts/README.md) for details.
+- See [`studio/scripts/README.md`](./studio/scripts/README.md) for details.
 
 ---
 
@@ -296,7 +300,7 @@ Notes:
 
 1. Follow the coding standards in [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md)
 2. Use TypeScript + Svelte 5 runes
-3. Follow existing component patterns in [`src/lib/components/AGENTS.md`](./src/lib/components/AGENTS.md)
+3. Follow existing component patterns in [`web/src/lib/components/AGENTS.md`](./web/src/lib/components/AGENTS.md)
 4. Run `pnpm format:check && pnpm lint && pnpm check` before pushing
 5. Ensure accessibility standards
 

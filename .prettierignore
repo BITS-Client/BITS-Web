@@ -12,4 +12,4 @@ build/
 node_modules/
 
 # Svelte components with special formatting
-src/lib/components/ui/seo/SEO.svelte
+web/src/lib/components/ui/seo/SEO.svelte

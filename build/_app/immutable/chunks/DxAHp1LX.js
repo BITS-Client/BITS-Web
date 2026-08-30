@@ -1,0 +1,1 @@
+import{_t as e}from"./B46eZZnu.js";var t=e({loadingStore:()=>a}),n={data:!0,theme:!0},r=new Set;function i(){r.forEach(e=>e(n))}var a={subscribe(e){return r.add(e),e(n),()=>r.delete(e)},start(){n={data:!0,theme:!0},i()},setDataLoaded(){n={...n,data:!1},i()},setThemeLoaded(){n={...n,theme:!1},i()}};export{t as n,a as t};
