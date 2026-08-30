@@ -64,16 +64,16 @@ div.card > p.text {
 
 ### Bundle Size
 
-- Import only needed icons from lucide-svelte
+- Import only needed icons from @lucide/svelte
 - Tree-shake unused utilities
 - Avoid importing entire libraries
 
 ```typescript
 // Good - specific imports
-import { Mail, Phone } from 'lucide-svelte';
+import { Mail, Phone } from '@lucide/svelte';
 
 // Bad - importing everything
-import * as Icons from 'lucide-svelte';
+import * as Icons from '@lucide/svelte';
 ```
 
 ## Icon System Best Practices

@@ -24,7 +24,7 @@ src/lib/components/ui/
 
 ```svelte
 <script lang="ts">
-	import { Mail } from 'lucide-svelte';
+	import { Mail } from '@lucide/svelte';
 	import type { Locale } from '$lib/types';
 
 	interface Props {
@@ -103,14 +103,14 @@ Examples:
 2. Use `interface Props` with `$props()` rune
 3. Accept `locale: Locale` if content varies by language
 4. Use Tailwind classes (avoid inline styles)
-5. Import icons from `lucide-svelte` individually
+5. Import icons from `@lucide/svelte` individually
 
 ### Example: New Card Component
 
 ```svelte
 <!-- src/lib/components/ui/card/FeatureCard.svelte -->
 <script lang="ts">
-	import { Check } from 'lucide-svelte';
+	import { Check } from '@lucide/svelte';
 	import type { Locale } from '$lib/types';
 
 	interface Props {
@@ -165,7 +165,7 @@ Use `getIconComponent` for icons stored in Sanity:
 
 - **CMS icons**: Use lowercase kebab-case (e.g., `code-xml`, `database`, `cloud`)
 - **Fallback**: Always provide `Sparkles` as fallback
-- **Static icons**: Import directly from `$lib/icons/lucide` or `lucide-svelte`
+- **Static icons**: Import directly from `$lib/icons/lucide` or `@lucide/svelte`
 - **Size**: Use Tailwind classes `w-5 h-5` or `w-6 h-6`
 - **Color**: Inherit from parent or use Tailwind color classes
 
@@ -189,6 +189,6 @@ ls src/lib/components/ui/animation/
 
 - **Always use `$props()`** - No `export let` (Svelte 4 syntax)
 - **Dark mode**: Use `dark:` prefix for dark mode styles
-- **Icons**: Import individually from `lucide-svelte`, not barrel imports
+- **Icons**: Import individually from `@lucide/svelte`, not barrel imports
 - **Locale prop**: Most components need `locale: Locale` for i18n content
 - **CSS files**: Only Header and Footer have separate `.css` files; use Tailwind elsewhere

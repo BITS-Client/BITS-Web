@@ -1,9 +1,8 @@
 // Centralized Lucide icons re-export
-// Use this file instead of 'lucide-svelte' for consistent imports
+// Use this file instead of '@lucide/svelte' directly for consistent imports
 export {
 	ArrowRight,
 	ArrowUp,
-	Github,
 	ChevronRight,
 	ChevronLeft,
 	ChevronDown,
@@ -16,11 +15,6 @@ export {
 	Mail,
 	Phone,
 	MessageCircle,
-	Twitter,
-	Linkedin,
-	Facebook,
-	Instagram,
-	Youtube,
 	MapPin,
 	Calendar,
 	Eye,
@@ -78,7 +72,6 @@ export {
 	Gavel,
 	Lock,
 	AlertCircle,
-	Slack,
 	ShoppingCart,
 	Megaphone,
 	LayoutDashboard,
@@ -99,4 +92,7 @@ export {
 	User,
 	FolderGit,
 	Copy
-} from 'lucide-svelte';
+} from '@lucide/svelte';
+
+// Brand icons (removed upstream from lucide) — local SVG components
+export { Github, Instagram, Youtube, Twitter, Linkedin, Facebook, Slack } from './brand';

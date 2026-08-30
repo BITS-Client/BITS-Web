@@ -147,7 +147,7 @@ This section defines the content structure for the developers to build in Sanity
 - **Component Framework:** Svelte ^5.48.5 (Runes mode: `$state`, `$derived`, `$effect`, `$props`).
 - **Adapter:** `@sveltejs/adapter-static` (^3.0.10) with `strict: false`.
 - **Styling:** Tailwind CSS ^4.1.18 with Vite plugin.
-- **Icons:** `lucide-svelte` ^0.563.0 (tree-shakeable).
+- **Icons:** `@lucide/svelte` ^1.37.0 (tree-shakeable).
 
 ### 6.2 Backend (Serverless & Functions)
 

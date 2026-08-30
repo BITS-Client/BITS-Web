@@ -9,7 +9,7 @@
 		Send,
 		MessageCircle
 	} from '$lib/icons/lucide';
-	import { Copy } from 'lucide-svelte';
+	import { Copy } from '@lucide/svelte';
 
 	interface Props {
 		copied: boolean;

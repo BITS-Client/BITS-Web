@@ -230,7 +230,7 @@ interface Props {
 ```svelte
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
-	import { Icon } from 'lucide-svelte';
+	import { Icon } from '@lucide/svelte';
 
 	interface Props {
 		title: string;
@@ -279,7 +279,7 @@ import { fade, fly } from 'svelte/transition';
 import { z } from 'zod';
 
 // 3. Icons
-import { Mail, Phone, ArrowRight } from 'lucide-svelte';
+import { Mail, Phone, ArrowRight } from '@lucide/svelte';
 
 // 4. Internal components
 import SEO from '$lib/components/SEO.svelte';

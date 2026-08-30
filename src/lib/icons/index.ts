@@ -17,11 +17,6 @@ import {
 	Mail,
 	Phone,
 	MessageCircle,
-	Twitter,
-	Linkedin,
-	Facebook,
-	Instagram,
-	Youtube,
 	MapPin,
 
 	// Content & Media
@@ -89,7 +84,6 @@ import {
 	Gavel,
 	Lock,
 	AlertCircle,
-	Slack,
 
 	// Additional
 	ShoppingCart,
@@ -111,7 +105,8 @@ import {
 	Clock,
 	User,
 	FolderGit
-} from 'lucide-svelte';
+} from '@lucide/svelte';
+import { Facebook, Instagram, Linkedin, Slack, Twitter, Youtube } from './brand';
 
 import type { Component } from 'svelte';
 
@@ -229,7 +224,7 @@ export type IconName =
 	| 'folder-git';
 
 // Centralized icon mapping
-export const iconMap: Record<IconName, typeof import('lucide-svelte').Code> = {
+export const iconMap: Record<IconName, typeof import('@lucide/svelte').Code> = {
 	// Navigation & UI
 	'arrow-right': ArrowRight,
 	'chevron-right': ChevronRight,
@@ -347,7 +342,7 @@ export const iconMap: Record<IconName, typeof import('lucide-svelte').Code> = {
  * @param name - The icon name
  * @returns The icon component or a fallback
  */
-export function getIcon(name: IconName): typeof import('lucide-svelte').Code {
+export function getIcon(name: IconName): typeof import('@lucide/svelte').Code {
 	return iconMap[name] || Sparkles;
 }
 
@@ -356,7 +351,7 @@ export function getIcon(name: IconName): typeof import('lucide-svelte').Code {
  * @param name - The icon name as string
  * @returns The icon component or a fallback
  */
-export function getIconByName(name: string): typeof import('lucide-svelte').Code {
+export function getIconByName(name: string): typeof import('@lucide/svelte').Code {
 	return iconMap[name as IconName] || Sparkles;
 }
 
@@ -366,7 +361,7 @@ export function getIconByName(name: string): typeof import('lucide-svelte').Code
  * @param iconName - The icon name from CMS
  * @returns The icon component or fallback
  */
-export function getIconComponent(iconName?: string | null): typeof import('lucide-svelte').Code {
+export function getIconComponent(iconName?: string | null): typeof import('@lucide/svelte').Code {
 	if (!iconName) return Sparkles;
 	const normalizedName = iconName.toLowerCase();
 	const iconEntry = Object.entries(iconMap).find(([key]) => key === normalizedName);

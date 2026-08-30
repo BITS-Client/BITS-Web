@@ -358,8 +358,7 @@
 				required
 				rows="5"
 				class="form-textarea"
-				placeholder={messagePlaceholder}
-			></textarea>
+				placeholder={messagePlaceholder}></textarea>
 		</div>
 
 		<!-- Turnstile Verification -->

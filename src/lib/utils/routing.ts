@@ -57,8 +57,7 @@ export function removeLocalePrefix(path: string, locale: string): string {
 export function getLocaleFromPath(pathname: string): 'en' | 'id' {
 	const pathSegments = pathname.split('/').filter(Boolean);
 	return (pathSegments[0] === 'id' || pathSegments[0] === 'en' ? pathSegments[0] : 'id') as
-		| 'en'
-		| 'id';
+		'en' | 'id';
 }
 
 /**

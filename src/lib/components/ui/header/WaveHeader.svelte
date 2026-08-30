@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { Clock } from '$lib/icons/lucide';
-	import type { ComponentType } from 'svelte';
+	import type { LucideProps } from '@lucide/svelte';
+	import type { Component } from 'svelte';
 
 	interface Props {
 		badge?: string;
-		badgeIcon?: ComponentType;
+		badgeIcon?: Component<LucideProps>;
 		title?: string;
 		subtitle?: string;
 		headingId?: string;

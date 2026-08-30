@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Instagram, Github, Youtube } from 'lucide-svelte';
+	import { Instagram, Github, Youtube } from '$lib/icons/lucide';
 
 	interface Props {
 		name: string;

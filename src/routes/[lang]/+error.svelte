@@ -4,8 +4,6 @@
 	import { Home } from '$lib/icons/lucide';
 	import { fade, fly } from 'svelte/transition';
 
-	let { data: _data }: { data?: Record<string, unknown> } = $props();
-
 	const error = $derived($page.error);
 
 	let isVisible = $state(false);

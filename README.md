@@ -1,300 +1,245 @@
-# Banten IT Solutions Website
+<div align="center">
+  <h1>BITS Corporate Website</h1>
+  <p>
+    Official website for <strong>Banten IT Solutions (BITS)</strong> — digital solutions company in Banten, Indonesia.
+  </p>
+  <p>
+    <a href="https://bits.co.id">
+      <img src="https://img.shields.io/badge/bits.co.id-Online-00C853?style=for-the-badge&logo=statuspage&logoColor=white" alt="bits.co.id Online" />
+    </a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/SvelteKit-FF3E00?style=flat&logo=svelte&logoColor=white" alt="SvelteKit" />
+    <img src="https://img.shields.io/badge/Svelte%205-FF3E00?style=flat&logo=svelte&logoColor=white" alt="Svelte 5" />
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/Sanity-F03E2F?style=flat&logo=sanity&logoColor=white" alt="Sanity" />
+    <img src="https://img.shields.io/badge/Lucide-F56565?style=flat&logo=lucide&logoColor=white" alt="Lucide" />
+    <img src="https://img.shields.io/badge/Cloudflare%20Pages-F38020?style=flat&logo=cloudflarepages&logoColor=white" alt="Cloudflare Pages" />
+    <img src="https://img.shields.io/badge/Resend-000000?style=flat&logo=resend&logoColor=white" alt="Resend" />
+    <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=flat" alt="All Rights Reserved" />
+  </p>
+</div>
 
-Modern, multilingual corporate website showcasing digital solutions including custom software development, web design, ERP systems, AI & automation, IT infrastructure, and creative services.
+---
 
-## Important: Never Run These Commands
+## ✨ Features
 
-**DO NOT run** any of the following unless explicitly requested by the user:
+| Feature                           | Description                                                                                                                                 |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Multilingual (i18n)**           | Indonesian (`id`) & English (`en`) via `/[lang]/` route segment — locale-specific fields in Sanity, URL-based language switching.           |
+| **Sanity CMS**                    | Headless content for services, portfolio, blog, pages & settings — live GROQ queries via `src/lib/sanity`.                                  |
+| **Contact + Newsletter + Resend** | Server-side Zod validation, sanitization, Cloudflare Turnstile CAPTCHA, Resend email delivery + rate limiting.                              |
+| **SEO Optimized**                 | Dynamic meta, OpenGraph, JSON-LD, canonical URLs, `sitemap.xml` per locale, `robots.txt`.                                                   |
+| **Dark / Light Theme**            | Theme store + `dark:` variants, persisted preference.                                                                                       |
+| **Animations**                    | Scroll-reveal, counters, floating elements — localized in `src/lib/components/animations`.                                                  |
+| **Static-First**                  | `@sveltejs/adapter-static` SSG + `404.html` fallback; dynamic routes served by Cloudflare Functions.                                        |
+| **Icon System**                   | `@lucide/svelte` with centralized re-export (`$lib/icons/lucide`) + local brand SVGs (`$lib/icons/brand`) + CMS-driven `iconMap`.           |
+| **Cloudflare Native**             | Deployed to Cloudflare Pages via GitHub Actions (`wrangler pages deploy`).                                                                  |
+| **Code Quality**                  | Prettier 3 + ESLint 10 + `simple-git-hooks` + `lint-staged` — auto-format on commit, type-check + build on push, weekly Dependabot updates. |
 
-- `pnpm dev` / `npm dev` / `npm run dev`
-- `pnpm preview`, `pnpm build`
-- `pnpm check`, `pnpm lint`
+## 🛠️ Tech Stack
 
-Ask the user to run these commands themselves if needed.
+| Layer                 | Technology                                                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Framework**         | [SvelteKit 2](https://kit.svelte.dev/) with [Svelte 5 Runes](https://svelte.dev/) (`$state`, `$derived`, `$props`).                 |
+| **Styling**           | [Tailwind CSS v4](https://tailwindcss.com/) (via `@tailwindcss/vite`) + custom CSS design system.                                   |
+| **Language**          | [TypeScript 6](https://www.typescriptlang.org/).                                                                                    |
+| **Icons**             | [`@lucide/svelte`](https://lucide.dev/) (migrated from deprecated `lucide-svelte`) + local brand icons.                             |
+| **Build Tool**        | [Vite 8](https://vitejs.dev/).                                                                                                      |
+| **CMS**               | [Sanity](https://www.sanity.io/) + `@sanity/client` + `groq` + [`@portabletext/svelte`](https://github.com/portabletext/to-svelte). |
+| **Validation**        | [Zod](https://zod.dev/) — API request schemas.                                                                                      |
+| **Email**             | [Resend](https://resend.com/) + Cloudflare Turnstile.                                                                               |
+| **Adapter / Hosting** | [`@sveltejs/adapter-static`](https://kit.svelte.dev/docs/adapter-static) → [Cloudflare Pages](https://pages.cloudflare.com/).       |
+| **Tooling**           | ESLint 10, Prettier 3, `svelte-check`, `simple-git-hooks`, `lint-staged`, GitHub Actions, Dependabot.                               |
 
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-pnpm install
-
-# Start development server
-pnpm dev
-
-# Build for production
-pnpm build
-
-# Type checking
-pnpm check
-
-# Linting
-pnpm lint
-pnpm lint:fix
-
-# Formatting
-pnpm format
-
-# Sanity data export (requires SANITY_TOKEN)
-pnpm export
-
-# Sanity data export with raw snapshots and full raw dumps
-pnpm export -- --with-raw
-
-# Sanity data export with asset download (assets-manifest + files)
-pnpm export -- --with-assets
-
-# Full Sanity export (published + raw + assets)
-pnpm export -- --with-raw --with-assets
-
-# Sanity seed audit (validate sanity/data/*.json integrity)
-pnpm audit:seed
-
-# Safe seed (audit first, then import)
-pnpm seed:safe
-
-# Sanity data seed/import (requires SANITY_TOKEN)
-pnpm seed
-```
-
-## 📋 Project Overview
-
-**Company:** Banten IT Solutions (BITS)
-**Website:** https://bits.co.id
-**Tech Stack:** SvelteKit 2 + Svelte 5 + TypeScript + Tailwind CSS 4 + Sanity CMS
-**Deployment:** Cloudflare Pages (Static Site Generation with Cloudflare Functions)
-**Architecture:** Static-first with dynamic routes handled by Cloudflare Functions
-
-## 🛠️ Technologies
-
-### Core Framework
-
-- **SvelteKit 2.50.1** - Full-stack web framework with file-based routing
-- **Svelte 5.48.5** - Component framework with Runes mode (`$state`, `$derived`, `$effect`)
-- **TypeScript 5.9.3** - Type-safe development
-
-### Styling & UI
-
-- **Tailwind CSS 4.1.18** - Utility-first CSS framework with Vite integration
-- **Lucide Svelte 0.563.0** - Icon library (import individual icons for tree-shaking)
-- **Custom CSS** - Advanced animations, glassmorphism effects, dark mode support
-- **Design System** - Custom properties for colors, spacing, typography
-
-### CMS & Data
-
-- **Sanity CMS 7.14.1** - Headless content management system
-  - `@sanity/client` - API client
-  - `@sanity/image-url` - Image optimization
-  - `@portabletext/svelte 3.0.1` - Rich text rendering
-- **Zod 4.3.6** - Schema validation for forms and API requests
-
-### Development Tools
-
-- **Vite** - Build tool
-- **ESLint** - Linting
-- **Prettier** - Code formatting
-- **Svelte Check** - Type checking
-
-### Deployment
-
-- **@sveltejs/adapter-static 3.0.10** - Static site generation with `strict: false`
-- **Cloudflare Pages** - Hosting platform with Cloudflare Functions for dynamic routes
-- **Fallback**: `404.html` for unmatched routes
+---
 
 ## 📁 Project Structure
 
-```
-src/
-├── lib/
-│   ├── components/       # Reusable Svelte components
-│   │   ├── animations/ # ScrollReveal, AnimatedCounter, FloatingElement
-│   │   ├── SEO.svelte  # SEO component with meta tags
-│   │   ├── Header.svelte
-│   │   ├── Footer.svelte
-│   │   └── LanguageSwitcher.svelte
-│   ├── sanity/          # Sanity CMS client
-│   │   ├── client.ts   # Sanity client configuration
-│   │   └── queries.ts  # GROQ queries (with locale support)
-│   ├── stores/           # Svelte stores
-│   │   └── theme.ts   # Dark/light mode store
-│   ├── types/            # TypeScript type definitions
-│   │   └── index.ts   # Locale type: 'id' | 'en'
-│   └── utils/            # Utility functions
-│       └── seo.ts      # SEO schema generators
-```
-
-## 🌐 Features
-
-### Internationalization (i18n)
-
-- Multi-language support (Indonesian `id` & English `en`)
-- Dynamic route segments: `/[lang]/` (e.g., `/id/`, `/en/`)
-- Default locale: Indonesian (`id`)
-- Content stored in Sanity CMS with locale-specific fields (e.g., `title.id`, `title.en`)
-- Locale type defined in `$lib/types/index.ts`
-- Language switching via `LanguageSwitcher.svelte` (URL-based, no client-side translation)
-- No translation files - all content from Sanity CMS
-
-### SEO Optimization
-
-- Structured data (JSON-LD schemas)
-- Dynamic meta tags
-- Canonical URLs
-- Sitemap generation
-- Open Graph & Twitter Card tags
-
-### Responsive Design
-
-- Mobile-first approach
-- Responsive grid layouts
-- Adaptive components
-- Dark/Light theme support
-
-### Animations & Interactions
-
-- Scroll-triggered animations
-- Hover effects
-- Counter animations
-- Smooth transitions
-
-### Accessibility
-
-- Semantic HTML
-- ARIA attributes
-- Keyboard navigation
-- Screen reader support
-
-## 🔧 Configuration
-
-### Environment Variables
-
-Required environment variables (set in `.env` for development, Cloudflare dashboard for production):
-
-```env
-# Resend API (Email service)
-RESEND_API_KEY=re_xxxxxxxxxxxxx
-ADMIN_EMAIL=admin@bits.co.id
-
-# Cloudflare Turnstile (CAPTCHA)
-# Test key for development: 0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI
-VITE_TURNSTILE_SITE_KEY=0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI
-TURNSTILE_SECRET_KEY=0x4AAAAAAACEIn84L8pN--7921SPbxZKaInI
+```text
+BITS-Web/
+├── .github/
+│   ├── workflows/
+│   │   └── deploy.yml       # GitHub Actions → Cloudflare Pages
+│   └── dependabot.yml       # Weekly deps + GitHub Actions updates
+├── docs/                    # PRD, tech stack, coding standards, best practices
+├── sanity/
+│   ├── schemas/             # Sanity document schemas (post, project, service, client…)
+│   ├── scripts/             # export.mjs, seed.mjs, seed-safe.mjs, audit-seed.mjs
+│   ├── data/                # Exported JSON seed data
+│   ├── sanity.config.ts
+│   └── sanity.cli.ts
+├── static/                  # Favicons, robots.txt, shared.css
+├── src/
+│   ├── app.html             # HTML template
+│   ├── app.css              # Tailwind v4 @theme + global styles
+│   ├── app.d.ts             # SvelteKit type overrides
+│   ├── hooks.server.ts      # Security headers
+│   ├── lib/
+│   │   ├── components/      # ui/ (animation, card, content, cta, form, header, hero, layout, misc, navigation, section, seo) + SEO.svelte
+│   │   ├── icons/           # lucide.ts (centralized re-export) + brand/ (local brand SVGs)
+│   │   ├── sanity/          # Sanity client + GROQ queries
+│   │   ├── stores/          # theme store
+│   │   ├── types/           # Locale type: 'id' | 'en', content types
+│   │   └── utils/           # seo, share, helpers
+│   └── routes/
+│       ├── +layout.svelte / +error.svelte
+│       ├── [lang]/          # Home, about, services, portfolio, blog, contact, privacy, terms, sitemap.xml
+│       └── api/             # contact/, newsletter/ → Resend
+├── eslint.config.js
+├── svelte.config.js         # adapter-static (output: build/)
+├── vite.config.ts           # tailwindcss() + sveltekit()
+├── tailwind.config.js
+├── tsconfig.json
+├── .prettierrc
+├── .prettierignore
+└── package.json
 ```
 
-### Key Files
+---
 
-- `svelte.config.js` - SvelteKit configuration
-- `vite.config.ts` - Vite configuration
-- `tsconfig.json` - TypeScript configuration
-- `eslint.config.js` - ESLint configuration
-- `.prettierrc` - Prettier configuration
+## 🚀 Quick Start
 
-## 📦 Package Manager
+### Prerequisites
 
-**Always use `pnpm`** - DO NOT use npm or yarn
+- [Node.js](https://nodejs.org/) 20+ and [pnpm](https://pnpm.io/) 10+
+- A [Sanity](https://www.sanity.io/) project (`VITE_SANITY_PROJECT_ID` + dataset)
+- Optional: [Resend](https://resend.com) + [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) for contact/newsletter APIs
+- Optional: [Cloudflare](https://dash.cloudflare.com) account for Pages deploy (`bits-web` project)
+
+### 1. Clone & Install
 
 ```bash
-pnpm install          # Install dependencies
-pnpm add <package>   # Add package
-pnpm add -D <package>  # Add dev dependency
-pnpm remove <package>  # Remove package
+git clone https://github.com/BITS-Client/BITS-Web.git
+cd BITS-Web
+pnpm install
 ```
 
-## 🧪 Testing & Quality
+### 2. Configure (Local)
 
 ```bash
-# Type checking
-pnpm check
-
-# Linting
-pnpm lint
-pnpm lint:fix
-
-# Format code
-pnpm format
-
-# Format check
-pnpm format:check
-
-# Build (for verification)
-pnpm build
+cp .env.example .env
 ```
 
-## 🚢 Deployment
+Edit `.env` — see [Environment Configuration](#️-environment-configuration).
 
-### Static Site Generation
+### 3. Develop
 
-The project uses `@sveltejs/adapter-static` to generate a static site:
+```bash
+pnpm dev
+# → http://localhost:5173
+
+# Sanity Studio:
+cd sanity && pnpm dev
+```
+
+### 4. Build
 
 ```bash
 pnpm build
+# → outputs to build/ (static SSG + 404.html fallback)
 ```
 
-Build output is placed in `build/` directory and can be deployed to:
+### 5. Deploy
 
-- Cloudflare Pages
-- Netlify
-- Vercel
-- GitHub Pages
-- Any static hosting service
+Production deploys run automatically via GitHub Actions on `push` to `main` and `workflow_dispatch`. See [Deployment](#-deployment) below.
 
-### Cloudflare Pages Deployment (GitLab Repository Connection)
+---
 
-This project deploys through **Cloudflare Pages Git integration** (connected directly to the GitLab repo).
+## 💻 Development
 
-- Push to branch → Cloudflare builds and deploys automatically
-- Pull/Merge Request branches get preview deployments automatically
-- Production branch (`main`) deploys to `https://bits.co.id`
+### Scripts
 
-#### GitLab CI Responsibility (Quality Gate Only)
+| Command                        | Description                                                     |
+| ------------------------------ | --------------------------------------------------------------- |
+| `pnpm dev`                     | Start SvelteKit dev server with HMR (`vite dev --host`).        |
+| `pnpm build`                   | Build static site (`@sveltejs/adapter-static` → `build/`).      |
+| `pnpm preview`                 | Preview the production build with Vite.                         |
+| `pnpm check`                   | `svelte-kit sync` + `svelte-check` type-check.                  |
+| `pnpm check:watch`             | Type-check in watch mode.                                       |
+| `pnpm lint`                    | Run ESLint over the project.                                    |
+| `pnpm lint:fix`                | Apply automatic ESLint fixes.                                   |
+| `pnpm format`                  | Format all files with Prettier.                                 |
+| `pnpm format:check`            | Verify formatting without writing.                              |
+| `pnpm export`                  | Export published Sanity data to `sanity/data/*.json`.           |
+| `pnpm export -- --with-raw`    | Export + raw snapshots and full raw dumps.                      |
+| `pnpm export -- --with-assets` | Export + download assets (`assets-manifest.json`).              |
+| `pnpm audit:seed`              | Validate seed JSON integrity (unique names/orders, `_key`s).    |
+| `pnpm seed`                    | Import `sanity/data/*.json` into Sanity (needs `SANITY_TOKEN`). |
+| `pnpm seed:safe`               | Audit first, then seed.                                         |
 
-GitLab CI in `.gitlab-ci.yml` is used only for code quality checks:
+### Code Style
 
-- Security templates (SAST, Secret Detection, Dependency Scanning)
-- `install` job (`pnpm install --frozen-lockfile`)
-- `validate` job (`pnpm lint` and `pnpm check`)
+- **Quotes**: single, **Semi**: off, **Tabs**: on, **Print width**: 100.
+- **Svelte 5 Runes**: `$state`, `$derived`, `$props` only — no `export let`.
+- **Icons**: import individually from `$lib/icons/lucide` (or `@lucide/svelte`); never barrel imports.
+- **Styling**: Tailwind 4 + `dark:` variants; Header/Footer keep separate CSS files, everything else uses Tailwind.
+- **Content**: never hardcode business content — all copy lives in Sanity CMS with `{ id, en }` locale fields.
 
-No deploy job runs in GitLab CI.
+More conventions: [`AGENTS.md`](./AGENTS.md), [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md), [`src/lib/components/AGENTS.md`](./src/lib/components/AGENTS.md), [`sanity/AGENTS.md`](./sanity/AGENTS.md).
 
-#### Environment Variables for Cloudflare Pages
+### Git Hooks
 
-Set these in **Cloudflare Pages → Settings → Environment variables**:
+`simple-git-hooks` + `lint-staged` install via `prepare`:
 
-| Variable                  | Description                              |
-| ------------------------- | ---------------------------------------- |
-| `VITE_SANITY_PROJECT_ID`  | Sanity CMS project ID                    |
-| `VITE_SANITY_DATASET`     | Sanity dataset name (e.g., `production`) |
-| `VITE_SANITY_API_VERSION` | Sanity API version                       |
-| `VITE_TURNSTILE_SITE_KEY` | Cloudflare Turnstile site key            |
-| `TURNSTILE_SECRET_KEY`    | Cloudflare Turnstile secret key          |
-| `RESEND_API_KEY`          | Resend API key for emails                |
-| `ADMIN_EMAIL`             | Admin email address                      |
-| `CONTACT_FROM_EMAIL`      | Sender email for contact form            |
-| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter              |
+- **pre-commit**: Prettier formats `*.{js,ts,svelte,json,css,md,yml,yaml}` + ESLint fixes `src/**/*.{ts,svelte}`.
+- **pre-push**: `pnpm run check && pnpm run build` — must pass before push.
 
-## 📚 Important Documentation
+Skip with `git commit --no-verify` / `git push --no-verify` if needed.
 
-- [`AGENTS.md`](./AGENTS.md) - AI Agent rules and conventions (Root)
-  - [`src/lib/components/AGENTS.md`](./src/lib/components/AGENTS.md) - UI Patterns & Components
-  - [`sanity/AGENTS.md`](./sanity/AGENTS.md) - CMS Schema & Patterns
-- [`docs/PRD.md`](./docs/PRD.md) - Product Requirements Document
-- [`docs/TECH_STACK.md`](./docs/TECH_STACK.md) - Technology stack details
-- [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md) - Coding standards
-- [`docs/BEST_PRACTICES.md`](./docs/BEST_PRACTICES.md) - Best practices
+---
+
+## ⚙️ Environment Configuration
+
+| Variable                  | Description                                      | Where to set                                         |
+| ------------------------- | ------------------------------------------------ | ---------------------------------------------------- |
+| `VITE_SANITY_PROJECT_ID`  | Sanity project ID.                               | `.env` + GitHub Actions secrets.                     |
+| `VITE_SANITY_DATASET`     | Sanity dataset (usually `production`).           | `.env` + GitHub Actions secrets.                     |
+| `VITE_SANITY_API_VERSION` | Sanity API version (pinned `2024-01-01` in CI).  | `.env`.                                              |
+| `VITE_TURNSTILE_SITE_KEY` | Turnstile site key (public).                     | `.env` + GitHub Actions secrets.                     |
+| `TURNSTILE_SECRET_KEY`    | Turnstile secret key (private).                  | `.env` + Cloudflare Pages secrets.                   |
+| `RESEND_API_KEY`          | [resend.com](https://resend.com) API key.        | `.env` + Cloudflare Pages secrets.                   |
+| `ADMIN_EMAIL`             | Recipient for contact/newsletter notifications.  | `.env` + Cloudflare Pages secrets.                   |
+| `CONTACT_FROM_EMAIL`      | Sender email for contact form (verified domain). | `.env` + Cloudflare Pages secrets.                   |
+| `NEWSLETTER_FROM_EMAIL`   | Sender email for newsletter (verified domain).   | `.env` + Cloudflare Pages secrets.                   |
+| `SANITY_TOKEN`            | Sanity write token for export/seed scripts.      | Shell env only — never commit.                       |
+| `CLOUDFLARE_API_TOKEN`    | Token for GitHub Actions deploy.                 | GitHub → Settings → Secrets and variables → Actions. |
+| `CLOUDFLARE_ACCOUNT_ID`   | Cloudflare account ID.                           | GitHub Secrets.                                      |
+
+---
+
+## 📡 API
+
+| Endpoint               | Method | Description                                                                                  |
+| ---------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| `POST /api/contact`    | POST   | Zod validation, HTML sanitization, Turnstile verification, rate limiting (5/min/IP), Resend. |
+| `POST /api/newsletter` | POST   | Newsletter subscription with validation + Turnstile, Resend email.                           |
+
+---
+
+## 🚀 Deployment
+
+- **CI file**: `.github/workflows/deploy.yml` (aligned with `BataBagus-Web` — proven pattern).
+- **Triggers**: `push` to `main`, `pull_request` (CI only), `workflow_dispatch` (manual, optional `ref` input).
+- **Job**: `☁️ Deploy to Cloudflare` (single job) — `📥 Checkout` → `📦 Setup pnpm` → `🟢 Setup Node.js 24` → `📚 Install` → `🔍 Typecheck` → `🧹 Lint` → `🎨 Format check` → `🏗️ Build` (with `VITE_SANITY_*` + `VITE_TURNSTILE_SITE_KEY`) → `🏗️ Ensure Pages project exists` → `🔐 Set Pages Secrets (when deploy)` → `🚀 Deploy` (`wrangler pages deploy build`) → `🎉 Summary`.
+- **Project**: `bits-web` on Cloudflare Pages. Output: `build/` (static).
+- **Custom Domain**: `bits.co.id` — add once via Dashboard → `Workers & Pages → bits-web → Settings → Custom domains`. After the first add, all future `git push` deploys auto-serve the domain.
+- **Dependabot**: `.github/dependabot.yml` — weekly `github-actions` (Mon 02:30) + `npm` for `/` and `/sanity` (Mon 03:00/03:30), grouped dev-deps minor/patch, ignores `typescript` major.
+- **Secrets (GitHub)**: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `VITE_SANITY_PROJECT_ID`, `VITE_SANITY_DATASET`, `VITE_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL`.
+- **Cloudflare Variables (set-when-deploy)**: `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `CONTACT_FROM_EMAIL`, `NEWSLETTER_FROM_EMAIL` — synced via `wrangler pages secret put` in CI (see `🔐 Set Cloudflare Pages Secrets`).
+
+Production URL: **https://bits.co.id**
+
+---
 
 ## 🗄️ Sanity Data Management
-
-Export and import data from Sanity CMS:
 
 ```bash
 # Export published schema JSON only (default; lightweight)
 export SANITY_TOKEN=sk_your_token
 pnpm export
-
-# Export raw snapshots + full raw dumps
-pnpm export -- --with-raw
-
-# Export + download assets (creates assets-manifest.json)
-pnpm export -- --with-assets
 
 # Full export: published + raw + assets
 pnpm export -- --with-raw --with-assets
@@ -305,136 +250,41 @@ pnpm audit:seed
 # Safe import (runs audit first, then seed)
 pnpm seed:safe
 
-# Import seed data to a fresh Sanity project
-export SANITY_TOKEN=sk_your_token
-pnpm seed
-
-# Import subset only (skip asset upload)
+# Import subset only
 pnpm seed -- --only=posts --skip-assets
-
-# Import only one collection
-pnpm seed -- --only=clients
 ```
 
 Notes:
 
 - `pnpm seed` reads per-schema JSON files in `sanity/data/*.json`.
-- Raw files (`*.raw.json`, `all-data.raw.json`, `all-documents.raw.json`, `drafts-data.json`) are optional and only generated with `--with-raw`.
-- Asset download is optional and only needed when migrating to a different dataset/project, or when you need to rehydrate assets via `assets-manifest.json`.
-- Export now fails fast when `client` documents contain duplicate `name` or duplicate numeric `order`.
+- `clients` data must have unique `name` and unique numeric `order` (enforced by audit + export).
+- Posts use `category` type `blog`/`both`; projects use `portfolio`/`both`.
+- See [`sanity/scripts/README.md`](./sanity/scripts/README.md) for details.
 
-See [`sanity/scripts/README.md`](./sanity/scripts/README.md) for details.
-
-## 🏗️ Project Architecture
-
-### File Structure
-
-```
-src/lib/
-├── types/           # TypeScript type definitions
-│   └── index.ts   # Locale type: 'id' | 'en'
-├── components/       # Reusable Svelte components
-├── sanity/          # Sanity CMS client and queries
-├── stores/          # Svelte stores (theme, etc.)
-└── utils/           # Utility functions
-
-sanity/
-├── schemas/         # Sanity CMS schemas
-├── scripts/         # Sanity data export/import scripts
-│   ├── export.mjs   # Export data from Sanity
-│   └── seed.mjs     # Import seed data to Sanity
-├── data/            # Exported JSON seed data
-└── ...
-```
-
-### Internationalization (i18n)
-
-- **Locale Type:** Defined in `$lib/types/index.ts` as `'id' | 'en'`
-- **Route Structure:** `/[lang]/` dynamic segment (e.g., `/id/`, `/en/`)
-- **Default Locale:** Indonesian (`id`)
-- **Content Source:** Sanity CMS with locale-specific fields
-  - Example: `{ "title": { "id": "Beranda", "en": "Home" } }`
-- **Language Switching:** `LanguageSwitcher.svelte` component (URL-based)
-- **No Translation Files:** All content managed via Sanity CMS
-- **Query Pattern:** `"title": title.${locale}` fetches correct locale field
+---
 
 ## 🏢 Company Information
 
 - **Name:** Banten IT Solutions
 - **Email:** admin@bits.co.id
-- **Phone:** +62 819 678 048
-- **WhatsApp:** +62 819 678 048
+- **Phone / WhatsApp:** +62 819 678 048
 - **Address:** Jl. Komp. Taman Pesona, Taktakan, Kota Serang, Banten 42162, Indonesia
 - **Website:** https://bits.co.id
-
-## 🔒 Security
-
-- **Cloudflare Turnstile** - Privacy-focused CAPTCHA (test key for dev, production key for prod)
-- **Resend API** - Secure email delivery with API key authentication
-- **Environment Variables** - Sensitive data stored in `.env` (dev) and Cloudflare dashboard (prod)
-- **Input Validation** - Zod schemas for form validation on client and server
-- **Sanitization** - HTML tag removal to prevent XSS attacks
-- **Rate Limiting** - 5 requests per IP per minute for contact form
-- **Security Headers** - `X-Content-Type-Options`, `X-Frame-Options`, `X-XSS-Protection`
-- **Content Security** - No hardcoded credentials in source code
-
-## 📊 Performance
-
-- Static Site Generation (SSG)
-- Image optimization
-- Code splitting
-- Lazy loading
-- Core Web Vitals optimization
-- Target: < 1s initial load
 
 ## 🤝 Contributing
 
 1. Follow the coding standards in [`docs/CODING_STANDARD.md`](./docs/CODING_STANDARD.md)
-2. Use TypeScript for type safety
-3. Follow existing component patterns
-4. Test on multiple devices and browsers
+2. Use TypeScript + Svelte 5 runes
+3. Follow existing component patterns in [`src/lib/components/AGENTS.md`](./src/lib/components/AGENTS.md)
+4. Run `pnpm format:check && pnpm lint && pnpm check` before pushing
 5. Ensure accessibility standards
 
-## 🚀 Deployment Checklist
-
-Before deploying to production:
-
-### Pre-deployment
-
-- [ ] Run `pnpm check` - No TypeScript errors
-- [ ] Run `pnpm lint` - No ESLint errors
-- [ ] Run `pnpm build` - Build succeeds
-- [ ] Test all pages manually (both `/id/` and `/en/` routes)
-- [ ] Verify dark mode on all pages
-- [ ] Test responsive design (mobile, tablet, desktop)
-- [ ] Check all links work
-- [ ] Verify meta tags and SEO
-- [ ] Test form submissions with Turnstile verification
-- [ ] Check console for errors
-
-### Environment Variables
-
-- [ ] `RESEND_API_KEY` - Resend API key for email sending
-- [ ] `ADMIN_EMAIL` - Admin email address
-- [ ] `VITE_TURNSTILE_SITE_KEY` - Turnstile site key (public)
-- [ ] `TURNSTILE_SECRET_KEY` - Turnstile secret key (private)
-
-### Post-deployment
-
-- [ ] Verify site loads correctly
-- [ ] Test all critical paths
-- [ ] Check contact form submission
-- [ ] Verify Turnstile captcha works
-- [ ] Test both language routes (`/id/` and `/en/`)
-- [ ] Check analytics tracking (if enabled)
-- [ ] Monitor error logs
-- [ ] Verify SSL certificate
-- [ ] Test page speed (Lighthouse)
-
-## 📝 License
+## 📄 License
 
 Copyright © 2025 Banten IT Solutions. All rights reserved.
 
 ---
 
-**Built with ❤️ using SvelteKit**
+<div align="center">
+  Developed with ❤️ by <a href="https://bits.co.id"><strong>Banten IT Solutions</strong></a>
+</div>

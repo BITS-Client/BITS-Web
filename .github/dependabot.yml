@@ -1,0 +1,63 @@
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '02:30'
+    open-pull-requests-limit: 10
+    labels:
+      - 'dependencies'
+      - 'github-actions'
+    commit-message:
+      prefix: 'chore(ci):'
+      include: 'scope'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '03:00'
+    open-pull-requests-limit: 5
+    labels:
+      - 'dependencies'
+      - 'npm'
+    commit-message:
+      prefix: 'chore(deps):'
+      include: 'scope'
+    ignore:
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
+    groups:
+      dev-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
+
+  - package-ecosystem: 'npm'
+    directory: '/sanity'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '03:30'
+    open-pull-requests-limit: 5
+    labels:
+      - 'dependencies'
+      - 'sanity'
+    commit-message:
+      prefix: 'chore(deps):'
+      include: 'scope'
+    ignore:
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
+    groups:
+      dev-dependencies:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'

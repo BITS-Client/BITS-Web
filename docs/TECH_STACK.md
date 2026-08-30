@@ -70,7 +70,7 @@
 
 ## UI Components
 
-### lucide-svelte
+### @lucide/svelte (migrated from deprecated lucide-svelte)
 
 - **Version**: ^0.563.0
 - **Purpose**: Icon library
@@ -169,7 +169,7 @@ pnpm seed    # Import data
 	"@sanity/client": "^7.15.0",
 	"@sanity/image-url": "^2.0.3",
 	"groq": "^5.9.0",
-	"lucide-svelte": "^0.564.0",
+	"@lucide/svelte": "^1.37.0",
 	"react": "^19.2.4",
 	"react-dom": "^19.2.4",
 	"sanity": "^5.9.0",
