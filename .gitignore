@@ -1,43 +1,32 @@
 # Dependencies
 node_modules/
+.pnpm-store/
+
+# Lock files — pnpm only (keep pnpm-lock.yaml)
+package-lock.json
+yarn.lock
+bun.lock
+bun.lockb
 
 # Build outputs
-web/build/
-web/.svelte-kit/
-studio/dist/
-studio/.sanity/
-**/dist/
+dist/
+build/
+.svelte-kit/
+.sanity/
+.wrangler/
+.d1/
 
-# Env
+# Stray build output (accidental sanity build target)
+refs/
+
+# Environment files — never commit secrets
 .env
 .env.*
-**/.env
-**/.env.local
 !.env.example
-!**/.env.example
 .env.backup
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Testing
-coverage/
-.nyc_output/
-
 # Static assets (except favicon)
-web/static/images/
+web/static/images/*
 !web/static/images/favicon.svg
 
 # Sanity data — keep only published seed JSON
@@ -48,6 +37,53 @@ studio/data/all-data.raw.json
 studio/data/drafts-data.json
 studio/data/assets-manifest.json
 
-# Package managers (we use pnpm)
-package-lock.json
-yarn.lock
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing / Coverage
+coverage/
+.nyc_output/
+
+# Caches
+.cache/
+.turbo/
+.vercel/
+.netlify/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE / Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.omc
+
+# Secrets & certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Local overrides
+*.local
+.npmrc
+
+# Temporary files
+tmp/
+temp/
+*.tmp
