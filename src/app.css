@@ -672,12 +672,12 @@ body {
 	transform: translateY(-4px);
 }
 
-:global(.dark) .quick-contact-card {
+.dark .quick-contact-card {
 	background: rgba(255, 255, 255, 0.1) !important;
 	border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-:global(.dark) .quick-contact-card span {
+.dark .quick-contact-card span {
 	color: white !important;
 }
 

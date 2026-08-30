@@ -640,7 +640,7 @@
 	transition: all 0.25s ease;
 }
 
-.service-card-icon :global(svg) {
+.service-card-icon svg {
 	width: 22px;
 	height: 22px;
 }
@@ -805,8 +805,8 @@
 	opacity: 0;
 }
 
-.nav-control-btn :global(button),
-.nav-control-btn :global(a) {
+.nav-control-btn button,
+.nav-control-btn a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -818,28 +818,28 @@
 	transition: all 0.3s ease;
 }
 
-.nav-control-btn :global(button:hover),
-.nav-control-btn :global(a:hover) {
+.nav-control-btn button:hover,
+.nav-control-btn a:hover {
 	background: var(--nav-glow);
 	border-color: var(--color-primary);
 	transform: translateY(-2px);
 	box-shadow: 0 4px 15px var(--nav-glow);
 }
 
-.nav-control-btn :global(svg) {
+.nav-control-btn svg {
 	width: 20px;
 	height: 20px;
 	color: var(--nav-text);
 	transition: color 0.3s ease;
 }
 
-.nav-control-btn :global(button:hover svg),
-.nav-control-btn :global(a:hover svg) {
+.nav-control-btn button:hover svg,
+.nav-control-btn a:hover svg {
 	color: var(--color-primary);
 }
 
-:root.dark .nav-control-btn :global(button:hover svg),
-:root.dark .nav-control-btn :global(a:hover svg) {
+:root.dark .nav-control-btn button:hover svg,
+:root.dark .nav-control-btn a:hover svg {
 	color: #60a5fa;
 }
 

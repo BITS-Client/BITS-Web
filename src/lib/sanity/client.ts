@@ -3,7 +3,9 @@ import { createImageUrlBuilder } from '@sanity/image-url';
 import type { SanityImageSource } from '@sanity/image-url';
 
 // Environment variables
-const projectId = import.meta.env.VITE_SANITY_PROJECT_ID || '';
+// projectId falls back to the public project ID (same as sanity/sanity.config.ts) so builds
+// never crash when the env var is missing (e.g. CI without secrets configured)
+const projectId = import.meta.env.VITE_SANITY_PROJECT_ID || 'j996ej4v';
 const dataset = import.meta.env.VITE_SANITY_DATASET || 'production';
 const apiVersion = import.meta.env.VITE_SANITY_API_VERSION || '2024-01-01';
 const useCdn = !import.meta.env.DEV;
