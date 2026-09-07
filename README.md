@@ -24,6 +24,15 @@
 
 ---
 
+## 📸 Screenshots
+
+| Mode     |              Desktop              |              Mobile              |
+| :------- | :-------------------------------: | :------------------------------: |
+| ☀️ Light |   ![](screenshots/desktop.png)    |   ![](screenshots/mobile.png)    |
+| 🌙 Dark  | ![](screenshots/desktop-dark.png) | ![](screenshots/mobile-dark.png) |
+
+---
+
 ## ✨ Features
 
 | Feature                           | Description                                                                                                                                 |
