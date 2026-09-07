@@ -26,10 +26,25 @@
 
 ## 📸 Screenshots
 
-| Mode    |           ☀️ Light           |              🌙 Dark              |
-| :------ | :--------------------------: | :-------------------------------: |
-| Desktop | ![](screenshots/desktop.png) | ![](screenshots/desktop-dark.png) |
-| Mobile  | ![](screenshots/mobile.png)  | ![](screenshots/mobile-dark.png)  |
+<div align="center">
+  <table>
+    <tr>
+      <th align="center">Mode</th>
+      <th align="center">☀️ Light</th>
+      <th align="center">🌙 Dark</th>
+    </tr>
+    <tr>
+      <td align="center"><strong>Desktop</strong></td>
+      <td><img src="screenshots/desktop.png" alt="BITS — Desktop Light" width="100%" /></td>
+      <td><img src="screenshots/desktop-dark.png" alt="BITS — Desktop Dark" width="100%" /></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Mobile</strong></td>
+      <td><img src="screenshots/mobile.png" alt="BITS — Mobile Light" width="50%" /></td>
+      <td><img src="screenshots/mobile-dark.png" alt="BITS — Mobile Dark" width="50%" /></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
