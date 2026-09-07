@@ -26,10 +26,10 @@
 
 ## 📸 Screenshots
 
-| Mode     |              Desktop              |              Mobile              |
-| :------- | :-------------------------------: | :------------------------------: |
-| ☀️ Light |   ![](screenshots/desktop.png)    |   ![](screenshots/mobile.png)    |
-| 🌙 Dark  | ![](screenshots/desktop-dark.png) | ![](screenshots/mobile-dark.png) |
+| Mode    |           ☀️ Light           |              🌙 Dark              |
+| :------ | :--------------------------: | :-------------------------------: |
+| Desktop | ![](screenshots/desktop.png) | ![](screenshots/desktop-dark.png) |
+| Mobile  | ![](screenshots/mobile.png)  | ![](screenshots/mobile-dark.png)  |
 
 ---
 
